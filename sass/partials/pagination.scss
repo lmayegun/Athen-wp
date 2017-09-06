@@ -1,0 +1,110 @@
+/**********************************************
+Pagination - Next/Prev - Ifinite Scroll
+**********************************************/
+/* Next - Prev -- Posts */
+.content-full-screen {
+	.post-pagination {
+		display: none; 
+	}
+}
+
+.post-pagination{
+	border-top: 1px solid #eee;
+	padding: 30px 0;
+	color: #888;
+	
+	a { 
+		color: #888;
+	}
+	
+	.post-prev {
+		float: left; 
+		width: 48%;
+		
+		span { 
+			margin-right: 5px;
+		}
+	}
+	
+	.post-next { 
+		float: right; 
+		width: 48%; 
+		text-align: right;
+		
+		span { 
+			margin-left: 5px;
+		}
+	}
+}
+
+/*Standard Number*/
+ul.page-numbers {
+	list-style: none;
+	margin: 10px 0 0;
+	li { 
+		display: block;
+		float: left;
+		margin: 0 4px 4px 0;
+		text-align: center; 
+	}
+}
+
+.page-numbers {
+	a, span {
+		line-height: 1;
+		display: block;
+		padding: 0.4em 0.7em;
+		font-size: 0.923em;
+		text-decoration: none; 
+		font-weight: normal;
+		font-weight: 400; 
+		cursor: pointer; 
+		border: 1px solid #ddd;
+		color: #888;
+		transition: all .15s ease-in-out;
+	}
+	
+	a span {
+		padding: 0; 
+	}
+	
+	a:hover, &.current, &.current:hover { 
+		color: #000;
+		background: #f7f7f7;
+		text-decoration: none;
+	}
+	
+	&:hover { 
+		text-decoration: none;
+	}
+}
+
+/*infinite scroll*/
+.infinite-scroll { 
+	&-loader{
+		position: absolute; 
+		bottom: -20px;
+		left: 50%; 
+		margin-left: -8px;
+		height: 16px; 
+		line-height: 16px; 
+		width: 30px; 
+		background: url("images/preloaders/loader.gif") center center no-repeat; text-indent: -9999px;
+	}
+	
+	&-nav { 
+		display: none; 
+	}
+	
+	&-wrap {
+		position: relative;
+		padding-bottom: 20px;
+	}
+}
+
+#infscr-loading {
+	img { 
+		display: none !important; 
+	}
+}
+

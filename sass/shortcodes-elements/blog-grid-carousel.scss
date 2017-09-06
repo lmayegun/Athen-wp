@@ -1,0 +1,20 @@
+/****************************************
+Blog Grid Carousel 
+****************************************/
+/* Blog Grid Carousel Wrap */ 
+.vcex-blog{
+	&-carousel-wrap{
+		margin: 0 0 20px 0px;
+		
+		.owl{
+			&-controls{
+				
+			}	
+			&-nav{
+			}
+			
+			&-prev{float: left;}
+		}
+	}
+	
+}

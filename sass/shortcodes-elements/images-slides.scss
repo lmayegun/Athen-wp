@@ -1,0 +1,95 @@
+/**************************
+Post or Image Slider
+**************************/
+/* slider caption */
+.vcex-posttypes-slider{
+	.wpex-slider-caption { 
+		padding: 20px 25px;
+		text-align: left; 
+		cursor: default; 
+		
+		.title {
+			font-size: 18px;
+			font-weight: bold; 
+			font-weight: 600; 
+			display: inline; 
+			cursor: pointer;
+		}
+		
+		.staff-position {
+			font-size: 11px;
+			color: #ddd;
+			font-weight: normal; 
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		
+		.excerpt { 
+			font-size: 1em;
+			line-height: 1.6;
+			font-weight: normal; 
+		}
+		
+		 p:last-child { 
+			margin: 0; 
+		}
+	}
+	
+	.wpex-slider-caption {
+		&.over-image {
+			position: absolute; 
+			bottom: 0;
+			left: 0;
+			width: 100%; 
+			background: rgba(0,0,0,0.85);
+			
+			a { 
+				color: #fff; 
+			}
+			
+			.title {
+				text-decoration: none;
+				&:hover { text-decoration: underline; }
+			}
+			
+			.excerpt {
+				color: #999;
+			}
+		}
+	}
+	
+	.wpex-slider-caption { 
+		&.under-image { 
+			padding: 20px 0 0;
+			
+			.title { 
+				color: #000; 
+			}
+			
+			.staff-position { 
+				color: #999 ;
+			}
+		}
+	}
+	
+	
+	&.has-thumbnails{
+		.wpex-slider-caption{
+			&.under-image { 
+				padding-bottom: 20px;
+			}
+		}
+	}
+	
+	&.has-excerpt{
+		.wpex-slider-caption {
+			header { 
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+/*woocommerce price on slider*/
+.slider-woocommerce-price { position: absolute; top: 20px; right: 20px; color: #fff; background: #7CC576; padding: 3px 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.slider-woocommerce-price ins { text-decoration: none !important }

@@ -1,0 +1,72 @@
+@import "../core-mixin";
+/************************************************************
+ WIDGETS - 
+ - Comments Avatar -
+ - Flickr -
+ - Modern Menu -
+ - Post Grid -
+ - Post Icons - 
+ - Post Thumbnails -
+ - Simple Menu - 
+ - Social Image -
+ - Social Font Awesome -
+ - Video -
+************************************************************/
+.sidebar-box{
+	
+	padding: 0px 0px 60px 0px;
+	width: 100%;
+	
+	// widget title
+	.widget-title {
+		font-size	: 16px;
+		color		: $black;
+		margin 	: 0px 0px 20px 0px;
+	} 
+	
+	.athen-widget-recent-posts-thumb{
+		
+	}
+	
+	.athen-recent-posts-thumb-grid{
+		
+		.entry{
+			height: 70px;
+			a{
+				&:link{ }
+			}
+			img{ 
+				height:100px;
+			}
+		}
+	}
+	
+	.athen-social-widget-img{
+	
+	}
+	
+	.athen-fontawesome-social-widget{
+	
+	}
+	
+	.athen-flickr-widget{
+	
+	}
+	
+	.athen-recent-comments-widget{
+		li{
+			padding: 0px 0px 10px;
+		}
+	}
+	
+	.athen-responsive-video-wrap{
+		.description {
+			margin: 10px 0 0 0;
+		}
+	}
+	
+	.athen-widget-recent-posts-icons{
+	
+	}
+}
+

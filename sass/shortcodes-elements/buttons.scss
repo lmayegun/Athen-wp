@@ -1,0 +1,353 @@
+/**************
+Buttons 
+*************/ 
+.vcex-button,
+.vcex-button.flat {
+	display: inline-block;
+	padding: .8em 1em;
+	margin: 0 5px 5px 0;
+	font-size: 0.923em; 
+	line-height: 1;
+	font-weight: normal;
+	font-family: inherit;
+	-webkit-appearance: none; 
+	color: #fff;
+	border-radius: 3px; 
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px; 
+	outline: none; 
+	border: none;
+	text-decoration: none !important;
+	background: $pri-color;
+}
+
+.vcex-button{
+	&-block-wrap { 
+		clear: left; 
+		display: block;
+	}
+	
+	&:hover, 
+	&flat:hover {
+		text-decoration: none;
+		color: #fff; 
+	}
+	
+	&:active, 
+	&.flat:active { 
+		box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; 
+	}
+	
+	&.animate-on-hover,
+	&.hvr-float-shadow,
+	&.hvr-float-grow,
+	&.hvr-float { 
+		transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out; 
+		-webkit-transition: all 0.25s ease-in-out;
+	}
+	
+	/* default & flat button colors*/
+	&.grey,
+	&.flat.grey { 
+		background-color: #bbb;
+	}
+	
+	&.grey:hover,
+	&.flat.grey:hover { 
+		background-color: #b3b3b3; 
+		color: #fff; 
+	}
+	
+	&.black,
+	&.flat.black { 
+		background-color: #333;
+	}
+	
+	&.black:hover,
+	&.flat.black:hover { 
+		background-color: #000;
+		color: #fff; 
+	}
+	
+	&.blue,
+	&.flat.blue {
+		background-color: #3f90bd; 
+		color: #fff; 
+	}
+	
+	&:hover,
+	&.blue:hover,
+	&.flat.blue:hover {
+		background-color: $sec-color;
+		color: #fff; 
+	}
+	
+	&.orange,
+	&.flat.orange { 
+		background-color: #EE7836;
+		color: #fff;
+	}
+	
+	&.orange:hover,
+	&.flat.orange:hover{
+		background-color: #eb6317; 
+		color: #fff;
+	}
+	
+	&.gold,
+	&.flat.gold { 
+		background-color: #ffaa33;
+		color: #fff;
+	}
+	
+	&.gold:hover,
+	&.flat.gold:hover { 
+		background-color: #ff9c11;
+		color: #fff;
+	}
+	
+	&.green,
+	&.flat.green {
+		background-color: #87bf17;
+		color: #fff;
+	}
+	
+	&.flat.green:hover {
+		background-color: #72a113; 
+		color: #fff;
+	}
+		
+	&.purple,
+	&.flat.purple {
+		background-color: #a73df2; 
+		color: #fff;
+	}
+	
+	&.purple:hover,
+	&.flat.purple:hover { 
+		background-color: #991df0;
+		color: #fff; 
+	}
+	
+	&.teal,
+	&.flat.teal { 
+		background-color: #00b3b3; 
+		color: #fff; 
+	}
+	
+	&.teal:hover,
+	&.flat.teal:hover {
+		background-color: #009191; 
+		color: #fff;
+	}
+
+	&.pink,
+	&.flat.pink { 
+		background-color: #f261c2;
+		color: #fff;
+	}
+
+	&.pink:hover,
+	&.flat.pink:hover {
+		background-color: #ef42b6;
+		color: #fff; 
+	}
+	
+	&.brown,
+	&.flat.brown { 
+		background-color: #804b35;
+		color: #fff;
+	}
+
+	&.brown:hover,
+	&.flat.brown:hover { 
+		background-color: #683d2b; 
+		color: #fff;
+	}
+	
+	&.red,
+	&.flat.red { 
+		background-color: #F73936; 
+		color: #fff;
+	}
+
+	&.red:hover,
+	&.flat.red:hover {
+		background-color: #f61915; 
+		color: #fff;
+	}
+
+	&.rosy,
+	&.flat.rosy {
+		background-color: #EA2487; 
+		color: #fff;
+	}
+	
+	&.rosy:hover,
+	&.flat.rosy:hover { 
+		background-color: #d71576; 
+		color: #fff;
+	}
+	
+	&.white,
+	&.flat.white { 
+		background-color: #fff;
+		color: #444; 
+	}
+
+	&.white:hover,
+	&.flat.white:hover { 
+		background: #fff; 
+		color: #444; 
+	}
+
+	/*graphical buttons*/
+	&.graphical { color: #fff; background: #3f90bd; border: 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; text-shadow: 0 -1px rgba(0,0,0,0.4); outline: none; box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 3px -1px rgba(45,60,72,0.5); -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 3px -1px rgba(45,60,72,0.5); -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 3px -1px rgba(45,60,72,0.5); border: 1px solid rgba(0,0,0,0.15); }
+	&.graphical:hover,
+	&.graphical.blue:hover { text-decoration: none; }
+	&.graphical:active { box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; }
+	&.graphical.grey { background-color: #bbb; }
+	&.graphical.grey:hover { background-color: #b3b3b3; }
+	&.graphical.black { background-color: #333; }
+	&.graphical.black:hover { background-color: #000; }
+	&.graphical.orange { background-color: #EE7836; }
+	&.graphical.orange:hover { background-color: #eb6317; }
+	&.graphical.gold { background-color: #ffaa33; }
+	&.graphical.gold:hover { background-color: #ff9c11; }
+	&.graphical.green { background-color: #87bf17; }
+	&.graphical.green:hover { background-color: #72a113; }
+	&.graphical.purple { background-color: #a73df2; }
+	&.graphical.purple:hover { background-color: #991df0; }
+	&.graphical.teal { background-color: #00b3b3; }
+	&.graphical.teal:hover { background-color: #009191; }	
+	&.graphical.pink { background-color: #f261c2; }
+	&.graphical.pink:hover { background-color: #ef42b6; }
+	&.graphical.brown { background-color: #804b35; }
+	&.graphical.brown:hover { background-color: #683d2b; }
+	&.graphical.red { background-color: #F73936; }
+	&.graphical.red:hover { background-color: #f61915; }
+	&.graphical.rosy { background-color: #EA2487; }
+	&.graphical.rosy:hover { background-color: #d71576; }
+	&.graphical.white { background-color: #fff; color: #444; }
+
+	/*3D buttons*/
+	&.three-d { color: #fff; background: #3f90bd; border: 0; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-shadow: none; outline: none; border: none; border-bottom: 4px solid rgba(0,0,0,0.25); }
+	&.three-d:hover { text-decoration: none; }
+	&.three-d:active { box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; border-bottom: none; }	
+	&.three-d.grey { background-color: #bbb; }
+	&.three-d.grey:hover { background-color: #b3b3b3; }
+	&.three-d.black { background-color: #333; }
+	&.three-d.black:hover { background-color: #000; }
+	&.three-d.blue { background-color: #3f90bd; }
+	&.three-d.orange { background-color: #EE7836; }
+	&.three-d.orange:hover { background-color: #eb6317; }
+	&.three-d.gold { background-color: #ffaa33; }
+	&.three-d.gold:hover { background-color: #ff9c11; }
+	&.three-d.green { background-color: #87bf17; }	
+	&.three-d.green:hover { background-color: #72a113; }
+	&.three-d.purple { background-color: #a73df2; }
+	&.three-d.purple:hover { background-color: #991df0; }
+	&.three-d.teal { background-color: #00b3b3; }
+	&.three-d.teal:hover { background-color: #009191; }
+	&.three-d.pink { background-color: #f261c2; }
+	&.three-d.pink:hover { background-color: #ef42b6; }
+	&.three-d.brown { background-color: #804b35; }
+	&.three-d.brown:hover { background-color: #683d2b; }
+	&.three-d.red { background-color: #F73936; }
+	&.three-d.red:hover { background-color: #f61915; }
+	&.three-d.rosy { background-color: #EA2487; }
+	&.three-d.rosy:hover { background-color: #d71576; }
+	&.three-d.white { background-color: #fff; color: #444; }
+
+	/*outline buttons*/
+	&.outline { color: #888; background: none; border: 0; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-shadow: none; outline: none; border: none; border: 3px solid #eee; font-weight: bold; font-weight: 600; }
+	&.outline,
+	&.outline.blue { color: #3f90bd; border-color: #3f90bd; }
+	&.outline:hover,
+	&.outline.blue:hover { background: #3f90bd; }
+	&.outline:active { border-color: transparent !important; box-shadow: none; }
+
+	&.outline.grey { color: #bbb; border-color: #bbb; }
+	&.outline.grey:hover { background: #bbb; }
+	&.outline.black { color: #333; border-color: #333; }
+	&.outline.black:hover { background: #333; }
+	&.outline.orange { color: #EE7836; border-color: #EE7836; }
+	&.outline.orange:hover { background: #EE7836; }
+	&.outline.gold { color: #ffaa33; border-color: #ffaa33; }
+	&.outline.gold:hover { background: #ffaa33; }
+	&.outline.green { color: #87bf17; border-color: #87bf17; }
+	&.outline.green:hover { background: #87bf17; }
+	&.outline.purple { color: #a73df2; border-color: #a73df2; }
+	&.outline.purple:hover { background: #a73df2; }
+	&.outline.teal { color: #009191; border-color: #009191; }
+	&.outline.teal:hover { background: #009191; }
+	&.outline.pink { color: #f261c2; border-color: #f261c2; }
+	&.outline.pink:hover { background: #f261c2; }
+	&.outline.brown { color: #804b35; border-color: #804b35; }
+	&.outline.brown:hover { background: #804b35; }	
+	&.outline.red { color: #F73936; border-color: #F73936; }
+	&.outline.red:hover { background: #F73936; }
+	&.outline.rosy { color: #EA2487; border-color: #EA2487; }
+	&.outline.rosy:hover { background: #EA2487; }
+	&.outline.white { color: #444; border-color: #fff; color: #fff; }
+	&.outline.white:hover { color: #000; background: #fff; }
+	&.outline:hover { color: #fff; text-decoration: none; text-decoration: none; border-color: transparent !important; }
+
+	/*Clean buttons*/
+	&.clean { color: #3f90bd; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-shadow: none; outline: none; border: 1px solid #ddd; -webkit-appearance: none; background-image: linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); background-image: -o-linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); background-image: -moz-linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); background-image: -webkit-linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); background-image: -ms-linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); -webkit-box-shadow: 0px 1px 1px rgba(180, 180, 180, 0.13); -moz-box-shadow: 0px 1px 1px rgba(180, 180, 180, 0.13); box-shadow: 0px 1px 1px rgba(180, 180, 180, 0.13); font-weight: bold; font-weight: 600; }
+	&.clean:active { box-shadow: 0 1px 2px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1) inset; -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1) inset; }
+	&.clean.grey { color: #bbb; }
+	&.clean.black { color: #333; }
+	&.clean.blue { color: #3f90bd; }
+	&.clean.orange { color: #EE7836; }
+	&.clean.gold { color: #ffaa33 ;}
+	&.clean.green { color: #87bf17; }
+	&.clean.purple { color: #9a5e9a; }
+	&.clean.teal { color: #009191; }
+	&.clean.pink { color: #f261c2; }
+	&.clean.brown { color: #804b35; }
+	&.clean.red { color: #F73936; }
+	&.clean.rosy { color: #EA2487 ;}
+	&.clean.white { color: #fff ;}
+	&.clean:hover { color: #000 !important; text-decoration: none; }
+	&.clean.black:hover { color: #3b86b0 !important }
+
+/*sizes & alignments*/
+	&.small { font-size: 0.923em }
+	&.medium { font-size: 1.077em }
+	&.large { font-size: 1.385em }
+	&.align-left { float: left }
+	&.align-right { float: right; margin-right: 0; margin-left: 5px; }
+	&-icon-right { padding-left: 10px }
+	&-icon-left { padding-right: 10px }
+	&.expanded { width: 100%; padding: 0.9em 1.2em; text-align: center; }	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,332 @@
+@import "../core-mixin";
+/********************************************
+Menu Navigation Style 
+********************************************/
+// NAVBAR STYLE
+.navbar {
+
+	// STYLE ONE 
+	&.navbar-style-one {
+		float: left;
+		position: relative;
+		margin-top: 0px;
+		margin-left: 14px;
+		top: 0px;
+		
+		.dropdown-menu {
+			background: none;
+			a {
+				color: lighten($black, 80);
+				
+				&:hover{
+					color: $white;
+					text-decoration: none; 
+				}
+			}
+			> li {
+				margin: 0px 0px 0px 20px;
+				
+				> a{
+					font-size: 12px;
+					line-height: 44px;
+					margin: 0px 16px;
+					
+					&:link { color: $white; }
+					&:hover { 
+						color: $link-hover;
+						text-decoration: none;
+					}
+				}
+				
+				&:first-child{
+					margin-left: 20px;
+				}
+				
+				// mobile icon
+				&.mobile-icon{
+					position: absolute;
+					left: -30px;
+					top: -16px;
+					margin: 0px;
+				}
+				
+				// dropdown list 
+				ul.sub-menu {
+					background-color: #333;
+					padding: 0px 0px;
+					
+					li {
+						padding: 0px;
+						margin: 0px;
+						
+						&.margin-bottom{
+								margin-bottom: 12px !important;
+							}
+						
+						a{
+						    padding: 8px 35px 8px 15px;
+							line-height: 2;
+							float: none;
+							
+							.fa{
+								&:before{
+									margin-right: 10px;
+								}
+							}
+							
+							.sub {
+								font-size: 10px;
+								position: absolute;
+								top: 27px;
+								font-style: italic;
+								text-transform: lowercase; 
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	// Megamenu 
+	li.megamenu {
+		
+		ul.sub-menu{
+			padding: 0px 20px 0px 0px !important;
+			background-color: #333;
+			background-image: url(http://themes.dfd.name/ronneby/first/wp-content/uploads/2015/07/layouts2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 100% 100%;
+			left: 20px;
+			
+			//////////////////// Header - Title > This Affect Column Cell
+			> li.menu-item-has-children {
+				padding: 0px 0px 0px 0px;  //////////// ! Do Not Change 
+				margin-left: 0px;
+				float: left;
+				
+				> a {
+					color: #fff;
+					padding: 18px 40px 0px 35px !important;
+					
+					// for header underline
+					&:after{
+						content: "";
+						display: block;
+						width: auto;
+						height: 1px;
+						position: relative;
+						left: 0px;
+						right: 20px;
+						top: 2px;
+						bottom: 5px;
+						margin: 0;
+						background: rgba(255,255,255,0.1);
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+				
+				///////////////////////////// Link List - Header Title Children
+				&.dropdown {
+					ul.sub-menu {
+						padding-left: 20px !important;
+						width: auto;
+						background: none;
+					}
+				}
+			}
+			
+			li {
+				border: 0px; 
+				
+			}
+		}
+	}
+	
+	// STYLE TWO - ASIDE MENU
+	&.navbar-style-two {
+		float: right;
+		position: relative;
+		margin-top: 40px;
+		margin-left: 14px;
+		top: 0px;
+		
+		li{
+			&.woo-menu-icon{
+				border-left: 0px;
+			}
+		}
+		
+		#searchform-dropdown{
+			background: #000;
+			margin-top: 10px;
+		}
+		
+		.dropdown-menu {
+			background: none;
+			a {
+				color: lighten($black, 80);
+								
+				&:hover{
+					color: $white;
+					text-decoration: none; 
+				}
+			}
+			> li {
+				margin: 0px 0px 0px 10px;
+				
+				> a{
+					font-size: 12px;
+					line-height: 44px;
+					margin: 0px 16px;
+					
+					&:link { color: #000; }
+					&:hover { 
+						color: $link-hover;
+						text-decoration: none;
+					}
+				}
+				
+				&:first-child{
+					margin-left: 20px;
+				}
+				
+				&.mobile-icon{
+					float: left !important;
+					margin: 0px;
+				}
+				
+				// dropdown list 
+				ul.sub-menu {
+					background-color: #333;
+					padding: 0px 0px;
+					margin-top: 10px;
+					
+					li {
+						padding: 0px;
+						margin: 0px;
+						
+						&.margin-bottom{
+								margin-bottom: 12px !important;
+							}
+						
+						a{
+						    padding: 8px 35px 8px 15px;
+							line-height: 2;
+							float: none;
+							
+							.fa{
+								&:before{
+									margin-right: 10px;
+								}
+							}
+							
+							.sub {
+								font-size: 10px;
+								position: absolute;
+								top: 27px;
+								font-style: italic;
+								text-transform: lowercase; 
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	// Megamenu 
+	li.megamenu {
+		
+		ul.sub-menu{
+			padding: 0px 20px 0px 0px !important;
+			background-color: #333;
+			background-image: url(http://themes.dfd.name/ronneby/first/wp-content/uploads/2015/07/layouts2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 100% 100%;
+			left: 20px;
+			
+			//////////////////// Header - Title > This Affect Column Cell
+			> li.menu-item-has-children {
+				padding: 0px 0px 0px 0px;  //////////// ! Do Not Change 
+				margin-left: 0px;
+				float: left;
+				
+				> a {
+					color: #fff;
+					padding: 18px 40px 0px 35px !important;
+					
+					// for header underline
+					&:after{
+						content: "";
+						display: block;
+						width: auto;
+						height: 1px;
+						position: relative;
+						left: 0px;
+						right: 20px;
+						top: 2px;
+						bottom: 5px;
+						margin: 0;
+						background: rgba(255,255,255,0.1);
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+				
+				///////////////////////////// Link List - Header Title Children
+				&.dropdown {
+					ul.sub-menu {
+						padding-left: 20px !important;
+						width: auto;
+						background: none;
+					}
+				}
+			}
+			
+			li {
+				border: 0px; 
+				
+			}
+		}
+	}
+	
+	// STYLE THREE  
+	&.navbar-style-three {
+		border-top: 0px;
+		position: relative;
+		float: left;
+		display: block;
+		width: 100%;
+		
+		.dropdown-menu{
+			background:red;
+			>li{
+				width: 65%;
+				display: block;
+				margin: 30px 0px 0px 20px;
+				padding: 0px 0px 20px 0px;
+				border-bottom: 1px solid #333;
+				box-sizing: border-box;
+				
+				a:link{
+					color:$white;
+					text-decoration:none;
+				}
+				
+				a:hover{
+					color:yellow;
+				}
+				
+				a:visited{
+					color:$white;
+				}
+			}
+		}			
+	}
+}

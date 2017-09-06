@@ -1,0 +1,19 @@
+/*************************
+Terms Grid 
+*************************/ 
+.vcex-terms-grid-entry {
+	.vcex-terms-grid-entry{
+		&-image { 
+			margin-bottom: 15px; 
+			img { 
+				vertical-align: bottom; 
+			}
+		}
+		
+		&-title { 
+			font-size: 1.077em; 
+			margin: 0 0 5px;
+		}
+	}
+}
+

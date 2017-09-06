@@ -1,0 +1,390 @@
+@import "../core-mixin";
+/***************************************************************************
+- SOCIAL SHARE 
+***************************************************************************/
+
+ul.social-share-buttons { 
+	list-style: none !important;
+}
+.single-portfolio.no-composer .social-share-wrap.position-horizontal { margin: 40px 0 0; }
+.social-share-wrap.position-vertical .social-share-title { display: none; }
+.left-sidebar .social-share-buttons.position-vertical { right: -55px; left: auto; }
+
+.social-share-buttons{
+
+	li, a{
+		display: block; 
+		text-decoration: none; 
+	}
+	
+	a:hover { 
+		text-decoration: none;
+	}
+	
+	&-text { 
+		font-size: 13px ; 
+	} 
+	
+	////// Vertical 
+	&.position-vertical{
+		.social-share-title { 
+			display: none; 
+		}
+		
+		li {
+			float: left;
+			&i:first-child {
+				border-top: 1px solid #e4e4e4;
+			}
+		}
+		
+		.social-share-button-text { display: none; }
+	}
+	
+	////// Horizontal 
+	&.position-horizontal { 
+		margin: 0 0 40px; 
+		li { 
+			float: left; 
+			margin: 0 5px 5px 0; 
+			border: none;
+			
+			a { 
+				color: $link-color;
+				width: auto; 
+				padding: 0 10px;
+				height: 30px; 
+				line-height: 30px;
+				border: 1px dashed $trace-2;
+				font-weight: normal; 
+			}
+			
+			.fa { 
+				margin-right: 5px;
+			}
+		}
+	}
+	
+	////////// Minimal 
+	li {
+		a { 
+			color: #999; 
+			width: 35px;
+			height: 35px;
+			line-height: 35px; 
+			border: 1px solid #e4e4e4; 
+			border-top: none; 
+			text-align: center;
+			font-size: 1.077em;
+			transition: all .15s ease-in-out; 
+			&:hover { 
+				background: #f7f7f7; 
+			}		
+		}
+		
+		&.share-twitter {
+			a {
+				&:hover { color: #00aced; }
+			}
+		}
+		
+		&.share-facebook {
+			a {
+				&:hover { color: #3b5998; }
+			}
+		}
+		
+		&.share-pinterest {
+			a {
+				&:hover { color: #cb2027; }
+			}
+		}
+		
+		&.share-googleplus {
+			a {
+				&:hover { color: #dd4b39; }
+			}
+		}
+		
+		&.share-linkedin {
+			a {
+				&:hover { color: #4875B4; }
+			}
+		}
+	}
+	
+	////////// Flat 
+	&.position-vertical{
+		&.style-flat {
+			li{
+				&:first-child { border-top: none; }
+			}
+		}
+	}
+	
+	&.style-flat {
+		li {
+			margin-bottom: 3px;
+			a { 
+				color: #fff !important;
+				border: none !important;
+				border-radius: 2px; 
+			}
+		}
+	}
+	
+	//////////// 3D
+	&.position-vertical{
+		&.style-three-d {
+			li{
+				&:first-child { border-top: none; }
+			}
+		}
+	}
+	
+	&.style-three-d {
+		li {
+			margin-bottom: 3px;
+			a { 
+				color: #fff !important;
+				border: none;
+				border-bottom: 3px solid rgba(0,0,0,0.25);
+				border-radius: 2px; 
+				&:active { 
+					border-bottom-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+/* share Flat */ 
+.style-flat {
+	li {
+		li:first-child { border: none }
+		
+		&.share-twitter {
+			a { 
+				background: #00aced;
+				&:hover { background: #0093cb; }
+			}
+		}
+		
+		&.share-facebook {
+			a {
+				background: #3b5998;
+				&:hover { background: #324b80; }
+			}
+		}
+		
+		&.share-pinterest {
+			a { 
+				background: #cb2027;
+				&:hover { background: #ae1b21; }
+			}
+		}
+		
+		&.share-googleplus {
+			a { 
+				background: #dd4b39; 
+				&:hover { background: #d03724; }
+			}
+		}
+		
+		.share-linkedin {
+			a { 
+				background: #4875B4;
+				&:hover { background: #3e659c; }
+			}
+		}
+	}
+}
+
+/* share 3D */ 
+.style-three-d {
+	li {
+		li:first-child { border: none; }
+		
+		&.share-twitter {
+			a { 
+				background: #00aced;
+				&:hover { background: #0093cb; }
+			}
+		}
+		
+		&.share-facebook {
+			a {
+				background: #3b5998;
+				&:hover { background: #324b80; }
+			}
+		}
+		
+		&.share-pinterest {
+			a { 
+				background: #cb2027;
+				&:hover { background: #ae1b21; }
+			}
+		}
+		
+		&.share-googleplus {
+			a { 
+				background: #dd4b39; 
+				&:hover { background: #d03724; }
+			}
+		}
+		
+		.share-linkedin {
+			a { 
+				background: #4875B4;
+				&:hover { background: #3e659c; }
+			}
+		}
+	}
+}
+
+
+
+/* FIRST SHARE BUTTON */
+
+#boxone {
+  overflow: hidden;
+  margin: 100px auto;
+  width: 235px;
+  height: 50px;
+  border: 1px solid #dadada;
+  
+  background-color: #eaeaea;
+  postition: relative;
+  
+  &:hover .inner {
+    position: relative;
+    left: -250px;
+    z-index: 10;
+    
+  -webkit-transition: all 0.2s ease-out; 
+     -moz-transition: all 0.2s ease-out; 
+       -o-transition: all 0.2s ease-out; 
+          transition: all 0.2s ease-out; 
+  }
+}
+
+.inner {
+  position: relative;
+  top: -50px;
+  left: 0;
+  z-index: 10;
+  float: left;
+  width: 235px;
+  height: 50px;
+  background-color: #ddd;
+  -webkit-transition: all 0.2s ease-out; 
+     -moz-transition: all 0.2s ease-out; 
+       -o-transition: all 0.2s ease-out; 
+          transition: all 0.2s ease-out; 
+}
+
+.list {
+	top: 0;
+    right: -100%;
+    z-index: 5;
+    list-style: none;
+    text-align: center;
+	width: 100%;
+    position: absolute;
+  
+  .link {
+    top: 80px;
+    float: left;
+    padding: 5px 0 0 13px;
+    height: 50px;
+    postition: absolute;
+    
+
+    
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+      text-decoration: none;
+      line-height: 50px;
+    }
+  }
+}
+
+
+/*
+  SECOND SHARE BUTTON
+*/
+
+#boxtwo {
+  overflow: hidden;
+  margin: 100px auto;
+  width: 235px;
+  height: 50px;
+  border: 1px solid #dadada;
+  
+  background-color: #eaeaea;
+  postition: relative;
+  
+  &:hover .inner {
+    position: relative;
+    top: -100px;
+    z-index: 10;
+    
+  -webkit-transition: all 0.2s ease-out; 
+     -moz-transition: all 0.2s ease-out; 
+       -o-transition: all 0.2s ease-out; 
+          transition: all 0.2s ease-out; 
+  }
+}
+
+.inner {
+  position: relative;
+  left: -50px;
+  z-index: 10;
+  float: left;
+  width: 235px;
+  height: 50px;
+  background-color: #ddd;
+  -webkit-transition: all 0.2s ease-out; 
+     -moz-transition: all 0.2s ease-out; 
+       -o-transition: all 0.2s ease-out; 
+          transition: all 0.2s ease-out; 
+}
+
+
+/* THIRD SHARE BUTTON */
+
+#view {
+  margin: 10px auto;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;  
+
+  
+  &:hover .share {
+    position: relative;
+    left: -100%;
+    
+    -webkit-transition: all 0.2s ease-out; 
+     -moz-transition: all 0.2s ease-out; 
+       -o-transition: all 0.2s ease-out; 
+          transition: all 0.2s ease-out;
+  }
+}
+
+.share {
+  position: relative;
+  left: 0;
+  border: 1px dashed $trace-2;
+  background-color: none;
+  width: 100%;
+  height: 50px;
+  
+  -webkit-transition: all 0.2s ease-out; 
+     -moz-transition: all 0.2s ease-out; 
+       -o-transition: all 0.2s ease-out; 
+          transition: all 0.2s ease-out;
+}
+
+

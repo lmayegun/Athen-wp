@@ -1,0 +1,181 @@
+.hover-white-text:hover * { 
+	color: #fff !important;
+}
+
+.animate-bg-hover { 
+	-webkit-transition: background .2s ease-in-out; 
+	-moz-transition: background .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out; 
+	transition: background .2s ease-in-out;
+}
+
+.transition-all {
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out; 
+	-o-transition: all .2s ease-in-out; 
+	transition: all .2s ease-in-out; 
+}
+
+/////////////// Hover Animation 
+.athen-image-hover {
+	position: relative; overflow: hidden; display: block !important; 
+	a {
+		display: block !important;
+	}
+	
+	img {
+		display: block; 
+		margin: 0; 
+		width: 100%; 
+		height: auto; 
+		box-shadow: 0 0 0 rgba(0,0,0,0);
+		-webkit-box-shadow: 0 0 0 rgba(0,0,0,0);
+		-moz-box-shadow: 0 0 0 rgba(0,0,0,0);
+		transition: all 0.25s; 
+		-moz-transition: all 0.25s;
+		-webkit-transition: all 0.25s; 
+		-o-transition: all 0.25s;
+	}
+	
+	&.opacity {
+		img:hover{
+			opacity: 0.8;
+			-moz-opacity: 0.8; 
+			-webkit-opacity: 0.8;
+		}
+	}
+	
+	&.grow {
+		&:hover{
+			img{
+				transform: scale(1.2);
+				-ms-transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				-o-transform: scale(1.2);
+				-moz-transform: scale(1.2);
+			}
+		}
+	}
+	
+	&.shrink {
+		&:hover{
+			img{
+				transform: scale(0.8);
+				-ms-transform: scale(0.8); 
+				-webkit-transform: scale(0.8);
+				-o-transform: scale(0.8);
+				-moz-transform: scale(0.8);
+			}
+		}
+	}
+	&.side-pan {
+		&:hover{
+			img{
+				margin-left: -11%;
+				transform: scale(1.2);
+				-ms-transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				-o-transform: scale(1.2); 
+				-moz-transform: scale(1.2);
+			}
+		}
+	}
+	&.vertical-pan {
+		&:hover{
+			img{
+				margin-top: -10%; 
+				transform: scale(1.2); 
+				-ms-transform: scale(1.2); 
+				-webkit-transform: scale(1.2); 
+				-o-transform: scale(1.2); 
+				-moz-transform: scale(1.2);
+			}
+		}
+	}
+	&.tilt {
+		&:hover{
+			img{
+				-webkit-transform: 
+				rotate(-10deg); 
+				-moz-transform: rotate(-10deg); 
+				-o-transform: rotate(-10deg); 
+				-ms-transform: rotate(-10deg); 
+				transform: rotate(-10deg);
+			}
+		}
+	}
+	&.blurr, &.blurr-invert {
+		img {
+			transition: all 0.2s; 
+			-moz-transition: all 0.2s;
+			-webkit-transition: all 0.2s;
+			-o-transition: all 0.2s;
+		}
+		&:hover{
+			img{
+				filter: blur(3px);
+				-webkit-filter: blur(3px); 
+				-moz-filter: blur(3px); 
+				-o-filter: blur(3px);
+				-ms-filter: blur(3px);
+			}
+		}
+	}
+	&.blurr-invert {
+		img {
+			filter: blur(3px); 
+			-webkit-filter: blur(3px); 
+			-moz-filter: blur(3px);
+			-o-filter: blur(3px);
+			-ms-filter: blur(3px);
+		}
+		&:hover{
+			img{
+				filter: blur(0px);
+				-webkit-filter: blur(0px); 
+				-moz-filter: blur(0px); 
+				-o-filter: blur(0px); 
+				-ms-filter: blur(0px);
+			}
+		}
+	}
+	&.sepia {
+		img {
+			webkit-filter: sepia(100%); 
+			filter: sepia(100%);
+		}
+		&:hover{
+			img{
+				-webkit-filter: sepia( 100% );
+				filter: sepia( 100% )
+			}
+		}
+	}
+	&.fade-in {
+		background: #000;
+		img{
+			opacity: 0.65; 
+			-moz-opacity: 0.65;
+			-webkit-opacity: 0.65;
+		}
+		&:hover{
+			img{
+				opacity: 1; 
+				-moz-opacity: 1;
+				-webkit-opacity: 1;
+			}
+		}
+	}
+	&.fade-out {
+		background: #000;
+		&:hover{
+			img{
+				opacity: 0.7; 
+				-moz-opacity: 0.7;
+				-webkit-opacity: 0.7;
+			}
+		}
+	}	
+}

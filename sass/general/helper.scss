@@ -1,0 +1,164 @@
+@import "../core-mixin";
+/*************************************************/
+/* Helper Styles */
+/************************************************/
+/////// Hidden Visbility 
+.hidden, .athen-hidden {
+	display: none;
+}
+
+/////// Background Styles
+.bg-cover {
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bg-repeat {
+	background-repeat: repeat;
+}
+
+.bg-repeat-x {
+	background-repeat: repeat-x;
+}
+
+.bg-repeat-y {
+	background-repeat: repeat-y;
+}
+
+.bg-repeat-no {
+	background-repeat: no-repeat;
+}
+
+.bg- {
+	&fixed, &fixed-top, &fixed-bottom{
+		background-attachment: fixed; 
+		background-repeat: no-repeat;
+		background-position: center center; 
+	}
+}
+
+.athen-fixed{
+	position:fixed;
+}
+
+//////////// text highlights
+.text-highlight{
+	color: $pri-color;
+}
+
+.text-bg-highlight {
+	colort: $text-color;
+	background: $pri-color;
+}
+
+///////////// Colors classs
+.color- { 
+	&white, &white:a, &white:hover{
+		color: $white;
+		}
+	}
+
+.color- { 
+	&black, &black:a, &black:hover{
+		color: #000;
+		}
+	}
+	
+////////////// Fonts
+.thin-font {
+	font-weight: lighter;
+}
+
+.bold-font {
+	font-weight: bold;
+}
+
+////////////////// No Padding and No Margin
+.no-padding { padding: 0 !important }
+.no-left-margin { margin: 0 !important }
+.no-right-margin { margin: 0 !important }
+.remove-dims { height: auto !important; width: auto !important; }
+.no-left-padding { padding-left: 0 }
+
+////////////////// Float 
+.float-left { float: left }
+.float-right { float: right }
+
+////////////////// Border Radius Rounded 
+.rounded, .vcex-rounded-images img, .vcex-rounded-images .wpex-image-hover { 
+	border-radius: 50%; 
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	}
+	
+.border-radius-rounded { 
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	}
+	
+.border-radius-round { 
+	border-radius: 50%; 
+	-moz-border-radius: 50%; 
+	-webkit-border-radius: 50%; 
+	}
+
+//////////////////// Font Weight 
+.font-weight-100 { font-weight: 100; }
+.font-weight-200 { font-weight: 200; }
+.font-weight-300,
+.font-weight-light { font-weight: 300; }
+.font-weight-400,
+.font-weight-normal { font-weight: normal; }
+.font-weight-500,
+.font-weight-semibold { font-weight: 500; }
+.font-weight-600,
+.font-weight-bold { font-weight: bold; font-weight: 600; }
+.font-weight-700 { font-weight: 700; }
+.font-weight-800 { font-weight: 800; }
+.font-weight-900,
+.font-weight-bolder { font-weight: 900; }
+
+///////////////// FA margin 
+.fa-left { margin-right: 10px; }
+.fa-right { margin-left: 10px; }
+
+///////////////// Text Alignment 
+.textcenter { text-align: center; }
+.textright { text-align: right; }
+.textleft { text-align: left; }
+
+///////////////// Text Transform 
+.text-transform-none { text-transform: none; }
+.text-transform-capitalize { text-transform: capitalize; }
+.text-transform-uppercase { text-transform: uppercase; }
+.text-transform-lowercase { text-transform: lowercase; }
+
+///////////////// Fade In 
+.fade-in-image, .show-on-load {
+	opacity: 0;
+	transition: all 0.35s; 
+	-moz-transition: all 0.35s; 
+	-webkit-transition: all 0.35s; 
+	-o-transition: all 0.35s;
+}
+
+/////////////// Disable Box Shadow
+body .disable-box-shadow {
+	box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;
+}
+
+.clr{
+	&:after{
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		zoom: 1;
+	}
+}

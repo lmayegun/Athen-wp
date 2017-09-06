@@ -1,0 +1,31 @@
+@import "../core-mixin";
+.social-icons{	
+	font-size: 16px;
+	box-sizing: border-box;
+				
+	a{
+		margin-left: 9px;
+    	padding-left: 15px;
+		&:first-child { margin-left: 0px;}
+		&:link {color:$link-color;}
+		&:visited{color:$link-color;}
+		&:hover {color: $sec-color;
+				 text-decoration:none;
+		}
+		span{
+			margin: 0px 0px 0px 5px;
+			&.fa-facebook{
+				color:$text-color;
+				&:hover{color:$link-hover;}
+			}
+			&.fa-twitter{
+				color:$text-color;
+				&:hover{color:$link-hover;}
+			}
+			&.fa-google-plus{
+				color:$text-color;
+				&:hover{color:$link-hover;}
+			}
+		}			
+	}
+}

@@ -1,0 +1,6 @@
+/**
+ * Theme Name:	Closer
+ * Description:	CSS for customizer editor admin screen
+ */
+.wpex-customizer-editor-table th,
+.wpex-customizer-editor-table td { padding: 7px 0; }

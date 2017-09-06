@@ -1,0 +1,94 @@
+/*********************************
+Recent News 
+**********************************/
+.vcex-recent-news{
+	&-header { 
+		margin-bottom: 30px ;
+	}
+	
+	&-entry { 
+		position: relative;
+		margin: 0;
+		padding-left: 85px;
+		width: auto !important;
+		padding-bottom: 20px; 
+		margin-bottom: 20px;
+		border-bottom: 1px solid #eee; 
+		
+		&:last-child { 
+			margin-bottom: 0;
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	
+	&-date {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 60px; 
+		padding: 5px 0 0;
+		text-align: center;
+		border: 1px solid #ddd; 
+		background: #f7f7f7;
+		border-bottom: none; 
+		
+		span{
+			&.day { 
+				display: block;
+				font-size: 24px; 
+				color: #444;
+				font-weight: 300;
+				padding: 0 5px 5px;
+			}
+			
+			&.month {
+				display: block;
+				font-size: 11px;
+				padding: 2px 5px; 
+				font-weight: normal;
+				text-transform: uppercase;
+				position: relative; 
+				margin: -1px -1px 0; 
+			}
+		}
+		
+		&-entry {
+			margin-bottom: 30px;
+		}
+		
+		&-thumbnail {
+			a { 
+				display: block;
+				&:hover{
+					 img { opacity: 0.85; }
+				}
+			}
+			img { 
+				display: block;
+			}
+		}
+		
+		&-thumbnail, &-video {
+			margin-bottom: 20px;
+		}
+		
+		&-entry-title-heading { 
+			font-size: 14px; 
+			margin: 0 0 10px;
+			font-weight: 600;
+		}
+		
+		&-entry-excerpt {
+			p:last-child { margin: 0; }
+			
+			.vcex-button { 
+				margin-top: 20px;
+				display: block;
+				float: left; 
+			}
+		}
+		
+		
+	}
+}

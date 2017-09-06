@@ -1,0 +1,64 @@
+/***********
+Bullets
+***********/
+.vcex-bullets {
+	ul { 
+		margin-left: 0 !important; 
+		padding-left: 0 !important; 
+		list-style: none !important; 
+		list-style-image: none !important; 
+		
+		li {
+			padding-left: 25px !important; 
+			margin-bottom: 6px; 
+		}
+	}
+	
+	&-check {
+		ul{
+			li{
+				background: url('../images/visual-composer/check.png') left center no-repeat;
+			}
+		}
+	}
+	
+	&-gray {
+		ul {
+			li {
+				background: url('../images/visual-composer/bullets-gray.png') left center no-repeat;
+			}
+		}
+	}
+	
+	&-black {
+		ul {
+			li {
+				background: url('../images/visual-composer/bullets-black.png') left center no-repeat;
+			}
+		}
+	}
+	
+	&-blue {
+		ul {
+			li {
+				background: url('../images/visual-composer/bullets-blue.png') left center no-repeat;
+			}
+		}
+	}
+	
+	&-red {
+		ul {
+			li {
+				background: url('../images/visual-composer/bullets-red.png') left center no-repeat;
+			}
+		}
+	}
+	
+	&-purple {
+		ul {
+			li {
+				background: url('../images/visual-composer/bullets-purple.png') left center no-repeat;
+			}
+		}
+	}
+}

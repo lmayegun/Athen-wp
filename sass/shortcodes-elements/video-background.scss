@@ -1,0 +1,50 @@
+/*****************************
+Viideo Background 
+******************************/
+.vcex-video{
+
+	&-bg { 
+		position: absolute;
+		top: 0;
+		left: 0; 
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -1000;
+		overflow: hidden; 
+	}
+	
+	&-bg-wrap { 
+		position: relative; 
+		overflow: hidden;
+		position: relative; 
+		z-index: 3; 
+	}
+	
+	&o-bg-overlay {
+		position: absolute; 
+		top: 0;
+		left: 0;
+		height: 100%; 
+		width: 100%;
+		z-index: -999;
+		
+		&.dark-overlay {
+			background: #000;
+			opacity: 0.65;
+			-moz-opacity: 0.65; 
+			-webkit-opacity: 0.65;
+		}
+		
+		.dotted-overlay { 
+			background: rgba(0,0,0,0.3) url("../images/visual-composer/dotted-overlay.png") repeat;
+		}
+		
+		.dashed-overlay { 
+			background: rgba(0,0,0,0.3) url("../images/visual-composer/dashed-overlay.png") repeat ;
+		}
+	}
+	
+	
+}

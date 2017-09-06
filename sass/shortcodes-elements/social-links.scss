@@ -1,0 +1,27 @@
+/*************************
+Social links
+*************************/ 
+.vcex-social-links { 
+	display: block; 
+	font-size: 1.231em;
+	color: #555; 
+	border-radius: 4px;
+	
+	a { 
+		display: inline-block;
+		padding: 10px;
+		line-height: 1;
+		text-align: center;
+		background: #eee; 
+		color: inherit;
+		border-radius: inherit; 
+		margin-right: 3px; 
+		margin-bottom: 5px; 
+		transition: 0.15s all;
+		&:hover { 
+			color: #fff; 
+		}
+	}
+}
+
+

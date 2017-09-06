@@ -1,0 +1,39 @@
+@import "../core-mixin";
+/***************************************************************************
+META -
+- meta
+- meta-download
+- meta-tribe_events
+***************************************************************************/
+.meta, 
+.entry .meta { 
+	font-size: 0.923em;
+	color: #777; 
+	list-style: none;
+	margin: 0 0 10px; 
+}
+
+.meta li,
+.entry .meta li { 
+	float: left; 
+	margin: 0 20px 5px 0; 
+	color: $text-color;
+
+	&:last-child { margin-right: 0; }
+}
+
+.meta { 
+	a { 
+		color: $link-color; 
+		text-decoration: none; 
+		&:hover{
+			color: $link-hover; 
+			text-decoration: none;
+		}
+	}
+	
+	li {
+		.fa { margin-right: 8px }
+	}
+}
+

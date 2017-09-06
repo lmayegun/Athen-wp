@@ -1,0 +1,11 @@
+.no-gutter > [class*=col-] {
+  padding-left: 0px;
+  paddigng-right: 0px; }
+
+.no-gutter {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+[class*=athen-col-] {
+  padding-left: 10px;
+  padding-right: 10px; }

@@ -1,0 +1,81 @@
+/********************************
+Feature Box
+********************************/
+.vcex-feature-box {
+	&-media { 
+		display: block;
+		width: 50%;
+	}
+	
+	&-content { 
+		display: block; 
+		width: 50%;
+		p:last-child {
+			margin: 0; 
+		}
+		
+		.vcex-feature-box-heading-link { 
+			text-decoration: none;
+		}
+	}
+	
+	&-heading { 
+		margin: 0 0 20px;
+		font-size: 1.231em;
+		color: #000; 
+	}
+	
+	&.left-image-right {
+		&-content  {
+			.vcex-feature-box-media { 
+				float: left;
+			}
+		
+			.vcex-feature-box-content { 
+				float: right; 
+				padding-left: 30px;
+			}
+		}
+		
+		&-image  {
+			.vcex-feature-box-media { 
+				float: left;
+			}
+		
+			.vcex-feature-box-content { 
+				float: right; 
+				padding-left: 30px;
+			}
+		}
+	}
+	
+	&-image-link { 
+		overflow: hidden;
+	}
+	
+	&-image-link, &-media.vcex-feature-box-image img {
+		display: block; 
+		margin: 0 auto;
+	}	
+}
+
+.match-height-feature-row {
+	.vcex-feature-box-media { 
+		position: relative; 
+		overflow: hidden; 
+		
+		.vcex-feature-box-image { 
+			position: absolute;
+			top: 0;
+			left: 0; 
+			height: auto; 
+			width: auto;
+			
+			img { 
+				max-width: none;
+			}
+		}
+	}
+}
+
+

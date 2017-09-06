@@ -1,0 +1,19 @@
+/*****************
+ Login Form 
+ ****************/
+.vcex-login-form { 
+	padding: 20px; 
+	border: 1px solid #e4e4e4; 
+	border-radius: 4px; 
+	
+	label {
+		font-weight: 600;
+		color: #000;
+	}
+	input[type="text"],
+	input[type="password"] { 
+		margin-top: 10px;
+		width: 100%;
+		font-size: 14px; 
+	}
+}

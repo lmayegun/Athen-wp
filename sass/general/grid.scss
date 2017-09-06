@@ -1,0 +1,79 @@
+/*--------------------- GRID SYSTEM ---------------------*/
+
+/* Small devices (phone, 200px and up) */
+@media (min-width: 200px){
+	.athen-col{
+		&-1,&-2,&-3,&-4,&-5,&-6{
+			float: left;
+		}
+		&-1{ width: 100%;}
+		&-2{ width: 100%;}
+		&-3{ width: 100%;}
+		&-4{ width: 100%;}	
+		&-5{ width: 100%;}	
+		&-6{ width: 100%;}	
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px){
+	
+	.athen-col{
+		&-1,&-2,&-3,&-4,&-5,&-6{
+			float: left;
+		}
+		&-1{ width: 100%;}
+		&-2{ width: 50%;}
+		&-3{ width: 33.3%;}
+		&-4{ width: 25%;}	
+		&-5{ width: 20%;}	
+		&-6{ width: 16%;}	
+	}
+	
+	.athen-col-2{
+		&.col-1{ float: left; }
+		&.col-2{ float: right }
+	}
+}
+
+/*Larger devices (max than desktop, 1200px and up) */
+@media (min-width: 992px){
+	
+	.athen-col{
+		&-1,&-2,&-3,&-4,&-5,&-6{
+			float: left;
+		}
+		&-1{ width: 100%;}
+		&-2{ width: 50%;}
+		&-3{ width: 33.3%;}
+		&-4{ width: 25%;}	
+		&-5{ width: 20%;}	
+		&-6{ width: 16%;}
+	}
+	
+	.athen-col-2{
+		&.col-1{ float: left; }
+		&.col-2{ float: right }
+	}
+}
+
+
+@media (min-width: 1200px){
+	
+	.athen-col{
+		&-1,&-2,&-3,&-4,&-5,&-6{
+			float: left;
+		}
+		&-1{ width: 100%;}
+		&-2{ width: 50%;}
+		&-3{ width: 33.3%;}
+		&-4{ width: 25%;}	
+		&-5{ width: 20%;}	
+		&-6{ width: 16%;}		
+	}
+	
+	.athen-col-2{
+		&.col-1{ float: left; }
+		&.col-2{ float: right }
+	}
+}

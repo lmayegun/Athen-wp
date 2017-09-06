@@ -1,0 +1,125 @@
+@import "../core-mixin";
+/*******************************
+- Single Blog Post 
+--------------------------   single
+- blog-single-style
+- blog-single-content
+- blob-single-header
+- blog-single-meta
+- blog-single-quote
+- blog-single-related-entry
+- blog-single-related-heading
+- blog-single-series
+- blog-single-title
+---------------------------- media single
+- blog-single
+- blog-single-audio
+- blog-single-gallery
+- blog-single-link
+- blog-single-video 
+
+********************************/
+.single-blog-article{
+	#post-media { 
+		display: block; 
+		position: relative;
+		margin-bottom: 20px; 
+		img { 
+			display: block; 
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+	
+	/* Single Title */ 
+	.single-post-title{
+		font-size: 1.500em;
+    	margin: 0 0 20px;
+	}
+	
+	/* meta */
+	.meta{
+		font-size: 0.923em;
+		color: #777;
+		list-style: none;
+		margin: 0 0 10px;
+	}
+	
+	/* content */
+	.entry{
+		line-height: 2;	
+	}
+}
+
+/*Quote post format*/
+.single {
+	.format-quote { 
+		position: relative; 
+		display: block; 
+		padding: 20px 30px; 
+		font-size: 1.231em; 
+		z-index: 2;
+		background: #f7f7f7; 
+		
+		p:last-child { 
+			margin: 0;
+		}
+		
+		.quote-entry-author { 
+			margin-top: 15px; 
+			font-size: 0.923em;
+			font-weight: 300;
+			text-decoration: underline; 
+		}
+		
+		.fa-quote-right { 
+			position: absolute; 
+			right: 15px;
+			bottom: 15px; 
+			font-size: 60px;
+			display: block; 
+			z-index: 1; 
+			opacity: 0.1; 
+		}
+	}
+}
+
+/*related posts*/
+.related-posts { 
+	margin-bottom: 20px;
+	overflow: hidden;
+	border: 1px dashed $trace-2;
+	
+	.related-post{
+		box-sizing: border-box;
+		border: 1px dashed $trace-2;
+		
+		&-thumb { 
+			display: block;
+			 img { 
+				display: block; 
+				width: 100%; 
+			}
+		}
+
+		&-title { 
+			margin: 0 0 5px;
+			display: block;
+		}
+
+		&-content { 
+			padding: 10px;
+			//background: #f7f7f7;
+			//border: 1px solid #eee; 
+		}
+
+		&-excerpt { 
+			font-size: 0.923em;
+			line-height: 1.7em; 
+			p:last-child { 
+				margin: 0; 
+			}
+		}
+	}
+}
+

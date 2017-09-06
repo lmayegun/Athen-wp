@@ -1,0 +1,33 @@
+/*********************************
+Newsletter Form 
+**********************************/
+.vcex-newsletter-form {
+	input[type="text"],	
+	input[type="email"] {
+		width: 100%; 
+		margin: 0;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-webkit-appearance: none;
+		font-size: 14px;
+		padding: 0 15px;
+	}
+	
+	&-wrap {
+		position: relative; 
+		margin: 0 auto;
+	}
+	
+	&-button {
+		display: block;
+		position: absolute;
+		top: 50%; 
+		margin-top: -15px; 
+		right: 20px; 
+		padding: 0 15px; 
+		height: 30px; 
+		line-height: 30px;
+		border-radius: 3px; 
+	}
+}

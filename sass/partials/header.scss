@@ -1,0 +1,158 @@
+@import "../core-mixin";
+/***************************************************************************
+HEADER - 
+- header-aside
+- header-layout
+- header-logo
+- header-menu
+- header-menu-mobile-alt
+- header-menu-mobile-icons
+- header-social
+***************************************************************************/
+#site-header{
+	background: none;
+	height: inherit;	
+		
+		#site-navigation-wrap,
+		#site-navigation-wrap .dropdown-menu > li,
+		#site-navigation-wrap .dropdown-menu > li	> a {
+			//line-height: 45px;
+			//height: 45px;						
+		}	
+		
+	////////// HEADER TWO //////////////
+	
+	&.header-two{
+	
+		#site-header-inner {
+			position: relative;
+			padding-top: 0px;
+			padding-bottom: 10px;
+			width: 100%;
+		}
+		
+		.header-top {
+			background: red;
+		}
+		
+		// contain (social-icons)
+		.header-two-aside{
+			position: relative;
+			top: 40px;
+			right: 15px;
+			float: right;
+			padding-bottom: 12px;
+			padding-right: 5px;
+			padding-left: 5px;
+			border-bottom: 1px solid #ccc;
+			
+			#top-bar-social a {
+				display: block;
+				float: left;
+				color: white;
+				font-size: 16px;
+				margin-left: 26px;
+				transition: color 0.15s ease-in-out;
+				&:first-child {margin-left: 0px;}
+			}
+		}
+		
+		#site-logo {
+			margin-top : 15px; 
+			border-bottom : 0px solid;
+			padding-bottom: 0px;
+			a:link { margin: 0px }
+		}
+	}
+	
+	///////////////////////////////////////////////////////////// HEADER THREE ///////////////////////////////////////////////////////////////////////////////
+	
+	&.header-three {
+		background: black;
+		float: left;
+		width: 15%;
+		height: 100%;
+		position: fixed;
+		
+		.header-top {
+			background : #333;
+			height : 44px;
+			position : relative;
+			padding: 0px 20px;
+			overflow: inherit;
+			
+			// MOBILE MENU TOGGLE 
+			a:link.mobile-menu-toggle {
+				float: left;
+				position: relative;
+				padding: 16px 0px 14px 14px;
+				font-size: 12px;
+				color: white;
+					&:hover{
+						
+						color: blue;
+					}
+				}
+		}		
+	}
+}
+	.header-three{
+		&-logo{
+			a:visited{
+			   color:#333;
+			}
+		}
+	}
+
+// OVERLAY HEADER
+body.has-overlay-header { 
+	#site-header {
+		height: inherit;
+				
+		&.overlay-header{
+			background: #333;
+			position: relative;
+			
+			.header-top{
+				#site-navigation-wrap,
+				#site-navigation-wrap .dropdown-menu > li,
+				#site-navigation-wrap .dropdown-menu > li	> a {
+							line-height: 45px;
+							height: 45px;						
+						}
+				.mobile-menu-toggle{
+						line-height: 0px;
+					}
+			}
+			.header-inner {
+				position: absolute !important;
+				z-index: 9999;
+				
+				#site-logo a {
+					color: #333;
+					border-bottom: 1px solid;
+				}
+			}
+		}
+	}
+}
+
+// SITE LOGO 
+.site-branding {
+	float: left; 
+	//height: 100%;
+	a {
+		&:link {
+		    max-width: 100%;
+			text-decoration: none;
+			color: $pri-color;
+			font-size: 45px;
+			font-weight: lighter;
+		}
+		&:visited{ color:$pri-color; }
+	}
+}
+
+.sidr {
+	display: none;
+}

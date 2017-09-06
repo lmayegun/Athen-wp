@@ -1,0 +1,832 @@
+/*--------------------------------------------------------------
+ Theme Name     : Total
+ Version        : 2.1.0
+ Description    : Visual Composer Extensions for Total
+ Author         : WPExplorer
+ Theme URI      : http://www.wpexplorer.com
+ Author URI     : http://www.wpexplorer.com
+ License        : Custom
+ License URI    : http://themeforest.net/licenses
+
+/*--------------------------------------------------------------
+- Commons
+--------------------------------------------------------------*/
+.vcex-isotope-grid { overflow: hidden; }
+.vcex-readmore { font-size: 0.923em; }
+.vcex-icon-wrap { display: inline; display: inline-block; text-align: center; }
+.vcex-icon-wrap.left { margin-right: 10px; }
+.vcex-icon-wrap.right { margin-left: 10px; }
+
+/*Visual Composer Extension Filter buttons*/
+ul.vcex-filter-links { list-style: none; margin: 0 0 20px; }
+ul.vcex-filter-links li { float: left; margin-right: 5px; margin-bottom: 5px; }
+ul.vcex-filter-links li:last-child { margin-right: 0 }
+.vcex-filter-links a { color: #888; font-size: 0.923em; display: block; padding: 0.2em 0.9em; margin: 0; display: inline-block; font-size: 1em; font-weight: normal; outline: none; cursor: pointer; outline: none; border: 1px solid #ddd; transition: background 0.25s ease-in-out, color 0.25s ease-in-out; -moz-transition: background 0.25s ease-in-out, color 0.25s ease-in-out; -webkit-transition: background 0.25s ease-in-out, color 0.25s ease-in-out; }
+.vcex-filter-links a:hover,
+.vcex-filter-links li.active a { text-decoration: none; background: #f7f7f7; color: #000; }
+.vcex-filter-links li.hidden { display: none !important; }
+
+/*center filter links*/
+ul.vcex-filter-links.center { text-align: center }
+ul.vcex-filter-links.center li { display: inline-block; float: none; }
+
+/*clear floats*/
+.vcex-clear-floats { clear: both }
+.vcex-clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.vcex-clr:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; zoom: 1; }
+
+/*image styles*/
+.vcex-rounded-images img { border-radius: 9999px }
+
+/*text align*/
+.vcex-text-align-center { text-align: center }
+.vcex-text-align-left { text-align: left }
+.vcex-text-align-right { text-align: right }
+
+/*single image caption*/
+.wpb_single_image a { position: relative; max-width: 100%; }
+.wpb_single_image_caption { position: absolute; z-index: 2; bottom: 20px; left: 0; color: #fff; padding: 4px 10px; background: #000; opacity: 0.7; -moz-opacity: 0.7; -webkit-opacity: 0.7; }
+
+/*--------------------------------------------------------------
+- Spacing
+--------------------------------------------------------------*/
+.vcex-spacing { clear: both; display: block; width: 100%; height: auto; margin: 0; padding: 0; background: none; border: none; outline: none; }
+
+/*--------------------------------------------------------------
+- Video Background
+--------------------------------------------------------------*/
+.vcex-video-bg-wrap { position: relative; overflow: hidden; position: relative; z-index: 3; }
+.vcex-video-bg { position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -1000; overflow: hidden; }
+
+/* Video Backgrounds > Overlay */
+.vcex-video-bg-overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: -999; }
+.vcex-video-bg-overlay.dark-overlay { background: #000; opacity: 0.65; -moz-opacity: 0.65; -webkit-opacity: 0.65; }
+.vcex-video-bg-overlay.dotted-overlay { background: rgba(0,0,0,0.3) url("../images/visual-composer/dotted-overlay.png") repeat }
+.vcex-video-bg-overlay.dashed-overlay { background: rgba(0,0,0,0.3) url("../images/visual-composer/dashed-overlay.png") repeat }
+
+/*--------------------------------------------------------------
+- Bullets
+--------------------------------------------------------------*/
+.vcex-bullets ul { margin-left: 0 !important; padding-left: 0 !important; list-style: none !important; list-style-image: none !important; }
+.vcex-bullets ul li { padding-left: 25px !important; margin-bottom: 6px; }
+.vcex-bullets-check ul li { background: url('../images/visual-composer/check.png') left center no-repeat }
+.vcex-bullets-gray ul li { background: url('../images/visual-composer/bullets-gray.png') left center no-repeat }
+.vcex-bullets-black ul li { background: url('../images/visual-composer/bullets-black.png') left center no-repeat }
+.vcex-bullets-blue ul li { background: url('../images/visual-composer/bullets-blue.png') left center no-repeat }
+.vcex-bullets-red ul li { background: url('../images/visual-composer/bullets-red.png') left center no-repeat }
+.vcex-bullets-purple ul li { background: url('../images/visual-composer/bullets-purple.png') left center no-repeat }
+
+/*--------------------------------------------------------------
+- Dividers
+--------------------------------------------------------------*/
+.vcex-divider { display: block; width: 100%; height: 0; margin: 0 auto; background: none; }
+.vcex-divider.solid { border-top: 1px solid #e8e8e8; }
+.vcex-divider.dashed { border-top: 2px dashed #e8e8e8; }
+.vcex-divider.dotted { height: 3px; background: url('../images/visual-composer/dotted.png') center center repeat-x; border: none; }
+.vcex-divider.dotted.repeat-bg { background-repeat: repeat; }
+.vcex-divider.double { height: 1px; padding-top: 2px; padding-bottom: 2px; border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; }
+
+/* divider with icons */
+.vcex-divider.has-icon { display: block; height: auto; margin: 0 auto; text-align: center; border: none; overflow: hidden; }
+.vcex-divider.has-icon .vcex-divider-icon { display: inline-block; position: relative; }
+.vcex-divider.has-icon .vcex-icon-wrap { display: inline-block; padding: 10px 20px; background: #fff; font-size: 1.231em; color: #999; }
+.vcex-divider.has-icon .vcex-divider-icon-before { display: block; position: absolute; top: 50%; border-bottom: solid 1px #e8e8e8; right: 100%; width: 9999px; margin-top: -0.5px; }
+.vcex-divider.has-icon .vcex-divider-icon-after { display: block; position: absolute; top: 50%; border-bottom: solid 1px #e8e8e8; left: 100%; width: 9999px; margin-top: -0.5px; }
+
+.vcex-divider.has-icon.icon-has-bg .vcex-icon-wrap { margin: 0 20px; }
+
+.vcex-divider.has-icon.double .vcex-divider-icon-before { border-top: solid 1px #e8e8e8; padding-top: 2px; padding-bottom: 2px; margin-top: -3px; }
+.vcex-divider.has-icon.double .vcex-divider-icon-after { border-top: solid 1px #e8e8e8; padding-top: 2px; padding-bottom: 2px; margin-top: -3px; }
+
+.vcex-divider.has-icon.dashed .vcex-divider-icon-before,
+.vcex-divider.has-icon.dashed .vcex-divider-icon-after { border-style: dashed; border-bottom-width: 2px; }
+
+.vcex-divider.has-icon.custom-icon-height .vcex-icon-wrap { padding-top: 0; padding-bottom: 0; }
+.vcex-divider.has-icon.custom-icon-width .vcex-icon-wrap { padding-left: 0; padding-right: 0; }
+
+/*--------------------------------------------------------------
+- List Item
+--------------------------------------------------------------*/
+.vcex-list_item .vcex-icon-wrap { margin-right: 10px; text-align: center }
+.vcex-list_item { margin-bottom: 5px }
+body .vcex-list_item a:hover { text-decoration: none !important }
+
+/*--------------------------------------------------------------
+- Buttons
+--------------------------------------------------------------*/
+body.compose-mode .vc-element.vc-vcex_button,
+.vc_vcex_button.vc_empty-shortcode-element { display: block }
+.vc_vcex_button.vc_empty-shortcode-element:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; zoom: 1; }
+.vcex-button-block-wrap { clear: left; display: block; }
+.vcex-button-block-wrap { clear: left; display: block; }
+
+/*default & flat button*/
+.vcex-button,
+.vcex-button.flat { display: inline-block; padding: .8em 1em; margin: 0 5px 5px 0; font-size: 0.923em; line-height: 1; font-weight: normal; font-family: inherit; -webkit-appearance: none; color: #fff; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; outline: none; border: none; text-decoration: none !important }
+.vcex-button:hover,
+.vcex-button.flat:hover { text-decoration: none; color: #fff; }
+.vcex-button:active,
+.vcex-button.flat:active { box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; }
+.vcex-button.animate-on-hover,
+.vcex-button.hvr-float-shadow,
+.vcex-button.hvr-float-grow,
+.vcex-button.hvr-float { transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -webkit-transition: all 0.25s ease-in-out; }
+
+/* default & flat button colors*/
+.vcex-button.grey,
+.vcex-button.flat.grey { background-color: #bbb }
+.vcex-button.grey:hover,
+.vcex-button.flat.grey:hover { background-color: #b3b3b3; color: #fff; }
+.vcex-button.black,
+.vcex-button.flat.black { background-color: #333 }
+.vcex-button.black:hover,
+.vcex-button.flat.black:hover { background-color: #000; color: #fff; }
+.vcex-button,
+.vcex-button.blue,
+.vcex-button.flat.blue { background-color: #3f90bd; color: #fff; }
+.vcex-button:hover,
+.vcex-button.blue:hover,
+.vcex-button.flat.blue:hover { background-color: #327397; color: #fff; }
+.vcex-button.orange,
+.vcex-button.flat.orange { background-color: #EE7836; color: #fff; }
+.vcex-button.orange:hover,
+.vcex-button.flat.orange:hover { background-color: #eb6317; color: #fff; }
+.vcex-button.gold,
+.vcex-button.flat.gold { background-color: #ffaa33; color: #fff; }
+.vcex-button.gold:hover,
+.vcex-button.flat.gold:hover { background-color: #ff9c11; color: #fff; }
+.vcex-button.green,
+.vcex-button.flat.green { background-color: #87bf17; color: #fff; }
+.vcex-button.flat.green:hover { background-color: #72a113; color: #fff; }
+.vcex-button.purple,
+.vcex-button.flat.purple { background-color: #a73df2; color: #fff; }
+.vcex-button.purple:hover,
+.vcex-button.flat.purple:hover { background-color: #991df0; color: #fff; }
+.vcex-button.teal,
+.vcex-button.flat.teal { background-color: #00b3b3; color: #fff; }
+.vcex-button.teal:hover,
+.vcex-button.flat.teal:hover { background-color: #009191; color: #fff; }
+.vcex-button.pink,
+.vcex-button.flat.pink { background-color: #f261c2; color: #fff; }
+.vcex-button.pink:hover,
+.vcex-button.flat.pink:hover { background-color: #ef42b6; color: #fff; }
+.vcex-button.brown,
+.vcex-button.flat.brown { background-color: #804b35; color: #fff; }
+.vcex-button.brown:hover,
+.vcex-button.flat.brown:hover { background-color: #683d2b; color: #fff; }
+.vcex-button.red,
+.vcex-button.flat.red { background-color: #F73936; color: #fff; }
+.vcex-button.red:hover,
+.vcex-button.flat.red:hover { background-color: #f61915; color: #fff; }
+.vcex-button.rosy,
+.vcex-button.flat.rosy { background-color: #EA2487; color: #fff; }
+.vcex-button.rosy:hover,
+.vcex-button.flat.rosy:hover { background-color: #d71576; color: #fff; }
+.vcex-button.white,
+.vcex-button.flat.white { background-color: #fff; color: #444; }
+.vcex-button.white:hover,
+.vcex-button.flat.white:hover { background: #fff; color: #444; }
+
+/*graphical buttons*/
+.vcex-button.graphical { color: #fff; background: #3f90bd; border: 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; text-shadow: 0 -1px rgba(0,0,0,0.4); outline: none; box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 3px -1px rgba(45,60,72,0.5); -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 3px -1px rgba(45,60,72,0.5); -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 3px -1px rgba(45,60,72,0.5); border: 1px solid rgba(0,0,0,0.15); }
+.vcex-button.graphical:hover,
+.vcex-button.graphical.blue:hover { text-decoration: none; }
+.vcex-button.graphical:active { box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; }
+.vcex-button.graphical.grey { background-color: #bbb }
+.vcex-button.graphical.grey:hover { background-color: #b3b3b3 }
+.vcex-button.graphical.black { background-color: #333 }
+.vcex-button.graphical.black:hover { background-color: #000 }
+.vcex-button.graphical.orange { background-color: #EE7836 }
+.vcex-button.graphical.orange:hover { background-color: #eb6317 }
+.vcex-button.graphical.gold { background-color: #ffaa33 }
+.vcex-button.graphical.gold:hover { background-color: #ff9c11 }
+.vcex-button.graphical.green { background-color: #87bf17 }
+.vcex-button.graphical.green:hover { background-color: #72a113 }
+.vcex-button.graphical.purple { background-color: #a73df2 }
+.vcex-button.graphical.purple:hover { background-color: #991df0 }
+.vcex-button.graphical.teal { background-color: #00b3b3 }
+.vcex-button.graphical.teal:hover { background-color: #009191 }
+.vcex-button.graphical.pink { background-color: #f261c2 }
+.vcex-button.graphical.pink:hover { background-color: #ef42b6 }
+.vcex-button.graphical.brown { background-color: #804b35 }
+.vcex-button.graphical.brown:hover { background-color: #683d2b }
+.vcex-button.graphical.red { background-color: #F73936 }
+.vcex-button.graphical.red:hover { background-color: #f61915 }
+.vcex-button.graphical.rosy { background-color: #EA2487 }
+.vcex-button.graphical.rosy:hover { background-color: #d71576 }
+.vcex-button.graphical.white { background-color: #fff; color: #444; }
+
+/*3D buttons*/
+.vcex-button.three-d { color: #fff; background: #3f90bd; border: 0; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-shadow: none; outline: none; border: none; border-bottom: 4px solid rgba(0,0,0,0.25); }
+.vcex-button.three-d:hover { text-decoration: none; }
+.vcex-button.three-d:active { box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; border-bottom: none; }
+.vcex-button.three-d.grey { background-color: #bbb }
+.vcex-button.three-d.grey:hover { background-color: #b3b3b3 }
+.vcex-button.three-d.black { background-color: #333 }
+.vcex-button.three-d.black:hover { background-color: #000 }
+.vcex-button.three-d.blue { background-color: #3f90bd }
+.vcex-button.three-d.orange { background-color: #EE7836 }
+.vcex-button.three-d.orange:hover { background-color: #eb6317 }
+.vcex-button.three-d.gold { background-color: #ffaa33 }
+.vcex-button.three-d.gold:hover { background-color: #ff9c11 }
+.vcex-button.three-d.green { background-color: #87bf17 }
+.vcex-button.three-d.green:hover { background-color: #72a113 }
+.vcex-button.three-d.purple { background-color: #a73df2 }
+.vcex-button.three-d.purple:hover { background-color: #991df0 }
+.vcex-button.three-d.teal { background-color: #00b3b3 }
+.vcex-button.three-d.teal:hover { background-color: #009191 }
+.vcex-button.three-d.pink { background-color: #f261c2 }
+.vcex-button.three-d.pink:hover { background-color: #ef42b6 }
+.vcex-button.three-d.brown { background-color: #804b35 }
+.vcex-button.three-d.brown:hover { background-color: #683d2b }
+.vcex-button.three-d.red { background-color: #F73936 }
+.vcex-button.three-d.red:hover { background-color: #f61915 }
+.vcex-button.three-d.rosy { background-color: #EA2487 }
+.vcex-button.three-d.rosy:hover { background-color: #d71576 }
+.vcex-button.three-d.white { background-color: #fff; color: #444; }
+
+/*outline buttons*/
+.vcex-button.outline { color: #888; background: none; border: 0; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-shadow: none; outline: none; border: none; border: 3px solid #eee; font-weight: bold; font-weight: 600; }
+.vcex-button.outline,
+.vcex-button.outline.blue { color: #3f90bd; border-color: #3f90bd; }
+.vcex-button.outline:hover,
+.vcex-button.outline.blue:hover { background: #3f90bd; }
+.vcex-button.outline:active { border-color: transparent !important; box-shadow: none; }
+
+.vcex-button.outline.grey { color: #bbb; border-color: #bbb; }
+.vcex-button.outline.grey:hover { background: #bbb; }
+.vcex-button.outline.black { color: #333; border-color: #333; }
+.vcex-button.outline.black:hover { background: #333; }
+.vcex-button.outline.orange { color: #EE7836; border-color: #EE7836; }
+.vcex-button.outline.orange:hover { background: #EE7836; }
+.vcex-button.outline.gold { color: #ffaa33; border-color: #ffaa33; }
+.vcex-button.outline.gold:hover { background: #ffaa33; }
+.vcex-button.outline.green { color: #87bf17; border-color: #87bf17; }
+.vcex-button.outline.green:hover { background: #87bf17; }
+.vcex-button.outline.purple { color: #a73df2; border-color: #a73df2; }
+.vcex-button.outline.purple:hover { background: #a73df2; }
+.vcex-button.outline.teal { color: #009191; border-color: #009191; }
+.vcex-button.outline.teal:hover { background: #009191; }
+.vcex-button.outline.pink { color: #f261c2; border-color: #f261c2; }
+.vcex-button.outline.pink:hover { background: #f261c2; }
+.vcex-button.outline.brown { color: #804b35; border-color: #804b35; }
+.vcex-button.outline.brown:hover { background: #804b35; }
+.vcex-button.outline.red { color: #F73936; border-color: #F73936; }
+.vcex-button.outline.red:hover { background: #F73936; }
+.vcex-button.outline.rosy { color: #EA2487; border-color: #EA2487; }
+.vcex-button.outline.rosy:hover { background: #EA2487; }
+.vcex-button.outline.white { color: #444; border-color: #fff; color: #fff; }
+.vcex-button.outline.white:hover { color: #000; background: #fff; }
+.vcex-button.outline:hover { color: #fff; text-decoration: none; text-decoration: none; border-color: transparent !important; }
+
+/*Clean buttons*/
+.vcex-button.clean { color: #3f90bd; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-shadow: none; outline: none; border: 1px solid #ddd; -webkit-appearance: none; background-image: linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); background-image: -o-linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); background-image: -moz-linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); background-image: -webkit-linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); background-image: -ms-linear-gradient(bottom, #f6f6f6 0%, #FFFFFF 100%); -webkit-box-shadow: 0px 1px 1px rgba(180, 180, 180, 0.13); -moz-box-shadow: 0px 1px 1px rgba(180, 180, 180, 0.13); box-shadow: 0px 1px 1px rgba(180, 180, 180, 0.13); font-weight: bold; font-weight: 600; }
+.vcex-button.clean:active { box-shadow: 0 1px 2px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1) inset; -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1) inset; }
+.vcex-button.clean.grey { color: #bbb }
+.vcex-button.clean.black { color: #333 }
+.vcex-button.clean.blue { color: #3f90bd }
+.vcex-button.clean.orange { color: #EE7836 }
+.vcex-button.clean.gold { color: #ffaa33 }
+.vcex-button.clean.green { color: #87bf17 }
+.vcex-button.clean.purple { color: #9a5e9a }
+.vcex-button.clean.teal { color: #009191 }
+.vcex-button.clean.pink { color: #f261c2 }
+.vcex-button.clean.brown { color: #804b35 }
+.vcex-button.clean.red { color: #F73936 }
+.vcex-button.clean.rosy { color: #EA2487 }
+.vcex-button.clean.white { color: #fff }
+.vcex-button.clean:hover { color: #000 !important; text-decoration: none; }
+.vcex-button.clean.black:hover { color: #3b86b0 !important }
+
+/*sizes & alignments*/
+.vcex-button.small { font-size: 0.923em }
+.vcex-button.medium { font-size: 1.077em }
+.vcex-button.large { font-size: 1.385em }
+.vcex-button.align-left { float: left }
+.vcex-button.align-right { float: right; margin-right: 0; margin-left: 5px; }
+.vcex-button-icon-right { padding-left: 10px }
+.vcex-button-icon-left { padding-right: 10px }
+.vcex-button.expanded { width: 100%; padding: 0.9em 1.2em; text-align: center; }
+
+/*--------------------------------------------------------------
+- Toggle
+--------------------------------------------------------------*/
+.vcex-toggle .vcex-toggle-trigger { display: block; color: #555; display: block; padding: 10px 20px 10px 32px; border: 1px solid #ddd; background: url("../images/visual-composer/plus.png") no-repeat 10px center; outline: 0; text-transform: none; letter-spacing: normal; font-weight: normal; font-size: 1em; line-height: 1.5em; margin: 0; margin-top: 10px; cursor: pointer; }
+.vcex-toggle .vcex-toggle-trigger:hover { background-color: #f7f7f7; text-decoration: none; color: #4d4d4d; }
+.vcex-toggle .vcex-toggle-trigger.active,
+.vcex-toggle .vcex-toggle-trigger.active:hover { background: #4d4d4d url("../images/visual-composer/minus.png") no-repeat 10px center; border-color: transparent; color: #fff; }
+.vcex-toggle .vcex-toggle-container { display: none; overflow: hidden; padding: 15px 0; }
+
+/*--------------------------------------------------------------
+- Pricing
+--------------------------------------------------------------*/
+.vcex-pricing-table { list-style: none; margin: 0; padding: 0; font-size: 1em; }
+.vcex-pricing { background: #fff; border-radius: 4px 4px 0 0; }
+.vcex-pricing .vcex-pricing-header { border: 1px solid #ccc; border-radius: 4px 4px 0 0; padding: 15px 20px; border-radius: 4px 4px 0 0; background: #e5e5e5; text-align: center; color: #444; font-size: 1em; font-weight: 600; text-transform: uppercase; margin: 0; }
+.vcex-pricing.featured .vcex-pricing-header { border-color: rgba(0,0,0,0.15); }
+.vcex-pricing .vcex-pricing-cost { background: #f7f7f7; text-align: center; padding: 20px 0; border: 1px solid #e4e4e4; border-top: 0 !important; border-bottom: 0 !important; }
+.vcex-pricing .vcex-pricing-ammount { display: inline; color: #7dbd21; font-size: 36px; line-height: 1em; padding: 20px 0 0; font-weight: 200; }
+.vcex-pricing .vcex-pricing-per { display: inline; font-size: 0.923em; color: #999; padding-top: 7px; }
+.vcex-pricing .vcex-pricing-content { font-size: 1em; text-align: center; padding: 15px; border: 1px solid #e8e8e8; }
+.vcex-pricing .vcex-pricing-content ul { margin: 0 !important; list-style: none !important; }
+.vcex-pricing .vcex-pricing-content ul li { margin: 0 0 5px !important; padding: 0 !important; }
+.vcex-pricing .vcex-pricing-content ul li:last-child { margin-bottom: 0 !important }
+.vcex-pricing .vcex-pricing-content ul li img { margin-right: 5px; display: inline-block; }
+.vcex-pricing .vcex-pricing-button { text-align: center; padding: 15px; border: 1px solid #e8e8e8; border-top: 0 !important; }
+.vcex-pricing .vcex-pricing-button a { float: none; margin: 0 auto; }
+
+/*visual composer support*/
+.wpb_column .vcex-pricing { width: 100% !important; margin: 0 !important; float: none !important; }
+.wpb_column .vcex-pricing:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; zoom: 1; }
+
+/*--------------------------------------------------------------
+- Skillbars
+--------------------------------------------------------------*/
+.vcex-skillbar { position: relative; display: block; margin-bottom: 7px; width: 100%; background: #fff; height: 40px; line-height: 40px; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); background: #f6f6f6; }
+.vcex-skillbar-title { background: none !important; position: absolute; top: 0; left: 0; font-size: 1em; font-weight: normal; color: #fff; z-index: 2; }
+.vcex-skillbar-title .vcex-skillbar-title-inner { display: block; padding: 0 12px; }
+.vcex-skillbar-title .vcex-icon-wrap { margin-right: 7px }
+.vcex-skillbar-bar { height: 100%; width: 0px; position: relative; z-index: 1; }
+.vcex-skill-bar-percent { position: absolute; top: 0; right: 20px; text-align: center; color: #fff; font-size: 1em; }
+
+/*--------------------------------------------------------------
+- Callout
+--------------------------------------------------------------*/
+.vcex-callout { padding: 15px; position: relative; background: #f7f7f7; border: 1px solid #e4e4e4; border-radius: 3px; -moz-border-radius: 3px; min-height: 70px; }
+.vcex-callout-caption { float: left; font-size: 14px; font-weight: normal; }
+.vcex-callout-caption h1,
+.vcex-callout-caption h2,
+.vcex-callout-caption h3,
+.vcex-callout-caption h4 { margin: 0; font-size: 21px; font-weight: normal; color: #000; }
+.vcex-callout-caption p:last-child { margin: 0 }
+.vcex-callout-button { float: left; }
+.vcex-callout-button .vcex-button { display: block; float: right; text-align: center; font-size: 1em; font-weight: normal; margin: 0; }
+.vcex-callout.with-button .vcex-callout-caption { width: 75%; padding-right: 20px; }
+.vcex-callout-button { width: 25% }
+
+/*--------------------------------------------------------------
+- LoginForm
+--------------------------------------------------------------*/
+.vcex-login-form { padding: 20px; border: 1px solid #e4e4e4; border-radius: 4px; }
+.vcex-login-form label { font-weight: 600; color: #000; }
+.vcex-login-form input[type="text"],
+.vcex-login-form input[type="password"] { margin-top: 10px; width: 100%; font-size: 14px; }
+
+/*--------------------------------------------------------------
+- Newsletter
+--------------------------------------------------------------*/
+.vcex-newsletter-form input[type="text"],
+.vcex-newsletter-form input[type="email"] { width: 100%; margin: 0; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -webkit-appearance: none; font-size: 14px; padding: 0 15px; }
+.vcex-newsletter-form-wrap { position: relative; margin: 0 auto; }
+.vcex-newsletter-form-button { display: block; position: absolute; top: 50%; margin-top: -15px; right: 20px; padding: 0 15px; height: 30px; line-height: 30px; border-radius: 3px; }
+
+/*--------------------------------------------------------------
+- Search Bar
+--------------------------------------------------------------*/
+.vcex-searchbar { font-size: 1.231em; position: relative; }
+.vcex-searchbar-input { float: left; width: 70%; }
+.vcex-searchbar-button { position: absolute; top: 0; right: 0; width: 28%; height: 100%; line-height: 100%; padding-top: 0; padding-bottom: 0; }
+.vcex-searchbar-input[type="search"] { font-size: inherit; color: inherit; text-transform: inherit; letter-spacing: inherit; font-weight: inherit; padding: 0.8em; }
+.vcex-searchbar-input:-webkit-autofill { -webkit-box-shadow: none; }
+
+/*--------------------------------------------------------------
+- Recent News
+--------------------------------------------------------------*/
+.vcex-recent-news-header { margin-bottom: 30px }
+.vcex-recent-news-entry { position: relative; margin: 0; padding-left: 85px; width: auto !important; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #eee; }
+.vcex-recent-news-entry:last-child { margin-bottom: 0; border-bottom: 0; padding-bottom: 0; }
+.vcex-recent-news-date { position: absolute; left: 0; top: 0; width: 60px; padding: 5px 0 0; text-align: center; border: 1px solid #ddd; background: #f7f7f7; border-bottom: none; }
+.vcex-recent-news-date span.day { display: block; font-size: 24px; color: #444; font-weight: 300; padding: 0 5px 5px; }
+.vcex-recent-news-date span.month { display: block; font-size: 11px; padding: 2px 5px; font-weight: normal; text-transform: uppercase; position: relative; margin: -1px -1px 0; }
+.vcex-news-entry-details { min-height: 72px }
+.vcex-recent-news-entry { margin-bottom: 30px }
+.vcex-news-entry-thumbnail,
+.vcex-news-entry-video { margin-bottom: 20px }
+.vcex-news-entry-thumbnail img { display: block }
+.vcex-news-entry-thumbnail a { display: block }
+.vcex-news-entry-thumbnail a:hover img { opacity: 0.85 }
+.vcex-recent-news-entry-title-heading { font-size: 14px; margin: 0 0 10px; font-weight: 600; }
+.vcex-recent-news-entry-excerpt p:last-child { margin: 0; }
+.vcex-recent-news-entry-excerpt .vcex-button { margin-top: 20px; display: block; float: left; }
+
+/*--------------------------------------------------------------
+- WooCommerce Carousel
+--------------------------------------------------------------*/
+.wpex-carousel-woocommerce .wpex-carousel-entry-details { text-align: center; font-size: 14px; font-weight: normal; }
+.wpex-carousel-entry-price del .amount { font-size: 1em; color: #888; }
+
+/*--------------------------------------------------------------
+- Post Types Slider
+--------------------------------------------------------------*/
+
+/* Post Types Slider > Caption */
+.vcex-posttypes-slider .wpex-slider-caption { padding: 20px 25px; text-align: left; cursor: default; }
+.vcex-posttypes-slider.has-excerpt .wpex-slider-caption header { margin-bottom: 10px; }
+.vcex-posttypes-slider .wpex-slider-caption .title { font-size: 18px; font-weight: bold; font-weight: 600; display: inline; cursor: pointer; }
+.vcex-posttypes-slider .wpex-slider-caption .staff-position { font-size: 11px; color: #ddd; font-weight: normal; text-transform: uppercase; letter-spacing: 1px; }
+.vcex-posttypes-slider .wpex-slider-caption .excerpt { font-size: 1em; line-height: 1.6; font-weight: normal; }
+.vcex-posttypes-slider .wpex-slider-caption p:last-child { margin: 0; }
+
+/* Post Types Slider > Caption > Over Image */
+.vcex-posttypes-slider .wpex-slider-caption.over-image { position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.85); }
+.vcex-posttypes-slider .wpex-slider-caption.over-image .title { text-decoration: none; }
+.vcex-posttypes-slider .wpex-slider-caption.over-image .title:hover { text-decoration: underline; }
+.vcex-posttypes-slider .wpex-slider-caption.over-image a { color: #fff; }
+.vcex-posttypes-slider .wpex-slider-caption.over-image .excerpt { color: #999; }
+
+/* Post Types Slider > Caption > Under Image */
+.vcex-posttypes-slider .wpex-slider-caption.under-image { padding: 20px 0 0; }
+.vcex-posttypes-slider.has-thumbnails .wpex-slider-caption.under-image { padding-bottom: 20px; }
+.vcex-posttypes-slider .wpex-slider-caption.under-image .title { color: #000; }
+.vcex-posttypes-slider .wpex-slider-caption.under-image .staff-position { color: #999 }
+
+/*woocommerce price on slider*/
+.slider-woocommerce-price { position: absolute; top: 20px; right: 20px; color: #fff; background: #7CC576; padding: 3px 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.slider-woocommerce-price ins { text-decoration: none !important }
+
+/* Post Types Slider > Responsive */
+@media only screen and (max-width: 767px) {
+	.wpex-responsive .vcex-posttypes-slider .wpex-slider-caption.over-image { position: relative; bottom: auto; background: #000; }
+}
+
+/*--------------------------------------------------------------
+- Icons
+--------------------------------------------------------------*/
+a:hover .vcex-icon { text-decoration: none; opacity: 0.8; }
+.vcex-icon-float-center { float: none; display: block; margin: 0 auto; text-align: center; }
+.vcex-icon-float-left { display: block; float: left; margin-right: 20px; }
+.vcex-icon-float-right { display: block; float: right; margin-left: 20px; }
+
+/*icon sizes*/
+.vcex-icon.vcex-icon-xlarge { font-size: 100px; height: 180px; line-height: 180px; width: 180px; }
+.vcex-icon.vcex-icon-large { font-size: 80px; height: 140px; line-height: 140px; width: 140px; }
+.vcex-icon.vcex-icon-normal { font-size: 40px; height: 70px; line-height: 70px; width: 70px; }
+.vcex-icon.vcex-icon-small { font-size: 20px; height: 35px; line-height: 35px; width: 35px; }
+.vcex-icon.vcex-icon-tiny { font-size: 0.923em; height: 25px; line-height: 25px; width: 25px; }
+
+/*other*/
+.vcex-icon.remove-dimensions { height: auto; width: auto; margin: auto; line-height: normal; }
+.vcex-icon.has-bg span { text-align: center }
+
+/*custom icon size*/
+.vcex-icon.has-bg .vcex-icon-wrap { display: inline-block; height: auto; width: auto; line-height: 1; padding: 20px; }
+.vcex-icon.remove-padding .vcex-icon-wrap { padding: 0 !important }
+
+/*--------------------------------------------------------------
+- Icon Boxes
+--------------------------------------------------------------*/
+
+/* Icon Boxes > General */
+.vcex-icon-box { position: relative; display: block !important }
+.vcex-icon-box p { margin: 0 0 10px }
+.vcex-icon-box p:last-child { margin: 0; }
+.vcex-icon-box-heading { display: block; font-size: 1.077em; font-weight: 600; margin: 0 0 10px; }
+.vcex-icon-box-link { text-decoration: none !important }
+.vcex-icon-box-icon.with-background { text-align: center; vertical-align: middle; padding: 15px; }
+.vcex-icon-box-icon * { color: inherit; }
+.vcex-icon-box.link-wrap { display: block; text-decoration: none !important; }
+.vcex-icon-box.link-wrap,
+.vcex-icon-box.link-wrap .vcex-icon-box-content { color: #555; }
+.vcex-icon-box-icon { font-size: 24px; color: #000; display: inline; display: inline-block; zoom: 1; line-height: 1; }
+
+/* Icon Boxes > Style 1 : Left Icon */
+.vcex-icon-box.style-one { padding-left: 50px; }
+.vcex-icon-box.style-one.no-icon { padding-left: 0; }
+.vcex-icon-box.style-one.with-background { padding-left: 80px }
+.vcex-icon-box.style-one.no-icon.with-background { padding-left: 15px; }
+.vcex-icon-box.style-one .vcex-icon-box-icon { position: absolute; left: 0; top: 0; font-size: 28px; }
+.vcex-icon-box.style-one .vcex-icon-box-image { position: absolute; left: 0; top: 0; display: block; }
+
+/* Icon Boxes > Style 7 : Right Icon */
+.vcex-icon-box.style-seven { padding-right: 50px; text-align: right; }
+.vcex-icon-box.style-seven.no-icon { padding-right: 0; }
+.vcex-icon-box.style-seven.with-background { padding-right: 80px }
+.vcex-icon-box.style-seven.no-icon.with-background { padding-left: 15px; }
+.vcex-icon-box.style-seven p { margin: 0 0 10px }
+.vcex-icon-box.style-seven .vcex-icon-box-icon { position: absolute; right: 0; top: 0; font-size: 28px; }
+.vcex-icon-box.style-seven .vcex-icon-box-icon.with-background { padding: 15px }
+.vcex-icon-box.style-seven .vcex-icon-box-image { position: absolute; right: 0; top: 0; display: block; }
+
+/* Icon Boxes > Style 2 : Top Icon */
+.vcex-icon-box.style-two { text-align: center; margin-bottom: 30px; }
+.vcex-icon-box.style-two .vcex-icon-box-icon { font-size: 26px; margin: 0 0 20px; display: inline-block; }
+.vcex-icon-box.style-two .vcex-icon-box-image { display: block; margin: 0 auto 20px; }
+.vcex-icon-box.style-two.align-left { text-align: left }
+.vcex-icon-box.style-two.align-right { text-align: right }
+.vcex-icon-box.style-two.align-left .vcex-icon-box-image,
+.vcex-icon-box.style-two.align-right .vcex-icon-box-image { display: inline-block }
+
+/* Icon Boxes > Style 3 : Legacy */
+.vcex-icon-box.style-three { text-align: center; }
+.vcex-icon-box.style-three .vcex-icon-box-icon { height: 80px; line-height: 80px; width: 80px; font-size: 24px; margin: 0 auto 30px; border-radius: 99px; -webkit-border-radius: 99px; -moz-border-radius: 99px; padding: 0; }
+.vcex-icon-box.style-three .vcex-icon-box-link:hover .vcex-icon-box-icon { opacity: 0.85 }
+.vcex-icon-box.style-three .vcex-icon-box-image { display: block; margin: 0 auto 20px; }
+
+/* Icon Boxes > Style 4 : Legacy */
+.vcex-icon-box.style-four { position: relative; text-align: center; padding: 30px; border: 1px solid #eee; }
+.vcex-icon-box.style-four p { margin: 0 0 10px }
+.vcex-icon-box.style-four .vcex-icon-box-icon { font-size: 28px; margin: 0 0 20px; color: #4d4d4d; }
+.vcex-icon-box.style-four .vcex-icon-box-image { display: block; margin: 0 auto 20px; }
+.vcex-icon-box.style-four .vcex-icon-box-content { margin-top: 15px }
+.vcex-icon-box.style-four.link-wrap:hover { border-color: transparent; }
+.vcex-icon-box.style-four.link-wrap:hover .vcex-icon-box-link,
+.vcex-icon-box.style-four.link-wrap:hover .vcex-icon-box-heading,
+.vcex-icon-box.style-four.link-wrap:hover .vcex-icon-box-icon,
+.vcex-icon-box.style-four.link-wrap:hover .vcex-icon-box-content { color: #fff !important }
+
+/* Icon Boxes > Style 5 : Legacy */
+.vcex-icon-box.style-five { text-align: center; padding: 30px; background-color: #f7f7f7; }
+.vcex-icon-box.style-five p { margin: 0 0 10px }
+.vcex-icon-box.style-five .vcex-icon-box-icon { font-size: 32px; margin: 0 0 20px; color: #4d4d4d; }
+.vcex-icon-box.style-five .vcex-icon-box-image { display: block; margin: 0 auto 20px; }
+.vcex-icon-box.style-five .vcex-icon-box-content { margin-top: 15px }
+.vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-link,
+.vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-heading,
+.vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-icon,
+.vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-content { color: #fff !important }
+
+/* Icon Boxes > Style 6 : Legacy */
+.vcex-icon-box.style-six { text-align: center; padding: 30px; background-color: #000; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; transition: all .2s ease-in-out; position: relative; color: #fff; }
+.vcex-icon-box.style-six p { margin: 0 0 10px; color: #fff; }
+.vcex-icon-box.style-six-link { text-decoration: none !important; color: #555; padding: 30px; display: block; }
+.vcex-icon-box.style-six .vcex-icon-box-icon { font-size: 32px; margin: 0 0 20px; color: #fff; }
+.vcex-icon-box.style-six .vcex-icon-box-image { display: block; margin: 0 auto 20px; }
+.vcex-icon-box.style-six .vcex-icon-box-heading { font-size: 0.923em; text-transform: uppercase; letter-spacing: 2px; color: #fff; }
+.vcex-icon-box.style-six.link-wrap:hover { position: relative; top: -10px; box-shadow: 0 5px 15px rgba(0,0,0,0.25); }
+
+/*--------------------------------------------------------------
+- Testimonials Grid
+--------------------------------------------------------------*/
+.vcex-testimonials-filter { list-style: none !important; margin: 0 0 15px !important; }
+.vcex-testimonials-filter li { float: left; margin-right: 5px; margin-bottom: 5px; }
+.vcex-testimonials-filter li:last-child { margin-right: 0 }
+
+/*--------------------------------------------------------------
+- Testimonials Slider
+--------------------------------------------------------------*/
+
+/* Testimonials Slider > Main */
+.vcex-testimonials-fullslider { padding: 40px 0; font-size: 21px; text-align: center; }
+.vcex-testimonials-fullslider .entry { font-weight: 300; padding: 0 30px; }
+.vcex-testimonials-fullslider .entry p:last-child { margin: 0; }
+.vcex-testimonials-fullslider-author { font-size: 14px; display: block; text-align: center; margin: 20px 0 5px; }
+.vcex-testimonials-fullslider-company { display: block }
+.vcex-testimonials-fullslider-avatar { margin-bottom: 20px }
+.vcex-testimonials-fullslider-avatar img { width: 70px; height: 70px; margin: 0 auto; display: block; border-radius: 50%; box-shadow: none !important; }
+.container.full-screen .container .entry.container { width: 100% !important }
+
+/* Testimonials Slider > Dots */
+.vcex-testimonials-fullslider .sp-buttons { position: relative; top: auto; left: auto; text-align: center; margin: 0 !important; }
+.vcex-testimonials-fullslider .sp-button { display: inline-block; height: 12px; width: 12px; margin-left: 5px; margin-right: 0; cursor: pointer; border-radius: 50%; background: #ddd; border: 0; }
+.vcex-testimonials-fullslider .sp-button:first-child { margin-left: 0 }
+
+/* Testimonials Slider > Arrows */
+.vcex-testimonials-fullslider.has-arrows .entry { padding-left: 100px; padding-right: 100px; }
+.vcex-testimonials-fullslider.has-arrows .sp-arrow { font-size: 34px; color: #ccc; background: none; border-radius: 50%; height: 50px; line-height: 50px; width: 50px; }
+.vcex-testimonials-fullslider.has-arrows .sp-arrow:hover{ color: #000; }
+
+/* Testimonials Slider > Thumbnails */
+.vcex-testimonials-fullslider.has-thumbs .sp-nc-thumbnails { text-align: center; padding-top: 20px; width: 100% !important; }
+.vcex-testimonials-fullslider.has-thumbs .sp-nc-thumbnail-container { display: inline-block; float: none; }
+
+/* Testimonials Slider > Light Skin */
+.vcex-testimonials-fullslider.light-skin { color: #fff }
+.vcex-testimonials-fullslider.light-skin .sp-button { background: #fff; opacity: 0.6; }
+.vcex-testimonials-fullslider.light-skin .sp-button:hover,
+.vcex-testimonials-fullslider.light-skin .sp-selected-button { background: #fff; opacity: 1; }
+.vcex-testimonials-fullslider.light-skin .sp-arrow { color: #fff; opacity: 0.8; }
+.vcex-testimonials-fullslider.light-skin .sp-arrow:hover { opacity: 1; color: #fff; }
+
+/*--------------------------------------------------------------
+- Post Type Grid
+--------------------------------------------------------------*/
+
+/* Post Type Grid > Main */
+.vcex-post-type-entry-details { padding: 15px; border: 1px solid #eee; }
+.vcex-post-type-entry-media { margin: 0; position: relative; overflow: hidden; }
+.vcex-post-type-entry-media img { display: block; margin: 0 auto; }
+.vcex-post-type-entry-title { font-size: 1.231em; margin: 0; line-height: 1.5em; font-weight: normal; }
+.vcex-post-type-entry-date { font-size: 0.923em; color: #777; list-style: none; margin: 0 0 5px; }
+.vcex-post-type-entry-excerpt p:last-child { margin: 0 }
+.vcex-post-type-entry-readmore-wrap { padding-top: 15px;}
+
+/* Post Type Grid > 1 Column */
+.vcex-post-type-grid.left-thumbs .span_1_of_1 .vcex-post-type-entry-media { float: left; margin: 0; width: 45%; }
+.vcex-post-type-grid.left-thumbs .span_1_of_1 .vcex-post-type-entry-details { float: right; width: 55%; border: none; padding: 0 0 0 30px; }
+
+/* Post Type Grid > No Margins Grid */
+.vcex-post-type-grid.vcex-no-margin-grid .vcex-post-type-entry-details { background: #262626; border: none; color: #787878; }
+.vcex-post-type-grid.vcex-no-margin-grid .vcex-post-type-entry-title a { color: #fff }
+
+/*--------------------------------------------------------------
+- Portfolio Grid
+--------------------------------------------------------------*/
+
+/* Portfolio Grid > 1 Column */
+.vcex-portfolio-grid.left-thumbs .span_1_of_1 { margin: 0 0 30px; float: none; border: none; }
+.vcex-portfolio-grid.left-thumbs .span_1_of_1 .portfolio-entry-media { width: 45%; float: left; padding: 0 30px 0 0; }
+.vcex-portfolio-grid.left-thumbs .span_1_of_1 .portfolio-entry-details { width: 55%; float: right; background: none; border: none; padding: 0; }
+
+/*--------------------------------------------------------------
+- Blog Grid
+--------------------------------------------------------------*/
+
+/* Blog Grid > Main */
+.vcex-blog-entry-details { padding: 20px; border: 1px solid #eee; }
+.vcex-blog-entry-media { margin: 0 0 -1px; position: relative; }
+.vcex-blog-entry-media img { display: block; width: 100%; }
+.vcex-blog-entry-title { font-size: 1.231em; margin: 0; line-height: 1.5em; font-weight: normal; }
+.vcex-blog-entry-excerpt p:last-child { margin: 0 }
+.vcex-blog-entry-date { font-size: 0.923em; color: #777; list-style: none; margin: 0 0 5px; }
+.vcex-blog-entry-details .vcex-button { font-size: 0.923em; }
+.vcex-blog-entry-excerpt p:last-child { margin: 0; }
+.vcex-blog-entry-readmore-wrap { padding-top: 15px; }
+
+/* Blog Grid > 1 Column */
+.vcex-blog-grid.left-thumbs .span_1_of_1 { float: none; border: none; }
+.vcex-blog-grid.left-thumbs .span_1_of_1 .vcex-blog-entry-media { width: 45%; float: left; padding: 0 30px 0 0; }
+.vcex-blog-grid.left-thumbs .span_1_of_1 .vcex-blog-entry-details { width: 55%; float: right; background: none; border: none; padding: 0; }
+
+/*--------------------------------------------------------------
+- Staff Grid
+--------------------------------------------------------------*/
+
+/* Staff Grid > 1 Column */
+.vcex-staff-grid.left-thumbs .span_1_of_1 { margin: 0 0 30px; float: none; border: none; }
+.vcex-staff-grid.left-thumbs .span_1_of_1 .staff-entry-media { width: 45%; float: left; padding: 0 30px 0 0; }
+.vcex-staff-grid.left-thumbs .span_1_of_1 .staff-entry-details { width: 55%; float: right; padding-top: 0; }
+
+/*--------------------------------------------------------------
+- Image Grid
+--------------------------------------------------------------*/
+.vcex-image-grid.grid-style-no-margins .col { margin: 0 }
+.vcex-image-grid-entry-img { position: relative; display: block; margin: 0 auto; text-align: center; }
+.vcex-image-grid-entry img { display: inline-block; vertical-align: bottom; }
+.vcex-image-grid-entry a { display: block; margin: 0 auto; }
+.vcex-image-grid-entry-title { margin: 10px 0 0; text-align: center; }
+.vcex-image-grid-entry-title h2, .vcex-image-grid-entry-title h3, .vcex-image-grid-entry-title h4 { margin: 0; }
+.vcex-image-grid-entry-title p:last-child { margin: 0 }
+.vcex-image-grid.grid-style-no-margins .vcex-image-grid-entry-title { position: absolute; bottom: 0; left: 0; background: #000; background: rgba(0,0,0,0.8); color: #fff; padding: 10px; text-align: center; width: 100%; }
+.vcex-image-grid.grid-style-no-margins .vcex-image-grid-entry-title a { color: #fff }
+.vcex-image-grid-video-overlay { position: absolute; top: 50%; left: 50%; height: 60px; line-height: 50px; width: 60px; text-align: center; color: #fff; font-size: 24px; margin-top: -25px; margin-left: -25px; border: 5px solid #fff; }
+
+/*--------------------------------------------------------------
+- Teaser Boxes
+--------------------------------------------------------------*/
+
+/* Teaser > Main */
+.vcex-teaser { display: block !important; margin-bottom: 30px; }
+.vcex-teaser-media { margin-bottom: 20px; }
+.vcex-teaser-media img { display: block; margin: 0 auto; }
+.vcex-teaser-link { text-decoration: none !important }
+.vcex-teaser-link img:hover { opacity: 0.8 }
+.vcex-teaser-heading { font-weight: 600; font-size: 1.231em; margin: 0; color: #000; }
+.vcex-teaser-text { margin: 10px 0 0 }
+.vcex-teaser-text p:last-child { margin: 0 }
+
+/* Teaser > Two */
+.vcex-teaser-two { padding: 20px; border: 1px solid #eee; border-radius: 3px; background: #f7f7f7; }
+
+/* Teaser > Three */
+.vcex-teaser-three { border: 1px solid #eee; background: #f7f7f7; }
+.vcex-teaser-three .vcex-teaser-media { margin: 0; }
+.vcex-teaser-three .vcex-teaser-content { padding: 20px; }
+
+/* Teaser > Four */
+.vcex-teaser-four { border: 1px solid #e4e4e4; }
+.vcex-teaser-four .vcex-teaser-media { margin: 0; }
+.vcex-teaser-four .vcex-teaser-content { padding: 20px; }
+
+/*--------------------------------------------------------------
+- MileStones
+--------------------------------------------------------------*/
+.vcex-milestone,
+a.vcex-milestone { display: block !important; margin: 0 auto; text-align: center }
+a.vcex-milestone, a.vcex-milestone:hover { text-decoration: none; }
+.vcex-milestone-number { font-weight: 600; font-size: 54px; color: #bcbcbc; line-height: 1em; }
+.vcex-milestone-caption { font-size: 1.231em; font-weight: 300; color: #898989; margin-top: 5px; }
+
+/*--------------------------------------------------------------
+- Typography Styles > Light
+--------------------------------------------------------------*/
+
+/*icon boxes*/
+.vcex-skin-light .vcex-icon-box-three .vcex-icon-box-three-icon { background: #fff; color: #4d4d4d; }
+.vcex-skin-light .vcex-icon-box-four { border-color: #fff }
+.vcex-skin-light .vcex-icon-box-four .vcex-icon-box-four-icon { color: #fff }
+.vcex-skin-light .vcex-icon-box-four.vcex-icon-hover-enabled:hover { background: #000; background: rgba(0,0,0,0.5) !important; border-color: rgba(0,0,0,0.5); }
+.vcex-skin-light .vcex-icon-box-five { background: #000; background: rgba(0,0,0,0.5) !important; }
+.vcex-skin-light .vcex-icon-box-five .vcex-icon-box-five-icon { color: #fff }
+
+/*teasers*/
+.vcex-skin-light .vcex-teaser-two { background-color: #000; background-color: rgba(0,0,0,0.25); border-color: rgba(0,0,0,0.1); }
+.vcex-skin-light .vcex-teaser-three .vcex-teaser-content { background-color: #000; background-color: rgba(0,0,0,0.25); border-color: rgba(0,0,0,0.1); }
+
+/*--------------------------------------------------------------
+- Image Swap
+--------------------------------------------------------------*/
+.vcex-image-swap { position: relative; overflow: hidden; display: block; margin: 0 auto; }
+.vcex-image-swap-link { display: block }
+.vcex-image-swap img { display: block; -webkit-transition: opacity 0.25s ease-in-out; -moz-transition: opacity 0.25s ease-in-out; -o-transition: opacity 0.25s ease-in-out; transition: opacity 0.25s ease-in-out; backface-visibility: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -ms-backface-visibility: hidden; width: 100%; height: 100%; overflow: hidden; }
+.vcex-image-swap-secondary { z-index: 1; position: absolute; top: 0; left: 0; overflow: hidden; }
+.vcex-image-swap-primary { z-index: 2; position: relative; }
+.vcex-image-swap:hover .vcex-image-swap-primary { opacity: 0; -moz-opacity: 0; -webkit-opacity: 0; }
+
+/*--------------------------------------------------------------
+- Navbar
+--------------------------------------------------------------*/
+
+/* Navbar > Main */
+.vcex-navbar a { display: block; float: left; }
+.vcex-navbar a:hover { text-decoration: none }
+.vcex-navbar a.has-bg-hover:hover { border-color: inherit; }
+
+/* Navbar > Buttons */
+.vcex-navbar.style-buttons a { margin: 0 5px 5px 0; color: #888; font-size: 0.923em; padding: 4px 10px; font-size: 1em; border: 1px solid #ddd; transition: all 0.15s ease; -webkit-transition: all 0.15s ease; -o-transition: all 0.15s ease; -moz-transition: all 0.15s ease; }
+.vcex-navbar.style-buttons a:hover,
+.vcex-navbar.style-buttons a.active { background: #f7f7f7; color: #000; }
+.vcex-navbar a .fa { margin-right: 7px }
+
+/* Navbar > Simple */
+.vcex-navbar.style-simple a { display: inline-block; margin-right: 5px; }
+.vcex-navbar.style-simple a:hover { text-decoration: underline; }
+
+/* Navbar > Alignments */
+.vcex-navbar.align-right a { float: right; margin-left: 5px; margin-right: 0; }
+.vcex-navbar.align-left a { float: left; }
+.vcex-navbar.align-center { text-align: center; }
+.vcex-navbar.align-center a { float: none; display: inline-block; }
+
+/*--------------------------------------------------------------
+- Feature Box
+--------------------------------------------------------------*/
+.vcex-feature-box-media { display: block; width: 50%; }
+
+/* Feature Box > Left Image + Right content */
+.vcex-feature-box.left-image-right-content .vcex-feature-box-media { float: left }
+.vcex-feature-box.left-image-right-content .vcex-feature-box-content { float: right; padding-left: 30px; }
+
+/* Feature Box > Right Image + Left Content */
+.vcex-feature-box.left-content-right-image .vcex-feature-box-media { float: right }
+.vcex-feature-box.left-content-right-image .vcex-feature-box-content { float: left; padding-right: 30px; }
+
+/* Feature Box > Media */
+.vcex-feature-box-image-link { overflow: hidden }
+.vcex-feature-box-image-link,
+.vcex-feature-box-media .vcex-feature-box-image img { display: block; margin: 0 auto; }
+
+/* Feature Box > Content */
+.vcex-feature-box-content { display: block; width: 50%; }
+.vcex-feature-box-content p:last-child { margin: 0; }
+
+/* Feature Box > Heading */
+.vcex-feature-box-heading { margin: 0 0 20px; font-size: 1.231em; color: #000; }
+.vcex-feature-box-content .vcex-feature-box-heading-link { text-decoration: none }
+
+/* Feature Box > Equal Heights */
+.match-height-feature-row .vcex-feature-box-media { position: relative; overflow: hidden; }
+.match-height-feature-row .vcex-feature-box-media .vcex-feature-box-image { position: absolute; top: 0; left: 0; height: auto; width: auto; }
+.match-height-feature-row .vcex-feature-box-media .vcex-feature-box-image img { max-width: none }
+
+/*--------------------------------------------------------------
+- Social Links
+--------------------------------------------------------------*/
+.vcex-social-links { display: block; font-size: 1.231em; color: #555; border-radius: 4px; }
+.vcex-social-links a { display: inline-block; padding: 10px; line-height: 1; text-align: center; background: #eee; color: inherit; border-radius: inherit; margin-right: 3px; margin-bottom: 5px; transition: 0.15s all; }
+.vcex-social-links a:hover { color: #fff; }
+
+/*--------------------------------------------------------------
+- Terms Grid
+--------------------------------------------------------------*/
+.vcex-terms-grid-entry .vcex-terms-grid-entry-image { margin-bottom: 15px; }
+.vcex-terms-grid-entry .vcex-terms-grid-entry-image img { vertical-align: bottom; }
+.vcex-terms-grid-entry .vcex-terms-grid-entry-title { font-size: 1.077em; margin: 0 0 5px; }
+
+/*--------------------------------------------------------------
+- Heading
+--------------------------------------------------------------*/
+.vcex-heading { display: block; font-size: 21px; color: #000; }
+a.vcex-heading:hover { text-decoration: none; }
+
+/*--------------------------------------------------------------
+- Accent Color
+--------------------------------------------------------------*/
+
+/* Accent > #3b86b0 > Color */
+.wpex-carousel-woocommerce .wpex-carousel-entry-details { color: #3b86b0; }
+
+/* Accent > #3b86b0 > Background */
+.vcex-skillbar-bar,
+.vcex-icon-box.style-five.link-wrap:hover,
+.vcex-icon-box.style-four.link-wrap:hover,
+.vcex-recent-news-date span.month,
+.vcex-pricing.featured .vcex-pricing-header,
+.vcex-testimonials-fullslider .sp-button:hover,
+.vcex-testimonials-fullslider .sp-selected-button,
+.vcex-button.graphical:hover,
+.vcex-button.three-d:hover,
+.vcex-social-links a:hover { background-color: #3b86b0; color: #fff; }
+
+	/* Accent that should NOT be overritten */
+	.vcex-button.graphical.blue:hover,
+	.vcex-button.three-d.blue:hover { background-color: #3b86b0; }

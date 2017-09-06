@@ -1,0 +1,52 @@
+/*****************************************
+Image Swap 
+******************************************/
+.vcex-image-swap { 
+	position: relative;
+	overflow: hidden;
+	display: block; 
+	margin: 0 auto;
+	
+	&:hover {
+		.vcex-image-swap-primary {
+			opacity: 0; 
+			-moz-opacity: 0;
+			-webkit-opacity: 0;
+		}
+	}
+	
+	img {
+		display: block; 
+		-webkit-transition: opacity 0.25s ease-in-out; 
+		-moz-transition: opacity 0.25s ease-in-out; 
+		-o-transition: opacity 0.25s ease-in-out; 
+		transition: opacity 0.25s ease-in-out; 
+		backface-visibility: hidden; 
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden; 
+		-ms-backface-visibility: hidden;
+		width: 100%;
+		height: 100%;
+		overflow: hidden; 
+	}
+
+	
+	&-link { 
+		display: block;
+	}
+	
+	&-secondary { 
+		z-index: 1;
+		position: absolute;
+		top: 0; 
+		left: 0; 
+		overflow: hidden;
+	}
+	
+	&-primary {
+		z-index: 2; 
+		position: relative; 
+	}
+	
+	
+}

@@ -1,0 +1,418 @@
+@import "../core-mixin";
+/************************************************************
+ WIDGETS - 
+ - Comments Avatar -
+ - Flickr -
+ - Modern Menu -
+ - Post Grid -
+ - Post Icons - 
+ - Post Thumbnails -
+ - Simple Menu - 
+ - Social Image -
+ - Social Font Awesome -
+ - Video -
+************************************************************/
+
+//////////////// Theme Widgets //////////////////////
+
+.athen{
+
+    /*** Recent Comment With Avatar ***/
+	&-recent-comments-widget {
+		li{ 
+			margin: 0px 0px 0px 84px;
+			line-height: 1.2;
+			font-size: 13px;
+			a {
+				&.avatar{
+					position: relative;
+					float: left;
+					padding: 3px 3px 1px 3px;
+					border: 1px solid #999;
+					margin: 0px 0px 0px -82px;
+				}	
+			}
+			
+			.comment{
+					&-title{font-weight: bold;}
+					&-excerpt{ color: lightgrey; }
+				}
+		}
+	}
+	
+	/*** Video ***/
+	&-responsive-video-wrap {
+		iframe { width : 100%; }
+	}
+	
+	&-video-widget-description{
+		font: initial;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	
+	/*** Font Awesome Icons ***/
+	&-fontawesome-social-widget {
+		ul{
+		list-style: none;
+			
+			/*** Color Selector ***/
+				
+			&.black-color-hover, &.color{
+				
+			}
+			
+			&.black-color-hover, &.black {
+				
+			}
+			
+			/*** Graphical ***/
+			&.graphical {
+				a{
+					box-shadow: inset 0 1px 1px rgba(255,255,255,0.4);	
+					border: 1px solid rgba(0,0,0,0.1);
+								
+				}
+			}
+
+			&.black-color-hover.graphical a { background: #000; }
+		}
+		
+		li {
+			margin: 0;
+			padding: 0;
+			border: none;
+			float: left;
+			margin-right: 7px;
+			margin-bottom: 5px;
+			
+			a {
+				background: #444;
+				display: block;
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+				border-radius: 3px;
+				text-align: center;
+				font-size: 14px;
+				color: #fff !important;
+				
+				&:hover{ opacity: 0.7;}
+			}		
+		}
+		
+		.desc {
+			margin: 0px 0px 15px 0px;
+			font-size: 14px;
+			line-height: 1.4;
+			color: #000;
+		}
+		
+	}
+	/**** End Font Awesome Widgets Styles ***/
+	
+	/*** Social Widget Icon Image ***/
+	&-social-widget-img {
+		li a img {
+			display: block;
+			margin: 0px 10px 0px 0px;
+			&:hover { opacity: 0.7;}
+			&:active { position: relative; }
+		}
+	}
+	
+	/*** Recent Post Widgets Thumbnail ***/
+	&-widget-recent-posts-thumb{
+		display : block;
+		li {
+			&:first-child{ margin-top: -14px; }
+			margin: 0;
+			font-size: 16px;
+			min-height: 95px;
+			padding-left: 150px;
+			position: relative;
+			padding-top: 15px;
+			padding-bottom: 20px;
+			border-bottom: 1px dashed $trace-2;
+			
+			a{
+				display: bock;
+			}
+			
+			.img-thumb {
+				position: absolute;
+				left: 0;
+				top: 15px;
+				width: 100px;
+				height: 80%;
+
+			}
+			
+			.post-title {
+				font-weight: 500;
+				color: $link-color;
+				font-size: 16px;
+				line-height: 0;
+			}
+			
+			.post-date{
+				font-size: 14px;
+				font-weight: 400;
+				color: #777;
+				margin-top: 6px;
+			}
+		} 
+	}
+	/*** End Recent Post Widgets Thumbnail ***/
+	
+	/*** Post Thumbnail Grid ***/
+	&-recent-posts-thumb-grid{
+		overflow: hidden;
+		
+		li{
+			&:first{ padding-left: 0px;}
+			a, img{
+				display: block;
+				width: auto;
+				max-width: 100%;
+			}
+		}
+		
+		div{
+			float: left;
+			box-sizing: border-box;
+			margin: 0px 0px 0px 0px;
+			overflow: hidden;
+			
+			a{
+				display: block;
+				line-height: 0px;
+			}
+			
+			&.athen-col-1{
+				padding: 8px;
+				&.col-1{padding-left: 0px;}
+			}
+			
+			&.athen-col-2{
+				padding: 8px;
+				&.col-1{padding-left: 0px;}
+				&.col-2{padding-right: 0px;}
+			}
+			
+			&.athen-col-3{
+				padding: 5px;
+				&.col-1{padding-left: 0px;}
+				&.col-3{padding-right: 0px;}
+			}
+				
+			&.athen-col-4{
+				padding: 2px;
+				&.col-1{padding-left: 0px;}
+				&.col-4{padding-right: 0px;}
+			}
+			
+		}
+	}
+	
+	/*** Morder Menu Widgets ***/ 
+	&-modern-menu-widget {
+		border: 1px solid #000;
+		margin: 0px;
+		
+		a {
+			position: relative;
+			padding: 7px 30px 7px 10px;
+			color: #000;
+			display: block;
+					
+			&:after{
+				display: block;
+				font-family: "FontAwesome";
+				content: "\f054";
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				margin-top: -6px;
+				height: 12px;
+				line-height: 12px;
+				font-size: 14px;
+				color: #aaa;
+			}
+				
+		}
+			> .fa {  margin-right: 8px; }
+		
+		li{
+			border-bottom: 1px solid #000;
+			a{
+				padding-left: 30px;
+				padding-right: 10px;
+			}
+			&:last-child { border-bottom: none;}
+		}
+		
+		ul{
+			border-top: 1px solid #000;
+		}
+	}
+	/*** End Modern Menu ***/
+	
+	/*** Recent Post with Icons ***/
+	&-widget-recent-posts-icons {
+		&-li{
+			
+			&:first-child{
+				border-top: 1px solid #eee;
+			}
+		}
+	}
+	
+	/*** Flickr ***/
+	&-flickr-widget {
+		.flickr_badge_image {
+			display: block;
+			float: left;
+			width: 22%;
+			margin-right: 4px;
+			margin-bottom: 4px;
+		}
+		
+		a {
+			display: block;
+			img{
+				display: block;
+			}
+		}
+	}
+	
+}
+
+//////////////////////////////////// Simple Menu /////////////////////////////////////////////////
+.widget_athen_simple_menu {
+	a {
+		color: #000;
+	}
+}
+
+.widget_categories, .widget_archive, .widget_recent_entries, .widget_recent_comments, .widget_product_categories,
+.athen-widget-recent-posts-icons, .widget_layered_nav, .widget_meta {
+	li {
+		padding: 6px 0;
+		border-bottom: 1px dashed $trace-2;
+		&:first-child{ border-top: 0px solid $trace-2; }
+	}
+}
+
+.athen-widget-recent-posts-icons{
+	li {	
+		.fa{	margin-right: 10px;
+			color: #999;
+		}
+	}
+}
+
+.athen-flickr-widget {
+
+	a{
+		display: block;
+		
+		img { display: block; }
+	}
+	.flickr_badge_image{
+	    display: block;
+		float: left;
+		width: 22%;
+		margin-right: 4px;
+		margin-bottom: 4px;
+	}
+}
+
+.athen-social-widget-img{
+	list-style: none;
+	li{
+		float: left;
+		a{
+			img{
+				display: block;
+				margin: 0px 10px 0px 0px;
+				float: left;
+			}
+		}
+	}
+}
+
+.athen-fontawesome-social-widget{
+	.desc{
+		color: #fff;
+	}
+	li{
+	    margin: 0;
+		padding: 0;
+		border: none;
+		float: left;
+		margin-right: 7px;
+		margin-bottom: 5px;
+		
+		a{
+		    background: #444;
+			display: block;
+			height: 30px;
+			line-height: 30px;
+			width: 30px;
+			border-radius: 3px;
+			text-align: center;
+		}
+	
+	}
+}
+
+.athen-responsive-video-wrap{
+	.description{
+		font: initial;
+		font-size: 16px;
+		line-height: 18px;
+		color: #bfbfbf;
+	}
+}
+
+.athen-widget-recent-posts-icons{
+	li{
+		padding: 6px 0;
+		border-bottom: 1px solid #eee;
+	float: left;
+		
+		&:first-child{
+			border-top: 0px solid #eee;
+		}
+		
+		.fa {
+			margin-right: 10px;
+			color: #999;
+	}
+	}
+}
+
+.athen-recent-comments-widget{
+	li{
+	    margin: 0px 0px 0px 84px;
+		line-height: 1.2;
+		font-size: 13px;
+		a{
+			&.avatar{
+			    position: relative;
+				float: left;
+				padding: 3px 3px 1px 3px;
+				border: 1px solid #999;
+				margin: 0px 0px 0px -82px;
+			}
+			
+			.comment{
+				&-title{font-weight: bold;}
+				&-excerpt{ color: lightgrey; }
+			}
+			
+			
+		}
+	}
+}

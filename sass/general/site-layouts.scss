@@ -1,0 +1,186 @@
+/*--------------------- BODY SKELETON ---------------------*/
+@import "../core-mixin";
+body{
+	background : none;
+	
+	.TN-main-wrap {
+		background : none;
+		overflow : hidden;
+	}
+	
+	&.athen-layout{
+	
+		// LAYOUT ONE (FULLWIDTH)
+		&-one {	
+			
+			#athen{
+				&-main-capsule{ width : 100%;}
+				&-alt-capsule {	width : 100%;}
+			}
+		}
+
+		// LAYOUT TWO (FULL WIDTH)
+		&-two {
+				
+			.athen-alt-capsule {
+				padding : 20px 30px 0px 30px;
+				margin : 20px 30px 0px 30px;
+			}
+		}
+		
+		&-three {
+				
+			.athen-alt-capsule {
+				width : 1100px; 
+				margin : auto;
+				border-left: 1px solid $pri-color;
+				border-right: 1px solid $pri-color;
+				border-top: 1px solid $pri-color;
+				border-bottom: 1px solid $pri-color;
+			}	
+		}
+	}
+	
+	// CONTENT AND SIDEBAR LAYOUT
+	&.athen-content-layout{
+		
+		&-full-width{
+			.posts-box{
+				width: 100%;
+			}
+
+			.sidebar-wrap{
+				display: none;
+			}
+		}
+
+		&-right-sidebar{
+			.posts-box{
+				float: left;
+				padding: 0px 20px;
+				margin-bottom: 20px;
+				box-sizing: border-box;
+				border-bottom: 1px dashed $trace;
+			}
+			.post-box{
+				float: left;
+				padding: 0px 20px;
+				box-sizing: border-box;
+			}
+
+			.sidebar-wrap{
+				float: right;
+				padding: 0px 20px;
+				box-sizing: border-box;
+				border-bottom: 1px dashed $trace;
+				height: 100%;
+			}
+		}
+
+		&-left-sidebar{
+			.posts-box{; 
+				float: right;
+				padding: 0px 20px;
+				margin-bottom: 20px;
+				box-sizing: border-box;
+			}
+			.post-box{
+				float: right;
+				padding: 0px 20px;
+				box-sizing: border-box;
+			}
+
+			.sidebar-wrap{
+				float: left;
+				padding: 0px 20px;
+				border-bottom: 1px dashed $trace;
+				box-sizing: border-box;
+			}
+		}		
+	}
+	
+	
+	
+	// CONTENT MOBILE WIDTH LAYOUT = FOR MOBILE 
+	&.content-mobile-width .content-space {
+		width : 100%;
+		max-width : none !important; 
+	}
+	
+	// STICKY HEADER 	
+	.is-sticky #site-header {
+		margin-top: 0px;
+	}
+	
+	// HAS OVERLAY HEADER
+	&.has-overlay-header{
+		#site-header.header-one {
+			.header-topbar {
+				padding: 0px;
+				
+				#top-bar-social {
+					float: right;
+					line-height: 44px;
+					margin-right: 14px;
+				}
+			}
+			
+			.header-inner{
+				width: 100%;
+			}
+		}		
+	}
+	
+	// Add shadow to athen alt capsule
+	&.alt-dropshadow {
+		.athen-alt-capsule{
+			box-shadow: 2px 10px 10px #ccc;
+		}
+	}
+	
+	// Site Section
+	.site-section{
+		.section-intro{
+			padding-left: 20px;
+			padding-right: 20px;
+			border-bottom: 1px dashed $trace;
+		}
+		.content-capsule{
+			padding: 0px 0px;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			border-bottom: 1px dashed $trace;
+		}
+	}
+
+	.content-space {
+		width	: 100%;
+		float	: left;
+		position : relative;
+	}
+	
+	.site-footer{
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background: none;
+		border-top: 1px dashed $trace;
+		border-bottom: 1px dashed $trace;
+		
+		.footer-main{
+			background: none;
+			border-bottom: 1px dashed $trace;
+		}
+	}
+	
+	.footer-bottom{
+		background: none;
+		border-bottom: 1px dashed $trace;
+	}
+}
+
+.div-full-width {
+	width : 100%;
+}
+
+
+//.sidebar-wrap{background: blue;}

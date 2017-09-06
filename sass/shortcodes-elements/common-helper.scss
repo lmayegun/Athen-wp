@@ -1,0 +1,131 @@
+/*****************************
+Common Helper 
+*****************************/ 
+.vcex{
+	&-isotope-grid { 
+		overflow: hidden;
+	}
+	
+	&-readmore {
+		font-size: 0.923em; 
+	}
+	
+	&-icon-wrap { 
+		display: inline;
+		display: inline-block; 
+		text-align: center; 
+		
+		&.left {
+			margin-right: 10px;
+		}
+		
+		&.right { 
+			margin-left: 10px; 
+		}
+	}
+	
+	/////////////// Filter Button 
+	&-filter-links a {
+		color: #888;
+		font-size: 0.923em;
+		display: block;
+		padding: 0.2em 0.9em;
+		margin: 0; 
+		display: inline-block;
+		font-size: 1em;
+		font-weight: normal;
+		outline: none; 
+		cursor: pointer;
+		outline: none;
+		border: 1px solid #ddd;
+		transition: background 0.25s ease-in-out, 
+		color 0.25s ease-in-out;
+		-moz-transition:
+		background 0.25s ease-in-out, 
+		color 0.25s ease-in-out;
+		-webkit-transition: background 0.25s ease-in-out,
+		color 0.25s ease-in-out; 
+		
+		&:hover, li.active a {
+			text-decoration: none;
+			background: #f7f7f7; 
+			color: #000;
+		}
+		
+		li.hidden { 
+			display: none !important;
+		}
+	}
+	
+	///////// clear
+	&-clear-floats { 
+		clear: both;
+	}
+	
+	&-clearfix {
+		&:after {
+			content: ".";
+			display: block;
+			clear: both; 
+			visibility: hidden;
+			line-height: 0;
+			height: 0; 
+		}
+	}
+	
+	&-clr {
+		&:after { 
+			content: ""; 
+			display: block; 
+			height: 0; 
+			clear: both;
+			visibility: hidden;
+			zoom: 1;
+		}
+	}
+	
+	////////////// images
+	&-rounded-images {
+		img { 
+			border-radius: 9999px ;
+		}
+	}
+	
+	/////////// text align 
+	&-text-align-center {
+		text-align: center; 
+	}
+	
+	&-text-align-left { 
+		text-align: left ;
+	}
+	
+	&-text-align-right { 
+		text-align: right;
+	}	
+}
+
+/* filter button */
+
+ul.vcex-filter-links { 
+	list-style: none;
+	margin: 0 0 20px 10px; 
+	li { 
+		float: left; 
+		margin-right: 5px; 
+		margin-bottom: 5px;
+		last-child { margin-right: 0 }
+	}
+	
+	&.center { 
+		text-align: center;
+		li {
+			display: inline-block; 
+			float: none;
+		}
+	}
+}
+
+/*single image caption*/
+.wpb_single_image a { position: relative; max-width: 100%; }
+.wpb_single_image_caption { position: absolute; z-index: 2; bottom: 20px; left: 0; color: #fff; padding: 4px 10px; background: #000; opacity: 0.7; -moz-opacity: 0.7; -webkit-opacity: 0.7; }

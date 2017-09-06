@@ -1,0 +1,118 @@
+/****************************
+Tipsy
+****************************/
+.tipsy {
+	font-size: 0.769em; 
+	position: absolute;
+	padding: 5px; 
+	z-index: 99;
+	
+	&-inner {
+		background-color: #000;
+		color: #FFF;
+		max-width: 200px;
+		padding: 5px 8px 4px 8px; 
+		text-align: center;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	}
+	
+	&-arrow { 
+		position: absolute;
+		width: 0; 
+		height: 0; 
+		line-height: 0; 
+		border: 5px dashed #000; 
+	}
+	
+	&-arrow-n { 
+		border-bottom-color: #000;
+	}
+	
+	&-arrow-s { 
+		border-top-color: #000;
+	}
+	
+	&-arrow-e { 
+		border-left-color: #000;
+	}
+	
+	&-arrow-w { 
+		border-right-color: #000;
+	}
+	
+	&-n{
+		.tipsy-arrow { 
+			top: 0px; 
+			left: 50%;
+			margin-left: -5px; 
+			border-bottom-style: solid;
+			border-top: none; 
+			border-left-color: transparent;
+			border-right-color: transparent;
+		}
+	}
+	
+	&-nw{
+		.tipsy-arrow { 
+			top: 0;
+			left: 10px; 
+			border-bottom-style: solid;
+			border-top: none; 
+			border-left-color: transparent;
+			border-right-color: transparent; 
+		}
+	}
+	
+	&-ne{
+		.tipsy-arrow { 
+			top: 0;
+			left: 10px; 
+			border-bottom-style: solid;
+			border-top: none; 
+			border-left-color: transparent;
+			border-right-color: transparent; 
+		}
+	}
+	
+	&-s{
+		.tipsy-arrow { 
+			bottom: 0; 
+			left: 50%;
+			margin-left: -5px;
+			border-top-style: solid;
+			border-bottom: none;
+			border-left-color: transparent; 
+			border-right-color: transparent;
+		}
+	}
+	
+	&-sw {
+		.tipsy-arrow {
+			bottom: 0;
+			left: 10px; 
+			border-top-style: solid;
+			border-bottom: none;
+			border-left-color: transparent; 
+			border-right-color: transparent; 
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

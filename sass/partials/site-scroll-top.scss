@@ -1,0 +1,37 @@
+@import "../core-mixin";
+/* Scroll Top */ 
+#site-scroll-top { 
+	position: fixed;
+	right: 40px;
+	bottom: 80px; 
+	color: $text-color;
+	height: 41px;
+	line-height: 35px;
+	width: 41px; 
+	font-size: 16px;
+	background: none; 
+	border-bottom: 1px dashed $trace;
+	text-align: center; 
+	z-index: 999; 
+	visibility: hidden; 
+	opacity: 0; 
+	-moz-opacity: 0;
+	-webkit-opacity: 0; 
+	transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out; 
+	
+	&:hover { 
+		border-color: transparent;
+		text-decoration: none;
+		color: $link-color; 
+	}
+	
+	&.show { 
+		display: block;
+		visibility: visible;
+		opacity: 1;
+		-moz-opacity: 1; 
+		-webkit-opacity: 1; 
+	}
+}

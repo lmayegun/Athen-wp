@@ -1,0 +1,95 @@
+/****************************************
+Blog Grid 
+****************************************/
+/* Blog Grid entry */ 
+.vcex-blog{
+	&-entry{
+		margin: 0 0 20px 0px;
+	}
+	&-entry-details { 
+		padding: 20px;
+		border: 1px dashed $sec-color; 
+		
+		.vcex-button {
+			font-size: 0.923em; 
+		}
+	}
+	
+	&-entry-media {
+		margin: 0 0 -1px;
+		position: relative;
+		
+		img { 
+			display: block;
+			width: 100%; 
+		}
+	}
+	
+	&-entry-title {
+		font-size: 1.231em;
+		margin: 0;
+		line-height: 1.5em;
+		font-weight: normal;
+	}
+	
+	&-entry-excerpt{
+		p{
+			&:last-child { margin: 0; }
+			&:last-child { margin: 0; }
+		}
+	}
+	
+	&-entry-date { 
+		font-size: 0.923em;
+		color: #777;
+		list-style: none;
+		margin: 0 0 5px; 
+	}
+	
+	&-entry-readmore-wrap {
+		padding-top: 15px;
+	}
+	
+	///////////////////////////////////// Grid 
+	&-grid{
+		&.left-thumbs{
+			.span_1_of_1 { 
+				float: none;
+				border: none; 
+			
+				.vcex-blog-entry{
+					&-media { 
+						width: 45%;
+						float: left;
+						padding: 0 30px 0 0; 
+					}
+					
+					&-details { 
+						width: 55%;
+						float: right;
+						background: none; 
+						border: none; 
+						padding: 0; 
+					}
+				}
+			}
+		}
+		
+		////////// Wrap 
+		&-wrap{
+			///// Filter
+			ul.vcex-blog-filter{
+				li{
+					border: 1px dashed $pri-color;
+				}
+			}
+			
+			/////Pagination
+			ul.page-numbers{
+				li{
+					border: 1px dashed $pri-color;
+				}
+			}
+		}
+	}
+}

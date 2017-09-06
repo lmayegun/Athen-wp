@@ -1,0 +1,277 @@
+/*********************************
+SuperFish Third Party 
+*********************************/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu li {
+	position: relative;
+	white-space: nowrap;
+}
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+.sf-menu > li {
+	float: left;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+	display: block;
+}
+
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+/*** Megamenu ***/
+.sf-menu {
+	
+	> li.megamenu {
+		position: inherit !important;
+		ul {
+			&:after, 
+			&:before {
+				display: none !important;
+			}
+		}
+		
+		&.hide-headings > ul.sub-menu > .menu-item-has-children > a { display: none; }
+		
+		&.col {
+		
+			&-1 {
+				ul.sub-menu > {
+					li { width: 100%; }
+				}
+			}
+			
+			&-2 {
+				> ul.sub-menu > {
+					li { width: 50%; }
+					li:nth-child(3n) { clear: both; }
+				}
+			}
+			
+			&-3 {
+				> ul.sub-menu > {
+					li { width: 33.33%; }
+					li:nth-child(4n) { clear: both; }
+				}
+			}
+			
+			&-4 {
+				> ul.sub-menu > {
+					li { width: 25%; }
+					li:nth-child(5n) { clear: both; }
+				}
+			}
+			
+			&-5 {
+				> ul.sub-menu > {
+					li { width: 20%; }
+					li:nth-child(6n) { clear: both; }
+				}
+			}
+			
+			&-6 {
+				> ul.sub-menu > {
+					li { width: 16.66%; }
+					li:nth-child(7n) { clear: both; }
+				}
+			}
+		}
+		
+		
+		
+		> ul.sub-menu{
+			width: 100%; 
+			left: 0;
+			right: auto;
+			border-radius: 0; 
+			-moz-border-radius: 0; 
+			-webkit-border-radius: 0;
+			padding: 12px 0 0;
+			
+			.nav-arrow{
+				display:none;
+			}
+			
+			.menu-item-has-children {
+				margin-bottom: 12px;
+			
+				> a{
+					font-weight: bold; 
+					font-weight: 600;
+					color: #000;
+					font-size: 1.03em; 
+					padding: 8px 12px;
+					word-wrap: break-word; 
+					white-space: normal; 
+					
+					&:hover {
+						background: none;
+					}
+				}
+			}
+			
+			> li { 
+				display: block !important;
+				float: left !important; 
+				padding: 0px 12px;
+				width: 100%; 
+				
+				a { border: none; }
+				
+				ul { 
+					display: block !important; 
+					top: auto !important; 
+					width: 100%; 
+					min-width: 0 !important; 
+					left: auto !important; 
+					position: relative !important; 
+					opacity: 1 !important; 
+					border: none !important; 
+					padding: 0 !important;
+					box-shadow: none !important;
+				}
+			}
+		
+			> li {
+				border-left: 1px solid #eee;
+					
+				> ul.sub-menu > li > ul.sub-menu a:before { 
+				display: inline-block; 
+				content: "\f105";
+				margin-right: 7px;
+				font-family: 'FontAwesome';
+				}
+					
+			&:first-child { border-left: none; }
+					
+			}
+		}		
+	}
+}
+
+/**-- Main Menu Default --**/
+
+/** Arrows **/
+#site-navigation {
+	.dropdown-menu {
+		li {
+			a {
+				.nav-arrow {
+					margin-left: 4px; 
+					margin-right: 0;
+				}
+			}
+		}
+		
+		ul {
+			a{
+				&.sf-with-ul{
+					 padding-right: 25px;
+				}
+			}
+		}	
+	}
+	
+	.sf-menu {
+		> li ul li {
+			.nav-arrow {
+				position: absolute;
+				top: 50%;
+				right: 0px;
+				height: 10px;
+				line-height: 10px;
+				margin-top: -5px;
+			}
+		}
+	}
+}
+
+/* Fixed Height */
+.nav-custom-height{
+	&.navbar-style-one{
+		margin-top: 0; 
+		top: 0;
+		
+		.dropdown-menu{
+			ul {
+				box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+				&:before, &:after{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+/* Top Border */
+#site-navigation-wrap{
+	.nav-dropdown-top-border {
+		.dropdown-menu {
+			> li > ul {
+				border: none;
+				border-top: 3px solid transparent;
+				box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+			}
+			
+			ul{
+				&before, &after{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+/* Left DropDown */
+#site-navigation {
+	.dropdown-menu{
+		li{
+			&.left-dropdowns{
+				ul {
+					ul {
+						left: auto;
+						right: 100%;
+					}
+					
+					.fa-angle-right { 
+						left: 9px;
+						right: auto;
+						
+						&:before {
+							content: "\f104";
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.sf-menu {
+		li{
+			&.left-dropdowns{
+				ul{
+					a.sf-with-ul { 
+						padding-left: 25px; 
+						padding-right: 12px;
+					}
+				}
+			}
+		}
+	}
+}

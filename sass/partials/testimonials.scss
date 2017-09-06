@@ -1,0 +1,70 @@
+/***************************************************************************
+TESTIMONIALS
+- testimonials-entry
+- testimonials-entry-author
+- testimonials-entry-avatar
+- testimonials-entry-company
+- testimonials-entry-content
+- testimonials-entry-meta
+***************************************************************************/
+.testimonial{
+	&-entry{
+		&-content { 
+			position: relative;
+			border: 1px solid #eee; 
+			background: #f7f7f7;
+			padding: 20px;
+			border-radius: 3px;
+			
+			p {
+				margin: 0 0 15px;
+				&:last-child { margin: 0; }
+			}
+		}
+		
+		&-bottom { margin-top: 20px; }
+		
+		&-thumb { 
+			float: left;
+			margin-right: 20px; 
+			min-width: 45px; 
+			
+			img { 
+				display: block;
+				padding: 3px; 
+				border: 1px solid #eee; 
+				border-radius: 50%;
+				width: 45px;
+				height: 45px; 
+			}
+		}
+		
+		&-meta { float: left; }
+		
+		&-author { 
+			display: block;
+			font-weight: bold;
+			font-weight: 600;
+			color: #000; 
+			font-size: 1.077em; 
+		}
+		
+		&-company { 
+			margin-top: -2px;
+			display: block;
+			color: #999;
+			font-size: 13px; 
+		}
+	}
+	
+	&-caret { 
+		position: absolute;
+		display: block;
+		background: url("images/base/testimonials-arrow.png") no-repeat; 
+		left: 10px;
+		height: 12px;
+		width: 20px; 
+		bottom: -12px;
+	}
+	
+}

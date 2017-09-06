@@ -1,0 +1,140 @@
+/************************************************
+Testimonial Sider + Grid 
+************************************************/
+.container.full-screen .container .entry.container { width: 100% !important }
+
+/* Grid */ 
+.vcex-testimonials{
+	&-filter { 
+		list-style: none !important;
+		margin: 0 0 15px !important;
+		
+		li { 
+			float: left; 
+			margin-right: 5px; 
+			margin-bottom: 5px;
+			&:last-child { margin-right: 0; }
+		}
+	}
+	
+	////////////////////// Slider 
+	&-fullslider { 
+		padding: 40px 0; 
+		font-size: 21px;
+		text-align: center;
+		
+		.entry {
+			font-weight: 300;
+			padding: 0 30px; 
+			
+			p:last-child {
+				margin: 0; 
+			}
+		}
+		
+		///////////// author
+		&-author { 
+			font-size: 14px;
+			display: block; 
+			text-align: center;
+			margin: 20px 0 5px; 
+		}
+		
+		&-company { 
+			display: block;
+		}
+		
+		&r-avatar { 
+			margin-bottom: 20px;
+			img {
+				width: 70px;
+				height: 70px;
+				margin: 0 auto;
+				display: block;
+				border-radius: 50%;
+				box-shadow: none !important;
+			}
+		}
+		
+		////////////////// dot 
+		.sp-buttons {
+			position: relative; 
+			top: auto;
+			left: auto;
+			text-align: center;
+			margin: 0 !important; 
+		}
+		
+		.sp-button {
+			display: inline-block;
+			height: 12px; 
+			width: 12px; 
+			margin-left: 5px;
+			margin-right: 0; 
+			cursor: pointer;
+			background: #ddd;
+			border: 0;
+			&:first-child { margin-left: 0 ;}
+		}
+		
+		///////////////////////// arrow 
+		&.has-arrows {
+			.entry { 
+				padding-left: 100px; 
+				padding-right: 100px;
+			}
+			
+			.sp-arrow { 
+				font-size: 34px;
+				color: #ccc; 
+				background: none;
+				border-radius: 50%; 
+				height: 50px;
+				line-height: 50px;
+				width: 50px;
+				&:hover {
+					color: #000;
+				}
+			}
+		}
+		
+		///////////////////// thiumbs 
+		&.has-thumbs {
+			.sp-nc-thumbnails {
+				text-align: center; 
+				padding-top: 20px;
+				width: 100% !important;
+			}
+			
+			sp-nc-thumbnail-container { 
+				display: inline-block;
+				float: none; 
+			}
+		}
+		
+		////////////////////// light skin 
+		&.light-skin { 
+			color: #fff;
+			
+			.sp-button {
+				background: #fff; 
+				opacity: 0.6;
+			}
+			
+			.sp-button:hover,
+			.sp-selected-button { 
+				background: #fff; 
+				opacity: 1;
+			}
+			
+			.sp-arrow {
+				color: #fff; 
+				opacity: 0.8; 
+				&:hover {
+					opacity: 1; 
+					color: #fff;
+				}
+			}	
+		}
+	}
+}

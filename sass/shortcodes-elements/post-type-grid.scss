@@ -1,0 +1,78 @@
+/****************************************
+Post Type Grid 
+****************************************/ 
+/* Grid Main */ 
+.vcex-post-type{
+	&-entry-details { 
+		padding: 15px;
+		border: 1px solid #eee;
+	}
+	
+	&-entry-media { 
+		margin: 0; 
+		position: relative;
+		overflow: hidden;
+		
+		img {
+			display: block;
+			margin: 0 auto; 
+		}
+	}
+	
+	&-entry-title { 
+		font-size: 1.231em; 
+		margin: 0;
+		line-height: 1.5em;
+		font-weight: normal;
+	}
+	
+	&-entry-date { 
+		font-size: 0.923em; 
+		color: #777; 
+		list-style: none; 
+		margin: 0 0 5px; 
+	}
+	
+	&-entry-excerpt {
+		p:last-child {
+			margin: 0;
+		}
+	}
+	
+	&-entry-readmore-wrap { 
+		padding-top: 15px;
+	}
+	
+	//////////////////////// Grid 
+	&-grid{
+		&.left-thumbs{
+			.span_1_of_1{
+				.vcex-post-type-entry-media { 
+					float: left; 
+					margin: 0; 
+					width: 45%;
+				}
+				
+				.vcex-post-type-entry-details { 
+					float: right;
+					width: 55%;
+					border: none;
+					padding: 0 0 0 30px;
+				}
+			}
+		}
+		
+		//////////////// No Margin 
+		&.vcex-no-margin-grid {
+			.vcex-post-type-entry-details { 
+				background: #262626; 
+				border: none; 
+				color: #787878;
+			}
+			
+			.vcex-post-type-entry-title {
+				a { color: #fff; }
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/*************************************
+WP Gallery 
+*************************************/
+.gallery-item {
+	padding: 0 10px;
+	
+	img{
+		&:hover { opacity: 0.8; }
+	}
+}
+
+.gallery-caption { 
+	font-size: 0.923em; 
+	background: #f7f7f7; 
+	border: 1px solid #e4e4e4;
+	border-top: none;
+	text-align: center; 
+	padding: 5px 10px; 
+}
+
+#wrap .gallery { 
+	margin: 0 -10px;
+}
+
+#wrap {
+	.wpex-gallery {
+		p { margin: 0; }
+	}
+}
+
+.content-full-width .gallery-item { margin-bottom: 15px; }
+.content-left-sidebar .gallery-item,
+.content-right-sidebar .gallery-item { margin-bottom: 10px; }
+.wpex-gallery { margin-bottom: 15px; }
+
+

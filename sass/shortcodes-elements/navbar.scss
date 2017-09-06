@@ -1,0 +1,75 @@
+/********************************
+Navbar
+********************************/
+.vcex-navbar {
+	a { 
+		display: block;
+		float: left;
+		&:hover { text-decoration: none; }
+		
+		&.has-bg-hover:hover {
+			border-color: inherit; 
+		}
+		
+		.fa { 
+			margin-right: 7px;
+		}
+	}
+	
+	&.style-simple {
+		a { 
+			display: inline-block; 
+			margin-right: 5px; 
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	
+	&.align-right {
+		a { 
+			float: right;
+			margin-left: 5px;
+			margin-right: 0;
+		}
+	}
+	
+	&.align-left {
+		a { 
+			float: left; 
+		}
+	}
+	
+	&.align-center { 
+		text-align: center; 
+		a {
+			float: none;
+			display: inline-block;
+		}
+	}
+	
+	&.style-buttons {
+		a {
+			margin: 0 5px 5px 0; 
+			color: #888; 
+			font-size: 0.923em; 
+			padding: 4px 10px;
+			font-size: 1em;
+			border: 1px solid #ddd;
+			transition: all 0.15s ease; 
+			-webkit-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease; 
+			-moz-transition: all 0.15s ease; 
+			
+			&:hover, &.active { 
+				background: #f7f7f7;
+				color: #000;
+			}
+		}
+	}
+	
+	
+	
+}
+
+

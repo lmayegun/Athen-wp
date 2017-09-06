@@ -1,0 +1,17 @@
+/*****************
+List 
+*****************/
+.vcex-list_item { 
+	margin-bottom: 5px; 
+	
+	.vcex-icon-wrap { 
+		margin-right: 10px;
+		text-align: center;
+	}
+	
+	a{
+		&:hover {
+			text-decoration: none !important;
+		}
+	}
+}

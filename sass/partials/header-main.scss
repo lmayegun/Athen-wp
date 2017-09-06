@@ -1,0 +1,94 @@
+@import "../core-mixin";
+#site-header{
+
+	//-- Header One Start --//
+	&.header-one{
+		
+		// Header Main  
+		.header-main {
+			margin-top: 1px; /* re-align components into it proper place */
+			padding-top : 40px;
+			padding-bottom : 40px;
+			padding-left: 20px;
+			padding-right: 10px;
+			position: relative;
+			border-bottom: 1px dashed $trace;
+			
+			// Logo 
+			.site-branding { 
+				//margin-right: 30px;
+				a{
+					font-size: 30px;
+				}
+			}
+			
+			// Menu  
+			.navbar{
+				float: right;
+				&.navbar-style-{
+					&one{ 
+						a:link{ color: $black;}
+					}
+				}
+				.mobile-menu-toggle {
+					float: left;
+					position: relative;
+					padding: 16px 0px 14px 14px;
+					font-size: 12px;
+					color: white;
+					&:hover{
+						color: #daa520;
+					}
+				}
+			}
+			
+			// Header Free Text
+			.header-free-txt{ 
+				float:left;
+				color:$white;
+				.fa{ color: $white;}
+				a{
+					&:link{ color:$link-color;}
+					&:hover{ color:$sec-color;}
+					&:visited{ color:$link-color;}
+				}
+			}
+			
+			// Social-icons
+			.social-icons{ 
+				float:right;
+				a{
+					&:link{ color:$link-color;}
+					&:hover{ color:$sec-color;}
+					&:visited{ color:$link-color;}
+				}
+			}
+			
+			// Search Icon
+			.search-icon{ 
+				float: right;
+				a{
+					&:link{ color:$link-color;}
+					&:hover{ color:$sec-color;}
+					&:visited{ color:$link-color;}
+				}
+			}
+			
+			// Header Main Free Txt
+			.header-main-free-txt {
+				float: right;
+				margin-right: 15px;
+				padding-top: 10px;
+				font-size : 15.4px;
+				width: 60%;
+				text-align: right;
+				.fa {
+					margin-left: 20px;
+					margin-right: 10px;
+					color : #000;
+				}
+			}
+		}
+	}
+	//-- Header One End --//
+}

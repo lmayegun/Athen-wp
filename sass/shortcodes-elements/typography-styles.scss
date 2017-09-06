@@ -1,0 +1,49 @@
+/**************************************
+Typography Visual Composer Light 
+**************************************/
+/* typography styles */
+.vcex-skin-light {
+	.vcex-teaser-two { 
+		background-color: #000; 
+		background-color: rgba(0,0,0,0.25); 
+		border-color: rgba(0,0,0,0.1);
+	}
+
+	.vcex-icon-box-three{
+		.vcex-icon-box-three-icon { 
+			background: #fff; 
+			color: #4d4d4d;
+		}
+		
+		.vcex-teaser-content {
+			background-color: #000; 
+			background-color: rgba(0,0,0,0.25); 
+			border-color: rgba(0,0,0,0.1);
+		}
+	}
+	
+	.vcex-icon-box-four { 
+		border-color: #fff ;
+		
+		.vcex-icon-box-four-icon { 
+			color: #fff;
+		}
+		
+		&.vcex-icon-hover-enabled{
+			&:hover { 
+				background: #000;
+				background: rgba(0,0,0,0.5) !important;
+				border-color: rgba(0,0,0,0.5);
+			}
+		}
+	}
+	
+	.vcex-icon-box-five { 
+		background: #000; 
+		background: rgba(0,0,0,0.5) !important;
+		
+		.vcex-icon-box-five-icon { 
+			color: #fff;
+		}
+	}
+}

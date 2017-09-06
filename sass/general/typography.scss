@@ -1,0 +1,146 @@
+@import "../core-mixin";
+/***************** Typography ****************/ 
+em { 
+	font-style: italic;
+}
+
+strong { 
+	font-weight: bold;
+	font-weight: 600;
+}
+
+small { 
+	font-size: 80%;
+}
+
+hr { 
+	border: solid #e4e4e4; 
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 40px 0; 
+	height: 0; 
+}
+
+/* Ems */
+.em-{
+	&14px { font-size: 14px; }
+	&16px { font-size: 16px; }
+	&18px { font-size: 18px; }
+	&21px { font-size: 21px; }
+}
+
+a { 
+	color: $link-color;
+	text-decoration: none;
+	outline: none; 
+	&:hover { 
+		text-decoration: underline;
+		color: $link-hover;
+	}
+}
+
+body.smooth-fonts { -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, h5, h6 { 
+	font-weight: bold; 
+	font-weight: 600; 
+	color: #222; 
+	line-height: 1.5;
+	margin: 30px 0 20px; 
+	
+	a { 
+		color : inherit;
+		&:hover { text-decoration: none; }
+	}
+}
+h{
+	&1 { font-size: 1.500em; margin: 0 0 20px; }
+	&2 { font-size: 1.313em }
+	&3 { font-size: 1.125em }
+	&4 { font-size: 1em }
+	&5 { font-size: 0.875em }
+	&6 { font-size: 0.750em }
+}
+
+p { margin: 0 0 20px }
+
+blockquote { 
+	background: url("images/base/quote.png") left 4px no-repeat; 
+	padding-left: 50px;
+	margin: 40px 0;
+	font-size: 1.231em;
+	color: #ababab;
+	line-height: 1.6em;
+	font-weight: 300;
+	
+	p:last-child { margin: 0 }
+}
+
+pre { 
+	position: relative; 
+	background: #f6f6f6; 
+	border: 1px solid #ddd; 
+	color: #555;
+	font-size: 0.923em; 
+	margin: 30px 0px;
+	padding: 20px; 
+	line-height: 1.7em;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap; 
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word; 
+	border-radius: 3px; 
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.06); 
+}
+
+.dropcap { 
+	display: block; 
+	float: left; 
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 3.231em; 
+	line-height: 100%;
+	&.boxed { 
+		color: #fff;
+		background: #000; 
+		padding: 5px 10px;
+	}	
+ }
+	
+//////// Theme heading 
+.theme-heading {
+	height: auto;
+	margin-bottom: 20px auto 20px auto; 
+	top: auto !important;
+	font-size: 30px;
+	font-wieight: bold;
+	color: $text-color;
+	overflow: hidden;
+	position: relative;
+	
+	span{
+		&.text{
+			display: inline-block;
+			max-width: 80%;
+			position: relative;	
+			&:after{
+				content: "";
+				display: block; 
+				position: absolute; 
+				top: 50%; 
+				border-bottom: dashed 1px none;
+				left: 100%; 
+				width: 9999px; 
+				margin-top: -1px; margin-left: 15px;
+			}
+		}
+	}
+}
+
+.text {
+    display: block;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+    line-height: 50px;
+}

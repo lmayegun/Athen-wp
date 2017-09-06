@@ -1,0 +1,126 @@
+@import "../core-mixin";
+/*------- Responsiveness ----------*/
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/*------------------- Extra Small Devices (phones, 200px and up ) -------------------------*/
+@media (min-width: 200px){
+	
+	// Boxed Layout - layout three
+	body.athen-layout-three{
+		.container{
+			width: 100%;
+		}
+		.athen-alt-capsule {
+			width: 100%;
+		}
+	}
+	
+	// Padding Layout - layout 2
+	body.athen-layout-two{ 
+		.athen-alt-capsule {
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+	
+	// CONTENT AND SIDEBAR LAYOUT
+	.posts-box{
+		width: 100%; 
+		margin-bottom: 20px;
+	}
+	
+	.post-box{
+		width: 100%; 
+		box-sizing: border-box;
+	}
+
+	.sidebar-wrap{
+		width: 100%;
+		box-sizing: border-box;
+		height: 20px;
+	}
+
+}
+
+
+
+/*------------------------- Small devices (tablets, 768px and up) -------------------------*/
+@media (min-width: 768px) { 
+		
+	// Boxed Layout
+	body.athen-layout-three{
+		.container{
+			width: 100%;
+		}
+		.athen-alt-capsule {
+			width: 100%;
+		}
+	}	
+	
+	// Boxed Layout
+	body.athen-layout-two {
+		.athen-alt-capsule {
+    		padding: 20px 30px 0px 30px;
+    		margin: 20px 30px 0px 30px;
+		}
+	}
+	
+	// Content Sidebar Layout
+	body.athen-content-layout{
+		&-full-screen{
+			.post-box{
+				width: 100%;	
+			}
+		}
+	}
+	
+}
+
+/*--------------------- Medium devices (desktops, 992px and up) -----------------*/
+@media (min-width: 992px) {
+	
+	
+	// CONTENT AND SIDEBAR LAYOUT
+	.posts-box{
+		width: 70%; 
+		margin-bottom: 20px;
+	}
+	
+	.post-box{
+		width: 70%; 
+		box-sizing: border-box;
+	}
+
+	.sidebar-wrap{
+		width: 30%;
+		box-sizing: border-box;
+		height: 20px;
+	}
+	
+	// Boxed Layout
+	body.athen-layout-three{
+		.container{
+			width: 100%;
+		}
+		.athen-alt-capsule {
+			width: 1100px;
+		}
+	}
+ }
+
+/*-------------- Large devices (large desktops, 1200px and up) -------------------*/
+@media (min-width: 1200px) {
+
+	
+	.full-width{
+		width: 100% !important;
+	}
+}
+
+/*------------- Larger devices (max than desktop, 1200px and up) -----------------*/
+@media (min-width: 1200px){
+
+}

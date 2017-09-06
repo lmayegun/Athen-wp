@@ -1,0 +1,58 @@
+@import "../core-mixin";
+/***************************************************************************
+PAGEHEADER
+- page-header-subheading
+- page-header-title
+***************************************************************************/
+.section-intro{
+	background: none;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: 1px dashed $trace;
+}
+
+.page-header-inner {
+	
+}
+
+.page-header-title{
+	display: block;
+	font-size: 21px;
+	line-height: 10px;
+	float: left;
+	font-weight: normal;
+	font-weight: 400;
+	margin: 0;
+	color: $black;
+}
+		
+.page-description {
+	font-size: 13px;
+	margin: 21px 0px 0px 0px;
+    position: absolute;
+	color: lighten($black, 60%);
+	}
+
+.page-header-breadcrumbs {
+	position: relative;
+    top: 0px;
+    font-size: 13.3px;
+    float: right;
+    color: lighten($black, 60%);
+	a {
+		color: lighten($black, 10%);
+	}
+	span{
+		padding: 0px 0px 0px 4px;
+	}
+}
+
+.centered-page-header{
+	.page-header-title, .page-description, .page-header-breadcrumbs{
+		display: inline-block;
+		float: none;
+		text-align: center;
+		width: 100%;
+		position: inherit;
+	}
+}

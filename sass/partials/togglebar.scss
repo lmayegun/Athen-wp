@@ -1,0 +1,27 @@
+/**********************************************************************
+TOGGLEBAR -
+- togglebar-button
+- togglebar-content
+- togglebar-layout
+**********************************************************************/
+#toggle-bar-wrap{
+	&.toggle-bar-fade{
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: #fff;
+		z-index: -1;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		border-bottom: 1px solid #ccc;
+		//box-shadow: 0 0 6px rgba(0,0,0,0.25);
+		transition: all 0.25s ease-in-out;
+	}
+	
+	&.active-bar{
+	    visibility: visible;
+		opacity: 1;
+		z-index: 10001;
+	}
+}

@@ -1,0 +1,69 @@
+/***************** BUTTONS ********************/
+.color-button {
+	padding: 0 15px; 
+	height: 34px; 
+	line-height: 34px;
+	margin: 0 5px 5px 0; 
+	display: inline-block; 
+	font-size: 13px; 
+	color: #fff;
+	border: 0; 
+	box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 3px -1px rgba(45,60,72,0.5);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: 0 -1px rgba(0,0,0,0.4);
+	outline: none;
+	-webkit-appearance: none;
+	-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 3px -1px rgba(45,60,72,0.5); 
+	-moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 3px -1px rgba(45,60,72,0.5); 
+	border: 1px solid rgba(0,0,0,0.15);
+	background-color: #3f90bd;
+	
+	&:hover {
+		text-decoration: none;
+		text-decoration: none; 
+		opacity: 0.8; 
+		-moz-opacity: 0.8;
+		-webkit-opacity: 0.8;
+	}
+	
+	&:active{
+		box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; 
+		-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset;
+		-moz-box-shadow: 0 2px 2px rgba(0,0,0,.1) inset;
+	}
+	
+	&.small { font-size: 11px; }
+	&.medium { font-size: 13px; }
+	&.large { font-size: 16px; }
+	&.align-left { float: left; }
+	&.align-right { float: right; margin-right: 0; margin-left: 5px; }
+	
+	
+	&.grey, &.grey:hover { background-color: #bbb;	}
+	
+	&.black, &.black:hover { background-color: #333; }
+	
+	&.blue, &.blue:hover { background-color: #3f90bd; }
+	
+	&.orange, &.orange:hover { background-color: #ff6040; }
+	
+	&.gold, &.gold:hover { background-color: #ffaa33; }
+	
+	&.green, &.green:hover { background-color: #87bf17; }
+	
+	&.purple, &.purple:hover { background-color: #a73df2; }
+	
+	&.teal, &.teal:hover { background-color: #00b3b3; }
+	
+	&.pink, &.pink:hover { background-color: #f261c2; }
+	
+	&.brown, &.brown:hover { background-color: #804b35; }
+	
+	&.red, &.red:hover { background-color: #F73936; }
+	
+	&rosy, &.rosy:hover { background-color: #EA2487; }
+	
+	&.white, &.white:hover { background-color: #fff; color: #444; }
+}

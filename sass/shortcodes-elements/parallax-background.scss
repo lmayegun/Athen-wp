@@ -1,0 +1,17 @@
+/****************** Parallax Background *******************/
+.parallax-yes {
+	position: relative;
+	
+	.container { 
+		position: relative;
+		z-index: 1; 
+		}
+	.wpb_column { 
+		z-index: 1; 
+		position: relative; 
+		}
+	.center-row-inner {
+		z-index: 1; 
+		position: relative;
+		}
+}

@@ -1,0 +1,108 @@
+@import "core-mixin";
+
+// Override Bootstrap Variable
+@import "3rd-lib/bootstrap_override";
+// Bootstrap variable e.g color, fonts-size 
+@import "3rd-lib/bootstrap/_variables";
+// Bootstrap mixins needed to use any bootrap sass "@include" mixins
+/* mixin working */
+@import "3rd-lib/bootstrap/mixins";
+
+/***************************************************************************
+--------------------------- GENERAL STYLES -------------------------------
+***************************************************************************/
+@import "general/resets";
+@import "general/accent-color";
+@import "general/animation-page-transition";
+@import "general/body-main-commons";
+@import "general/boxed-layouts";
+@import "general/form-and-button-template";
+@import "general/grid";
+@import "general/helper";
+@import "general/hover-styles-animation";
+@import "general/ilightbox-core";
+@import "general/slider-pro";
+@import "general/superfish-third-party";
+@import "general/tipsy";
+@import "general/typography";
+@import "general/wordpress-styles";
+@import "general/wp-gallery";
+@import "general/wp-calender";
+@import "general/site-layouts";
+
+/***************************************************************************
+---------------------------- PARTIALS STYLES--------------------------------
+***************************************************************************/
+@import "partials/blogs";
+@import "partials/single-post";
+@import "partials/cart";
+@import "partials/footer";
+@import "partials/header-top";
+@import "partials/header-main";
+@import "partials/header-bottom";
+@import "partials/header";
+@import "partials/meta";
+@import "partials/miscellaneous";
+@import "partials/overlays";
+@import "partials/page-header";
+@import "partials/password-protection-form";
+@import "partials/portfolio";
+@import "partials/search";
+@import "partials/sidebar";
+@import "partials/staff";
+@import "partials/social";
+@import "partials/social-share";
+@import "partials/testimonials";
+@import "partials/togglebar";
+@import "partials/post-series";
+@import "partials/pagination";
+@import "partials/menu-style";
+@import "partials/post-filter-btn";
+@import "partials/widgets";
+@import "partials/author-bio";
+@import "partials/comment-area";
+@import "partials/color-buttons";
+@import "partials/site-scroll-top";
+
+
+/***************************************************************************
+---------------------------- SHORTCODES STYLES-----------------------------
+***************************************************************************/
+@import "shortcodes-elements/common-helper";
+@import "shortcodes-elements/buttons";
+@import "shortcodes-elements/dividers";
+@import "shortcodes-elements/icon-box";
+@import "shortcodes-elements/lists";
+@import "shortcodes-elements/parallax-background";
+@import "shortcodes-elements/parallax-bg";
+@import "shortcodes-elements/pricing-tables";
+@import "shortcodes-elements/recent-news";
+@import "shortcodes-elements/skills-and-progress-bar";
+@import "shortcodes-elements/testimonial-slider";
+@import "shortcodes-elements/video-background"; 
+@import "shortcodes-elements/bullets";
+@import "shortcodes-elements/callout";
+@import "shortcodes-elements/login-form";
+@import "shortcodes-elements/newsletter-form";
+@import "shortcodes-elements/search-bar";
+@import "shortcodes-elements/post-type-grid";
+@import "shortcodes-elements/portfolio-grid";
+@import "shortcodes-elements/blog-grid";
+@import "shortcodes-elements/blog-grid-carousel";
+@import "shortcodes-elements/image-grid";
+@import "shortcodes-elements/teaser-boxes";
+@import "shortcodes-elements/milestone";
+@import "shortcodes-elements/typography-styles";
+@import "shortcodes-elements/image-swap";
+@import "shortcodes-elements/navbar";
+@import "shortcodes-elements/feature-box";
+@import "shortcodes-elements/social-links";
+@import "shortcodes-elements/terms-grid";
+@import "shortcodes-elements/headings";
+@import "shortcodes-elements/spacing";
+
+// Bootstrap
+@import "general/responsive";
+@import "3rd-lib/bootstrap/_responsive-utilities";
+@import "3rd-lib/bootstrap/_grid";
+@import "3rd-lib/bootstrap/_type";

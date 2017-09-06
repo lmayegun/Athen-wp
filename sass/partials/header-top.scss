@@ -1,0 +1,136 @@
+@import "../core-mixin";
+/***************************************************************************
+TOPBAR
+- topbar-content
+- topbar-layout
+- topbar-menu
+- topbar-social
+***************************************************************************/
+#site-header{
+	//-- Header One Start --//
+	&.header-one{
+		///////////////HEADER TOPBAR
+		.header-top {
+			background : none;
+			padding : 0px 20px;
+			line-height : 3 ;
+			position : relative;
+			overflow : inherit;
+			border-bottom: 1px dashed $trace;
+			
+			// Logo 
+			.site-branding { 
+				display: none;
+				margin-right: 30px;
+				a{
+					font-size: 30px;
+					&:link{color:$link-color;}
+					&:visited{color:$link-hover;}
+				}
+			}
+			
+			// Header Free Text
+			.header-top-free-txt{ 
+				float:left;
+				color:$text-color;
+				.fa{ color: $text-color;}
+				a{
+					&:link{ color:$link-color;}
+					&:hover{ color:$sec-color;}
+					&:visited{ color:$link-color;}
+				}
+			}
+			
+			// MOBILE MENU TOGGLE 
+			.navbar{
+				.mobile-menu-toggle {
+					float: left;
+					position: relative;
+					padding: 16px 0px 14px 14px;
+					font-size: 12px;
+					color: white;
+					&:hover{
+						color: #daa520;
+					}
+				}
+			}
+			
+			// Social-icons
+			.social-icons{ 
+				float:right;
+				a{
+					&:link{ color:$link-color;}
+					&:hover{ color:$sec-color;}
+					&:visited{ color:$link-color;}
+				}
+			}
+			
+			// Search Icon
+			.search-icon{ 
+				float: right;
+				a{
+					&:link{ color:$link-color;}
+					&:hover{ color:$sec-color;}
+					&:visited{ color:$link-color;}
+				}
+			}
+		}
+	}
+	//-- Header One End --//
+	
+	////////////////////////////// Sticky Effect JS 
+	.is-sticky {
+		.header-top{
+			z-index: 9;
+			padding: 10px 0px !important;
+			margin: 0px auto;
+			width: inherit;
+			z-index: 9999;
+			
+			// SITE LOGO 
+			.site-branding {
+				display: inline-block;
+				float: left; 
+				height: 100%;
+				line-height: 45px;
+				height: 45px;	
+			}
+			
+			.navbar.navbar-style-one .dropdown-menu > li.mobile-icon {
+				top: -16px;
+				margin: 0px -10px 0px 0px;
+				position: relative;
+				left: 0px;
+			}
+				
+			navbar.navbar-style-one {
+				float: left;
+				top: 3px;
+			}
+		}
+	}
+}
+
+#topbar-capsule{
+	
+	#top-bar{
+		padding: 20px 0px;
+		&.top-bar-left #top-bar-content{ float: left; }
+		&.top-bar-left #top-bar-social { float: right; }
+		&.top-bar-left #top-bar-social-alt { float: right; }
+		&.top-bar-right #top-bar-content{ float: right; }
+		&.top-bar-right #top-bar-social { float: left; }
+		&.top-bar-left #top-bar-social-alt { float: right; }
+		
+		#top-bar-content{
+				margin: 0px 20px 0px 0px;
+		}
+		
+		#top-bar-social{					
+				margin: 0px 20px 0px 0px;
+		}
+	}
+}
+
+
+	

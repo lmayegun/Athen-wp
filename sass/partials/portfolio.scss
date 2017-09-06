@@ -1,0 +1,143 @@
+/***************************************************************************
+PORTFOLIO - 
+- portfolio-entry
+- portfolio-entry-content 
+- portfolio-entry-excerpt
+- portfolio-entry-media
+- portfolio-entry-title
+--------------------------   single
+- portfolio-single-comments
+- portfolio-single-content
+- portfolio-single-gallery
+- portfolio-single-layout
+- portfolio-single-media
+- portfolio-single-related
+- portfolio-single-related-heading
+- portfolio-single-share
+- portfolio-single-title
+***************************************************************************/
+
+/*entry*/
+.portfolio-entry {
+	box-sizing: border-box;
+	margin: 0px 0px 15px 0px;
+	&-title{
+		margin: 10px 0px;
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+	
+	&-categories { 
+		margin: -5px 0 10px; 
+		
+		a {
+			font-size: 0.923em; 
+			color: #777; 
+			list-style: none;
+		}
+	}
+	
+	&-media {
+		position: relative; 
+		overflow: hidden;
+		
+		img {
+			display: block; 
+			width: 100%;
+			box-shadow: #000 0em 0em 0em;
+		}
+		&-link{
+			display: block; 
+		}
+	}
+	
+	&-details{
+		background: #f7f7f7; 
+		border: 1px solid #eee; 
+		padding: 0px 15px 15px;
+		
+		p { 
+			margin-bottom: 15px ;
+			
+			&:last-child{
+				margin: 0;
+			}
+		}	
+	}
+	
+	&-excerpt{
+		margin: 20px 0px;
+	}
+	
+	&-readmore-wrap { 
+		padding-top: 15px; 
+	}
+}
+
+/* No Margin Grid */
+
+.portfolio-no-margins {
+	.col {
+		margin: 0 !important;
+		padding: 0 !important; 
+	}
+	
+	.portfolio-entry-details { 
+		background: #262626;
+		border: none;
+		color: #787878; 
+	}
+}
+
+.vcex-no-margin-grid, 
+.portfolio-no-margins {
+	.portfolio-entry-details { 
+		background: #262626;
+		border: none;
+		color: #787878;
+	}
+	
+	portfolio-entry-title {
+		a { 
+			color: #fff;
+		}
+	}
+}
+
+/* Column Grid */
+#portfolio-entries .portfolio-entry.span_1_of_1 {
+	margin: 0 0 30px;
+	float: none; 
+	border: none;
+	
+	.portfolio-entry-media { 
+		width: 45%;
+		float: left;
+		margin: 0 30px 0 0; 
+	}
+	
+	.portfolio-entry-details {
+		background: none;
+		border: none;
+		padding: 0; 
+	}
+	
+	.portfolio-entry-title { 
+		margin: 0;
+	}
+}
+
+/* Singular */
+#portfolio {
+	&-post-comments { 
+		margin-top: 50px;
+	}
+	
+	&-single-media { 
+		margin-bottom: 30px;
+	}
+}
+
+/* Related Post */
+.no-composer .related-portfolio-posts{ margin-top: 30px; }
+.related-portfolio-posts { margin-bottom: 30px; }

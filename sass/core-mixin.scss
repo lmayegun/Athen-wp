@@ -1,0 +1,56 @@
+$pri-color 		: #333;
+$sec-color 		: #ccc ; 
+$ter-color 		: #ccc; 
+$text-color 	: $pri-color;
+$link-color  	: #000; 
+$link-hover 	: $sec-color;
+$white 			: white;
+$black 			: #000000;
+$trace			: red;
+$trace-2		: #333;
+
+@mixin color-social-icons( $color : black  ){
+	@if $color == black {
+		.social-widget-dribble { a{background: $color; } }
+		.social-widget-facebook { a{background: $color; } }
+		.social-widget-flickr { a{background: $color;} }
+		.social-widget-vk { a{background: $color;} }
+		.social-widget-github { a{background: $color;} }
+		.social-widget-google-plus { a{background: $color;} }
+		.social-widget-instagram { a{background: $color;} }
+		.social-widget-linkedin { a{background: $color;} }
+		.social-widget-pinterest { a{background: $color;} }
+		.social-widget-tumblr { a{background: $color;} }
+		.social-widget-twitter { a{background: $color;} }
+		.social-widget-skype { a{background: $color;} }
+		.social-widget-trello { a{background: $color;} }
+		.social-widget-foursquare { a{background: $color;} }
+		.social-widget-renren { a{background: $color;} }
+		.social-widget-xing { a{background: $color;} }
+		.social-widget-vimeo-square{ a{background: $color;} }
+		.social-widget-vine { a{background: $color;} }
+		.social-widget-youtube { a{background: $color;} }
+		}
+	@if $color == red {
+		.social-widget-dribble { a{background: #ea4c89;} a:hover{background: #ea4c89 ;} }
+		.social-widget-facebook { a{background: #3b5998;} a:hover{background: #3b5998 ;} }
+		.social-widget-flickr { a{background: #FF0084;} a:hover{background: #FF0084 ;} }
+		.social-widget-vk { a{background: #55779b;} a:hover{background: #55779b ;} }
+		.social-widget-github { a{background: #555;} a:hover{background: #555 ;} }
+		.social-widget-google-plus { a{background: #DD4B39;} a:hover{background: #DD4B39 ;} }
+		.social-widget-instagram { a{background: #3F729B;} a:hover{background: #3F729B ;} }
+		.social-widget-linkedin { a{background: #3399CC;} a:hover{background: #3399CC ;} }
+		.social-widget-pinterest { a{background: #CB2027;} a:hover{background: #CB2027 ;} }
+		.social-widget-tumblr { a{background: #2C4762;} a:hover{background: #2C4762 ;} }
+		.social-widget-twitter { a{background: #55ACCE;} a:hover{background: #55ACCE ;} }
+		.social-widget-skype { a{background: #00AFF0;} a:hover{background: #00AFF0 ;} }
+		.social-widget-trello { a{background: #2174a6;} a:hover{background: #2174a6 ;} }
+		.social-widget-foursquare { a{background: #0CBADF;} a:hover{background: #0CBADF ;} }
+		.social-widget-renren { a{background: #2970ad;} a:hover{background: #2970ad ;} }
+		.social-widget-xing { a{background: #026466;} a:hover{background: #026466 ;} }
+		.social-widget-vimeo-square{ a{background: $color;} a:hover{background: red ;} }
+		.social-widget-vine { a{background: #00b386;} a:hover{background: #00b386 ;} }
+		.social-widget-youtube-play { a{background: #C4302B;} a:hover{background: #C4302B ;} }
+	
+	}
+}

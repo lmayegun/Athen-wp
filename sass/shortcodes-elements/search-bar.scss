@@ -1,0 +1,37 @@
+/********************************
+Search Bar 
+********************************/
+.vcex-searchbar {
+	font-size: 1.231em; 
+	position: relative; 
+
+	&-input {
+		float: left;
+		width: 70%;
+	}
+	
+	&-button { 
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 28%; 
+		height: 100%;
+		line-height: 100%;
+		padding-top: 0;
+		padding-bottom: 0; 
+	}
+	
+	&-input[type="search"] { 
+		font-size: inherit; 
+		color: inherit; 
+		text-transform: inherit;
+		letter-spacing: inherit;
+		font-weight: inherit; 
+		padding: 0.8em; 
+	}
+	
+	&-input:-webkit-autofill { 
+		-webkit-box-shadow: none; 
+	}
+}
+

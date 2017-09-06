@@ -1,0 +1,57 @@
+///////////////////////////////////////////// WP Calender //////////////////////////////////////////////////
+#wp-calendar {
+	width: 100%;
+	font-size: 13px;
+	
+	
+	caption{
+		cursor: pointer;
+		font-size: 13px;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 12px;
+		outline: 0 none !important;
+		color: #fff;
+		text-align: center;
+	}	
+	
+	thead{
+		th{
+		background: #f5f5f5;
+		border: 1px solid #ddd;
+		border-top: none;
+		font-size: 12px;
+		}
+	}
+	
+	tbody{
+		td{
+		text-align: center;
+		border: 1px solid #ddd;
+		line-height: 38px;
+		@include transition-duration(1s);
+			&:hover{
+				background: #f1f1f1;
+				color: #333;
+			}
+			a {	
+				display: block;
+				text-decoration: none;
+				background: #f1f1f1; 
+				color: #333;
+				&:hover{
+					background: #4d4d4d; 
+					color: #fff;
+				}
+			}
+		}
+	}
+	
+	tfoot{
+		td{
+		padding-top: 1px;
+		padding: 4px;
+		}
+	}
+
+}
