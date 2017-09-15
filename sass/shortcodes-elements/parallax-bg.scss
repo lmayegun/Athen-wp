@@ -24,18 +24,40 @@ section:nth-of-type(2){background:black;height:1600px;}*/
 #story-freext>div:nth-of-type(2) {
     background: url(../img/nike.png) 50% 0 no-repeat fixed;
     margin: 0;
-    height: 1600px;
+    //height: 1600px;
     position:absolute;
     top:0px;left:100px;
     width:100%;
 }
 
-#bottle>div:nth-of-type(1){
+
+#parallax-container{
+	height: 500px;
+    position: relative;
+    width: 100% !important;
+    min-width: 1000px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#parallax-container>div:nth-of-type(1){
+    /*background: url(../img/bottle.jpeg) 50% 0 no-repeat fixed;*/
+	margin: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#parallax-container>div:nth-of-type(2){
     /*background: url(../img/bottle.jpeg) 50% 0 no-repeat fixed;*/
     margin: 0;
-    height: 1200px;
+    height: 100%;
     position:absolute;
-    top:0;left:0;
+    top:0;
+	left:0;
     width:100%;   
 }
 

@@ -1077,15 +1077,9 @@
                 return;
             }
             
-            $('.parallax').scrolly({bgParallax: true});
-
-            $( '.parallax-bg' ).each( function() {
-                var $this = $( this );
-                $this.scrolly().trigger( 'scroll' );
-                $this.css( {
-                    'opacity' : 1
-                } );
-            } );
+            $('.parallax').scrolly2({
+				bgParallax: true
+			});
 
         },
 

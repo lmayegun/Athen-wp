@@ -128,6 +128,8 @@ class Athen_Theme_Js extends Athen_Framework_Init{
 
 			// Parallax bgs
 			wp_enqueue_script( 'wpex-scrolly', ATHEN_JS_DIR_URI .'lib/jquery.scrolly.js', array( 'jquery' ), false, true );
+			
+			wp_enqueue_script( 'wpex-scrolly2', ATHEN_JS_DIR_URI .'lib/scrolly.js', array( 'jquery' ), false, true );
 
 			// iLightbox
 			wp_enqueue_script( 'wpex-ilightbox', ATHEN_JS_DIR_URI .'lib/ilightbox.js', array( 'jquery' ), false, true );
