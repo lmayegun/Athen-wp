@@ -21,7 +21,7 @@ if ( is_admin() ) return;
 
 // Extract shortcode attributes
 extract( shortcode_atts( array(
-    'size'          => '20px',
+    'size'          => '80px',
     'class'         => '',
     'visibility'    => '',
 ),

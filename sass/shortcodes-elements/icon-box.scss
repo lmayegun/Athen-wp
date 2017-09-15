@@ -1,7 +1,7 @@
 /**********************
 Icon Boxes
 **********************/
-vcex-icon{
+.vcex-icon{
 	&-float-center { 
 		float: none; 
 		display: block;
@@ -98,9 +98,10 @@ vcex-icon{
 		
 		&-heading {
 			display: block;
-			font-size: 1.077em; 
-			font-weight: 600; 
-			margin: 0 0 10px; 
+			font-size: 1.077em;
+			font-weight: 600;
+			margin: 0 0 10px;
+			line-height: 30px; 
 		}
 		
 		&-link {
@@ -150,54 +151,15 @@ vcex-icon{
 			}
 			
 			.vcex-icon-box-icon { 
-				position: absolute; 
+				position: absolute;
 				left: 0;
 				top: 0;
-				font-size: 28px; 
 			}
 			
 			.vcex-icon-box-image { 
 				position: absolute;
 				left: 0; 
 				top: 0; 
-				display: block;
-			}
-		}
-		
-		/////////////////// style 7 -- right icon 
-		&.style-seven { 
-			padding-right: 50px;
-			text-align: right;
-			
-			&.no-icon { 
-				padding-right: 0;
-				&.with-background {
-					padding-left: 15px;
-				}
-			}
-			
-			&.with-background {
-				padding-right: 80px;
-			}
-			
-			p { 
-				margin: 0 0 10px;
-			}
-			
-			.vcex-icon-box-icon { 
-				position: absolute;
-				right: 0; 
-				top: 0;
-				font-size: 28px;
-				&.with-background {
-					padding: 15px;
-				}
-			}
-			
-			.vcex-icon-box-image { 
-				position: absolute;
-				right: 0;
-				top: 0;
 				display: block;
 			}
 		}
@@ -237,15 +199,14 @@ vcex-icon{
 			text-align: center;
 			
 			.vcex-icon-box-icon { 
-				height: 80px; 
+				height: 80px;
 				line-height: 80px;
-				width: 80px; 
-				font-size: 24px; 
+				width: 80px;
+				font-size: 24px;
 				margin: 0 auto 30px;
-				border-radius: 99px;
-				-webkit-border-radius: 99px;
-				-moz-border-radius: 99px;
 				padding: 0;
+				border-radius: 50%;
+				background: #ccc;
 			}
 			
 			.vcex-icon-box-link:hover .vcex-icon-box-icon { 
@@ -260,10 +221,10 @@ vcex-icon{
 		
 		////////////////////////// style 4 -- leegacy
 		&.style-four { 
-			position: relative; 
+			position: relative;
 			text-align: center;
 			padding: 30px;
-			border: 1px solid #eee; 
+			border: 1px solid #eee;
 		
 			p { 
 				margin: 0 0 10px;
@@ -334,14 +295,11 @@ vcex-icon{
 		/////////////////////////////////// style 6 --- legacy 
 		&.style-six {
 			text-align: center;
-			padding: 30px; 
+			padding: 30px;
 			background-color: #000;
-			-webkit-transition: all .2s ease-in-out; 
-			-moz-transition: all .2s ease-in-out;
-			-ms-transition: all .2s ease-in-out; 
-			-o-transition: all .2s ease-in-out;
 			transition: all .2s ease-in-out;
-			position: relative; color: #fff; 
+			position: relative;
+			color: #fff;
 			
 			p { 
 				margin: 0 0 10px;
@@ -376,6 +334,44 @@ vcex-icon{
 				font-size: 0.923em; 
 				text-transform: uppercase; 
 				letter-spacing: 2px; color: #fff; 
+			}
+		}
+		
+		/////////////////// style 7 -- right icon 
+		&.style-seven { 
+			padding-right: 50px;
+			text-align: right;
+			
+			&.no-icon { 
+				padding-right: 0;
+				&.with-background {
+					padding-left: 15px;
+				}
+			}
+			
+			&.with-background {
+				padding-right: 80px;
+			}
+			
+			p { 
+				margin: 0 0 10px;
+			}
+			
+			.vcex-icon-box-icon { 
+				position: absolute;
+				right: 0; 
+				top: 0;
+				font-size: 28px;
+				&.with-background {
+					padding: 15px;
+				}
+			}
+			
+			.vcex-icon-box-image { 
+				position: absolute;
+				right: 0;
+				top: 0;
+				display: block;
 			}
 		}
 

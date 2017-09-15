@@ -132,7 +132,7 @@ if ( $icon ) {
 // Main Classes
 $wrapper_classes = array( 'vcex-icon-box', 'clr' );
 if ( $style ) {
-    $wrapper_classes[] = 'style-'. $style;
+    //$wrapper_classes[] = 'style-'. $style;
 }
 if ( empty( $icon ) && empty( $image ) ) {
     $wrapper_classes[] = 'no-icon';

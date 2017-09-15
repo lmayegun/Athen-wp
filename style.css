@@ -7208,7 +7208,7 @@ Dividers
   display: block;
   width: 100%;
   height: 0;
-  margin: 0 auto;
+  margin: 20px auto;
   background: none; }
   .vcex-divider.solid {
     border-top: 1px solid #e8e8e8; }
@@ -7229,7 +7229,7 @@ Dividers
   .vcex-divider.has-icon {
     display: block;
     height: auto;
-    margin: 0 auto;
+    margin: 80px auto;
     text-align: center;
     border: none;
     overflow: hidden; }
@@ -7284,255 +7284,250 @@ Dividers
 /**********************
 Icon Boxes
 **********************/
-vcex-icon-float-center {
+.vcex-icon-float-center {
   float: none;
   display: block;
   margin: 0 auto;
   text-align: center; }
 
-vcex-icon-float-left {
+.vcex-icon-float-left {
   display: block;
   float: left;
   margin-right: 20px; }
 
-vcex-icon-float-right {
+.vcex-icon-float-right {
   display: block;
   float: right;
   margin-left: 20px; }
 
-vcex-icon.vcex-icon-xlarge {
+.vcex-icon.vcex-icon-xlarge {
   font-size: 100px;
   height: 180px;
   line-height: 180px;
   width: 180px; }
 
-vcex-icon.vcex-icon-large {
+.vcex-icon.vcex-icon-large {
   font-size: 80px;
   height: 140px;
   line-height: 140px;
   width: 140px; }
 
-vcex-icon.vcex-icon-normal {
+.vcex-icon.vcex-icon-normal {
   font-size: 40px;
   height: 70px;
   line-height: 70px;
   width: 70px; }
 
-vcex-icon.vcex-icon-small {
+.vcex-icon.vcex-icon-small {
   font-size: 20px;
   height: 35px;
   line-height: 35px;
   width: 35px; }
 
-vcex-icon.vcex-icon-tiny {
+.vcex-icon.vcex-icon-tiny {
   font-size: 0.923em;
   height: 25px;
   line-height: 25px;
   width: 25px; }
 
-vcex-icon.remove-dimensions {
+.vcex-icon.remove-dimensions {
   height: auto;
   width: auto;
   margin: auto;
   line-height: normal; }
 
-vcex-icon.has-bg span {
+.vcex-icon.has-bg span {
   text-align: center; }
 
-vcex-icon.has-bg .vcex-icon-wrap {
+.vcex-icon.has-bg .vcex-icon-wrap {
   display: inline-block;
   height: auto;
   width: auto;
   line-height: 1;
   padding: 20px; }
 
-vcex-icon.remove-padding .vcex-icon-wrap {
+.vcex-icon.remove-padding .vcex-icon-wrap {
   padding: 0 !important; }
 
-vcex-icon-box {
+.vcex-icon-box {
   position: relative;
   display: block !important; }
-  vcex-icon-box p {
+  .vcex-icon-box p {
     margin: 0 0 10px; }
-    vcex-icon-box p:last-child {
+    .vcex-icon-box p:last-child {
       margin: 0; }
-  vcex-icon-box-heading {
+  .vcex-icon-box-heading {
     display: block;
     font-size: 1.077em;
     font-weight: 600;
-    margin: 0 0 10px; }
-  vcex-icon-box-link {
+    margin: 0 0 10px;
+    line-height: 30px; }
+  .vcex-icon-box-link {
     text-decoration: none !important; }
-  vcex-icon-box-icon {
+  .vcex-icon-box-icon {
     font-size: 24px;
     color: #000;
     display: inline-block;
     zoom: 1;
     line-height: 1; }
-    vcex-icon-box-icon * {
+    .vcex-icon-box-icon * {
       color: inherit; }
-    vcex-icon-box-icon.with-background {
+    .vcex-icon-box-icon.with-background {
       text-align: center;
       vertical-align: middle;
       padding: 15px; }
-  vcex-icon-box.link-wrap {
+  .vcex-icon-box.link-wrap {
     display: block;
     text-decoration: none !important; }
-  vcex-icon-box.link-wrap, vcex-icon-box .link-wrap .vcex-icon-box-content {
+  .vcex-icon-box.link-wrap, .vcex-icon-box .link-wrap .vcex-icon-box-content {
     color: #555; }
-  vcex-icon-box.style-one {
+  .vcex-icon-box.style-one {
     padding-left: 50px; }
-    vcex-icon-box.style-one.no-icon {
+    .vcex-icon-box.style-one.no-icon {
       padding-left: 0; }
-      vcex-icon-box.style-one.no-icon.with-background {
+      .vcex-icon-box.style-one.no-icon.with-background {
         padding-left: 15px; }
-    vcex-icon-box.style-one.with-background {
+    .vcex-icon-box.style-one.with-background {
       padding-left: 80px; }
-    vcex-icon-box.style-one .vcex-icon-box-icon {
+    .vcex-icon-box.style-one .vcex-icon-box-icon {
       position: absolute;
       left: 0;
-      top: 0;
-      font-size: 28px; }
-    vcex-icon-box.style-one .vcex-icon-box-image {
+      top: 0; }
+    .vcex-icon-box.style-one .vcex-icon-box-image {
       position: absolute;
       left: 0;
       top: 0;
       display: block; }
-  vcex-icon-box.style-seven {
-    padding-right: 50px;
-    text-align: right; }
-    vcex-icon-box.style-seven.no-icon {
-      padding-right: 0; }
-      vcex-icon-box.style-seven.no-icon.with-background {
-        padding-left: 15px; }
-    vcex-icon-box.style-seven.with-background {
-      padding-right: 80px; }
-    vcex-icon-box.style-seven p {
-      margin: 0 0 10px; }
-    vcex-icon-box.style-seven .vcex-icon-box-icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-      font-size: 28px; }
-      vcex-icon-box.style-seven .vcex-icon-box-icon.with-background {
-        padding: 15px; }
-    vcex-icon-box.style-seven .vcex-icon-box-image {
-      position: absolute;
-      right: 0;
-      top: 0;
-      display: block; }
-  vcex-icon-box.style-two {
+  .vcex-icon-box.style-two {
     text-align: center;
     margin-bottom: 30px; }
-    vcex-icon-box.style-two .vcex-icon-box-icon {
+    .vcex-icon-box.style-two .vcex-icon-box-icon {
       font-size: 26px;
       margin: 0 0 20px;
       display: inline-block; }
-    vcex-icon-box.style-two .vcex-icon-box-image {
+    .vcex-icon-box.style-two .vcex-icon-box-image {
       display: block;
       margin: 0 auto 20px; }
-    vcex-icon-box.style-two.align-left {
+    .vcex-icon-box.style-two.align-left {
       text-align: left; }
-    vcex-icon-box.style-two.align-right {
+    .vcex-icon-box.style-two.align-right {
       text-align: right; }
-    vcex-icon-box.style-two.align-left .vcex-icon-box-image,
-    vcex-icon-box.style-two.align-right .vcex-icon-box-image {
+    .vcex-icon-box.style-two.align-left .vcex-icon-box-image,
+    .vcex-icon-box.style-two.align-right .vcex-icon-box-image {
       display: inline-block; }
-  vcex-icon-box.style-three {
+  .vcex-icon-box.style-three {
     text-align: center; }
-    vcex-icon-box.style-three .vcex-icon-box-icon {
+    .vcex-icon-box.style-three .vcex-icon-box-icon {
       height: 80px;
       line-height: 80px;
       width: 80px;
       font-size: 24px;
       margin: 0 auto 30px;
-      border-radius: 99px;
-      -webkit-border-radius: 99px;
-      -moz-border-radius: 99px;
-      padding: 0; }
-    vcex-icon-box.style-three .vcex-icon-box-link:hover .vcex-icon-box-icon {
+      padding: 0;
+      border-radius: 50%;
+      background: #ccc; }
+    .vcex-icon-box.style-three .vcex-icon-box-link:hover .vcex-icon-box-icon {
       opacity: 0.85; }
-    vcex-icon-box.style-three .vcex-icon-box-image {
+    .vcex-icon-box.style-three .vcex-icon-box-image {
       display: block;
       margin: 0 auto 20px; }
-  vcex-icon-box.style-four {
+  .vcex-icon-box.style-four {
     position: relative;
     text-align: center;
     padding: 30px;
     border: 1px solid #eee; }
-    vcex-icon-box.style-four p {
+    .vcex-icon-box.style-four p {
       margin: 0 0 10px; }
-    vcex-icon-box.style-four .vcex-icon-box-icon {
+    .vcex-icon-box.style-four .vcex-icon-box-icon {
       font-size: 28px;
       margin: 0 0 20px;
       color: #4d4d4d; }
-    vcex-icon-box.style-four .vcex-icon-box-image {
+    .vcex-icon-box.style-four .vcex-icon-box-image {
       display: block;
       margin: 0 auto 20px; }
-    vcex-icon-box.style-four .vcex-icon-box-content {
+    .vcex-icon-box.style-four .vcex-icon-box-content {
       margin-top: 15px; }
-    vcex-icon-box.style-four .link-wrap:hover {
+    .vcex-icon-box.style-four .link-wrap:hover {
       border-color: transparent; }
-      vcex-icon-box.style-four .link-wrap:hover .vcex-icon-box-link,
-      vcex-icon-box.style-four .link-wrap:hover .vcex-icon-box-heading,
-      vcex-icon-box.style-four .link-wrap:hover .vcex-icon-box-icon,
-      vcex-icon-box.style-four .link-wrap:hover .vcex-icon-box-content {
+      .vcex-icon-box.style-four .link-wrap:hover .vcex-icon-box-link,
+      .vcex-icon-box.style-four .link-wrap:hover .vcex-icon-box-heading,
+      .vcex-icon-box.style-four .link-wrap:hover .vcex-icon-box-icon,
+      .vcex-icon-box.style-four .link-wrap:hover .vcex-icon-box-content {
         color: #fff !important; }
-  vcex-icon-box.style-five {
+  .vcex-icon-box.style-five {
     text-align: center;
     padding: 30px;
     background-color: #f7f7f7; }
-    vcex-icon-box.style-five p {
+    .vcex-icon-box.style-five p {
       margin: 0 0 10px; }
-    vcex-icon-box.style-five .vcex-icon-box-icon {
+    .vcex-icon-box.style-five .vcex-icon-box-icon {
       font-size: 32px;
       margin: 0 0 20px;
       color: #4d4d4d; }
-    vcex-icon-box.style-five .vcex-icon-box-image {
+    .vcex-icon-box.style-five .vcex-icon-box-image {
       display: block;
       margin: 0 auto 20px; }
-    vcex-icon-box.style-five .vcex-icon-box-content {
+    .vcex-icon-box.style-five .vcex-icon-box-content {
       margin-top: 15px; }
-    vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-link,
-    vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-heading,
-    vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-icon,
-    vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-content {
+    .vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-link,
+    .vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-heading,
+    .vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-icon,
+    .vcex-icon-box.style-five.link-wrap:hover .vcex-icon-box-content {
       color: #fff !important; }
-  vcex-icon-box.style-six {
+  .vcex-icon-box.style-six {
     text-align: center;
     padding: 30px;
     background-color: #000;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     position: relative;
     color: #fff; }
-    vcex-icon-box.style-six p {
+    .vcex-icon-box.style-six p {
       margin: 0 0 10px;
       color: #fff; }
-    vcex-icon-box.style-six-link {
+    .vcex-icon-box.style-six-link {
       text-decoration: none !important;
       color: #555;
       padding: 30px;
       display: block; }
-    vcex-icon-box.style-six.link-wrap:hover {
+    .vcex-icon-box.style-six.link-wrap:hover {
       position: relative;
       top: -10px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); }
-    vcex-icon-box.style-six .vcex-icon-box-icon {
+    .vcex-icon-box.style-six .vcex-icon-box-icon {
       font-size: 32px;
       margin: 0 0 20px;
       color: #fff; }
-    vcex-icon-box.style-six .vcex-icon-box-image {
+    .vcex-icon-box.style-six .vcex-icon-box-image {
       display: block;
       margin: 0 auto 20px; }
-    vcex-icon-box.style-six .vcex-icon-box-heading {
+    .vcex-icon-box.style-six .vcex-icon-box-heading {
       font-size: 0.923em;
       text-transform: uppercase;
       letter-spacing: 2px;
       color: #fff; }
+  .vcex-icon-box.style-seven {
+    padding-right: 50px;
+    text-align: right; }
+    .vcex-icon-box.style-seven.no-icon {
+      padding-right: 0; }
+      .vcex-icon-box.style-seven.no-icon.with-background {
+        padding-left: 15px; }
+    .vcex-icon-box.style-seven.with-background {
+      padding-right: 80px; }
+    .vcex-icon-box.style-seven p {
+      margin: 0 0 10px; }
+    .vcex-icon-box.style-seven .vcex-icon-box-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 28px; }
+      .vcex-icon-box.style-seven .vcex-icon-box-icon.with-background {
+        padding: 15px; }
+    .vcex-icon-box.style-seven .vcex-icon-box-image {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block; }
 
 /*****************
 List 
@@ -8190,6 +8185,8 @@ Blog Grid Carousel
 /* Blog Grid Carousel Wrap */
 .vcex-blog-carousel-wrap {
   margin: 0 0 20px 0px; }
+  .vcex-blog-carousel-wrap .owl-controls {
+    margin: auto 50%; }
   .vcex-blog-carousel-wrap .owl-prev {
     float: left; }
 
