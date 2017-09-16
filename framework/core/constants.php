@@ -7,7 +7,7 @@ class Athen_Constants extends Athen_Framework_Init {
         define( 'ATHEN_FRAMEWORK_VERSION', '1.0.0' );
 
 		// Define branding constant based on theme options
-		define( 'ATHEN_NAME_THEME', $this->athen_get_mod( 'theme_branding', 'TN' ) );
+		define( 'ATHEN_NAME_THEME', $this->athen_get_mod( 'theme_branding', 'Redactive' ) );
 
 		// Theme Panel slug
 		define( 'ATHEN_THEME_PANEL_SLUG', 'theme-panel' );
@@ -49,7 +49,7 @@ class Athen_Constants extends Athen_Framework_Init {
 
 		// Visual Composer
 		define( 'ATHEN_VCEX_DIR', ATHEN_FRAMEWORK_DIR .'third-party/visual-composer/extend/' );
-		define( 'ATHEN_VCEX_DIR_URI', ATHEN_FRAMEWORK_DIR_URI .'visual-composer/extend/' );
+		define( 'ATHEN_VCEX_DIR_URI', ATHEN_FRAMEWORK_DIR_URI .'third-party/visual-composer/extend/' );
         
     }
 }
