@@ -142,7 +142,7 @@ if ( ! function_exists( 'vcex_parallax_bg_shortcode_vc_map' ) ) {
                 array(
                     'type'              => 'dropdown',
                     'heading'           => __( 'Background', 'athen_transl' ),
-                    'param_name'        => 'color',
+                    'param_name'        => 'bg_color',
                     'std'               => '',
                     'value'             => vcex_button_colors(),
                     'group'             => __( 'Design', 'athen_transl' ),

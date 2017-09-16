@@ -1,18 +1,10 @@
 <?php
 /**
  * Loads all functions for the Visual Composer
- *
- * @package     Total
- * @subpackage  Framework/Visual Composer
- * @author      Alexander Clarke
- * @copyright   Copyright (c) 2015, WPExplorer.com
- * @link        http://www.wpexplorer.com
- * @since       1.6.0
- * @version     2.1.0
  */
 
-// WPEX Visual Composer Class used to tweak VC functions and defaults
-class WPEX_Visual_Composer_Config {
+// Athen Visual Composer Class used to tweak VC functions and defaults
+class Athen_Visual_Composer_Config {
 
 	/**
 	 * Check if the theme should tweak the Visual Composer or not.
@@ -28,7 +20,7 @@ class WPEX_Visual_Composer_Config {
 	 * @since 1.6.0
 	 */
 	public function __construct() {
-
+		
 		// Declare global object to store data for use with custom vc modules and keep things fast
 		global $vcex_global;
 		$vcex_global = new stdClass;
@@ -581,4 +573,4 @@ class WPEX_Visual_Composer_Config {
 	}
 
 }
-$athen_visual_composer_config = new WPEX_Visual_Composer_Config();
+new Athen_Visual_Composer_Config();
