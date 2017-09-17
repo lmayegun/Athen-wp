@@ -327,11 +327,12 @@ function athen_header_menu() {
  * Gets the template part for the "icons" style mobile menu.
  *
  * @since Total 1.0.0
+ * Deprecated
  */
 function athen_mobile_menu_icons() {
     
     if ( athen_is_responsive() && athen_has_mobile_menu() ) {
-		get_template_part( 'partials/site-header/header-menu-mobile-icons' );
+	//	get_template_part( 'partials/site-header/_header-menu-mobile-icons' );
     }
 }
 

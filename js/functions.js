@@ -363,7 +363,7 @@
 
                 // Add sidr
                 $( 'a.mobile-menu-toggle, li.mobile-menu-toggle > a' ).sidr( {
-                    name        : 'sidr-main',
+                    name        	: 'sidr-main',
                     source      	: athenLocalize.sidrSource,
                     side        	: athenLocalize.sidrSide,
                     displace    	: athenLocalize.sidrDisplace,

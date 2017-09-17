@@ -6680,6 +6680,29 @@ ol.commentlist {
     -moz-opacity: 1;
     -webkit-opacity: 1; }
 
+.sidr ul.submenu {
+  display: none; }
+
+.sidr li {
+  position: relative; }
+
+.sidr .sub-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  border-left: 1px solid #dddddd;
+  font-size: 1.5em;
+  width: 15px;
+  text-align: center; }
+
+.sidr .sub-toggle.is-open {
+  content: " - " !important; }
+
+.sidr .sub-toggle:hover {
+  color: red;
+  background: rgba(255, 255, 255, 0.5); }
+
 /***************************************************************************
 ---------------------------- SHORTCODES STYLES-----------------------------
 ***************************************************************************/
