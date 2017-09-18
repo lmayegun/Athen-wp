@@ -1079,7 +1079,7 @@
             
             $('.parallax').scrolly({bgParallax: true});
 
-            $( '.parallax-bg' ).each( function() {
+            $( '.parallax' ).each( function() {
                 var $this = $( this );
                 $this.scrolly().trigger( 'scroll' );
                 $this.css( {

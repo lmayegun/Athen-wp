@@ -7,7 +7,7 @@ class Athen_Constants extends Athen_Framework_Init {
         define( 'ATHEN_FRAMEWORK_VERSION', '1.0.0' );
 
 		// Define branding constant based on theme options
-		define( 'ATHEN_NAME_THEME', $this->athen_get_mod( 'theme_branding', 'TN' ) );
+		define( 'ATHEN_NAME_THEME', $this->athen_get_mod( 'theme_branding', 'Athen' ) );
 
 		// Theme Panel slug
 		define( 'ATHEN_THEME_PANEL_SLUG', 'theme-panel' );
