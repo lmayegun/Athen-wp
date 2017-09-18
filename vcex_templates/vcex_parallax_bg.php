@@ -42,7 +42,7 @@ $img2 = wp_get_attachment_image_url($image_id2, "full");
 
 <div id="parallax-container">
 
-	<div class="parallax" data-velocity="-.5" style="background: url(<?php echo $img2; ?>) 50% 0 no-repeat fixed;"></div>
+	<div class="parallax" data-velocity="-.1" style="background: url(<?php echo $img2; ?>) 50% 0 no-repeat fixed;"></div>
 	<div class="parallax" data-velocity="-.8" style="background: url(<?php echo $img; ?>) 50% 0 no-repeat fixed;"></div>
 
 </div>
