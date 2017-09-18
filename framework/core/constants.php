@@ -49,7 +49,7 @@ class Athen_Constants extends Athen_Framework_Init {
 
 		// Visual Composer
 		define( 'ATHEN_VCEX_DIR', ATHEN_FRAMEWORK_DIR .'third-party/visual-composer/extend/' );
-		define( 'ATHEN_VCEX_DIR_URI', ATHEN_FRAMEWORK_DIR_URI .'visual-composer/extend/' );
+		define( 'ATHEN_VCEX_DIR_URI', ATHEN_FRAMEWORK_DIR_URI .'third-party/visual-composer/extend/' );
         
     }
 }

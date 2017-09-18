@@ -217,7 +217,7 @@ class Athen_Menu {
 		$items = array();
 
 		// Add close button
-		$items['sidrclose'] = '#sidr-close';
+		//$items['sidrclose'] = '#sidr-close';
 
 		// Add mobile menu alternative if defined
 		if ( has_nav_menu( 'mobile_menu_alt' ) ) {

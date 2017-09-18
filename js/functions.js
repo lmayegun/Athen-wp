@@ -363,7 +363,7 @@
 
                 // Add sidr
                 $( 'a.mobile-menu-toggle, li.mobile-menu-toggle > a' ).sidr( {
-                    name        : 'sidr-main',
+                    name        	: 'sidr-main',
                     source      	: athenLocalize.sidrSource,
                     side        	: athenLocalize.sidrSide,
                     displace    	: athenLocalize.sidrDisplace,
@@ -1076,17 +1076,10 @@
             if ( ! $.fn.scrolly ) {
                 return;
             }
-            
-            $('.parallax').scrolly({bgParallax: true});
 
-            $( '.parallax' ).each( function() {
-                var $this = $( this );
-                $this.scrolly().trigger( 'scroll' );
-                $this.css( {
-                    'opacity' : 1
-                } );
-            } );
-
+            $('.parallax').scrolly2({
+				bgParallax: true
+			});
         },
 
         /**

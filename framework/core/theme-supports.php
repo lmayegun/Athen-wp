@@ -14,7 +14,6 @@ register_nav_menus (
 		'top_header_menu'   => __( 'Top Header', 'athen_transl' ),
 		'main_menu'         => __( 'Main', 'athen_transl' ),
         'bottom_header_menu'=> __( 'Bottom Header', 'athen_transl' ),
-		'mobile_menu'       => __( 'Mobile Icons', 'athen_transl' ),
 		'mobile_menu_alt'   => __( 'Mobile Menu Alternative', 'athen_transl' ),
 		'footer_menu'       => __( 'Footer', 'athen_transl' ),
 		)

@@ -6680,6 +6680,29 @@ ol.commentlist {
     -moz-opacity: 1;
     -webkit-opacity: 1; }
 
+.sidr ul.submenu {
+  display: none; }
+
+.sidr li {
+  position: relative; }
+
+.sidr .sub-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  border-left: 1px solid #dddddd;
+  font-size: 1.5em;
+  width: 15px;
+  text-align: center; }
+
+.sidr .sub-toggle.is-open {
+  content: " - " !important; }
+
+.sidr .sub-toggle:hover {
+  color: red;
+  background: rgba(255, 255, 255, 0.5); }
+
 /***************************************************************************
 ---------------------------- SHORTCODES STYLES-----------------------------
 ***************************************************************************/
@@ -7578,7 +7601,6 @@ section:nth-of-type(2){background:black;height:1600px;}*/
 #story-freext > div:nth-of-type(2) {
   background: url(../img/nike.png) 50% 0 no-repeat fixed;
   margin: 0;
-  height: 1600px;
   position: absolute;
   top: 0px;
   left: 100px;
@@ -7586,17 +7608,24 @@ section:nth-of-type(2){background:black;height:1600px;}*/
 
 #parallax-container {
   height: 500px;
-  position: static; }
+  position: relative;
+  width: 100% !important;
+  min-width: 1000px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
 
 #parallax-container > div:nth-of-type(1) {
+  /*background: url(../img/bottle.jpeg) 50% 0 no-repeat fixed;*/
   margin: 0;
   height: 100%;
   position: absolute;
+  width: 100%;
   top: 0;
-  left: 0;
-  width: 100%; }
+  left: 0; }
 
 #parallax-container > div:nth-of-type(2) {
+  /*background: url(../img/bottle.jpeg) 50% 0 no-repeat fixed;*/
   margin: 0;
   height: 100%;
   position: absolute;
