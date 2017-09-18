@@ -15,7 +15,7 @@
 /**
  * Returns global object or property from global object
  *
- * @since Total 2.1.0
+ * @since Athen 1.0.0
  */
 function athen_global_obj( $property = null ) {
 

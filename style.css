@@ -3995,26 +3995,6 @@ FOOTER -
 .footer-box {
   box-sizing: border-box; }
 
-/* footer widget */
-.single-col-footer .col {
-  margin-left: 0;
-  width: 100%;
-  margin-right: 0; }
-
-.full-screen-post .site-footer {
-  margin-top: 0; }
-
-/* Footer > Widgets */
-.footer-widget {
-  padding-bottom: 45px; }
-
-#footer-widgets.wpex-row .col {
-  margin-bottom: 0 !important; }
-
-.footer-widget .wpex-widget-recent-posts-title {
-  color: #fff; }
-
-/* Typography */
 .site-footer {
   background: #333;
   color: #777; }
@@ -6708,7 +6688,7 @@ ol.commentlist {
   position: fixed;
   top: 0;
   height: 100%;
-  z-index: 999999;
+  z-index: 9;
   overflow-x: hidden;
   overflow-y: auto;
   width: 300px;
