@@ -21,7 +21,7 @@ FOOTER -
 .footer-widget .wpex-widget-recent-posts-title { color: #fff; }
 
 /* Typography */ 
-.footer-widget .widget-title { color: #fff; font-weight: bold; font-weight: 600; font-size: 1.077em; margin: 0 0 20px; }
+//.footer-widget .widget-title { color: #fff; font-weight: bold; font-weight: 600; font-size: 1.077em; margin: 0 0 20px; }
 
 
 /////////// Footer Main
@@ -29,42 +29,38 @@ FOOTER -
 	background: $pri-color; 
 	color: #777; 
 	
-	.footer-inner{
+	.footer-box{
+		padding-top: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	//// Footer Widget
+	.footer-widget{
+		width:100%;
+		box-sizing: border-box;
 		
-		.footer-box{
-			padding-top: 20px;
-			padding-right: 20px;
-			padding-left: 20px;
+		/// Widget Title
+		.widget-title{
+			color: $text-color;
+			font-size: 1.077em;
+			margin: 0 0 20px;
 		}
 		
-		//// Footer Widget
-		.footer-widget{
-			width:100%;
-			box-sizing: border-box;
-			
-			/// Widget Title
-			&-title{
-				color: #fff;
-				font-weight: bold;
-				font-weight: 600;
-				font-size: 1.077em;
-				margin: 0 0 20px;
-			}
-			
-			.athen-recent-posts-thumb-grid{
-		
-				.entry{
-					height: 70px;
-					a{
-						&:link{ }
-					}
-					img{ 
-						height:100px;
-					}
+		.athen-recent-posts-thumb-grid{
+	
+			.entry{
+				height: 70px;
+				a{
+					&:link{ }
+				}
+				img{ 
+					height:100px;
 				}
 			}
-		}			
-	}
+		}
+	}			
+	
 	
 	a, strong { 
 		color: #999;

@@ -50,10 +50,18 @@ TOPBAR
 					font-size: 12px;
 					color: white;
 					&:hover{
-						color: #daa520;
+						color: $link-hover;
 					}
 				}
+				a{
+					&:link{ color: $link-color;}
+					&:hover{ color: $link-hover;}
+					&:visited{ color: $link-color;}
+				}
+
+
 			}
+			
 			
 			// Social-icons
 			.social-icons{ 
