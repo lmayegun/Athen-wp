@@ -378,7 +378,7 @@
                 var $hasChildren = $( '.sidr-class-menu-item-has-children' );
 
                 // Add dropdown toggle (arrow)
-                $hasChildren.children( 'a' ).append( '<span class="sidr-class-dropdown-toggle"></span>' );
+                $hasChildren.children( 'a' ).append( '<span class="sidr-class-dropdown-toggle"> + </span>' );
 
                 // Toggle dropdowns
                 $( '.sidr-class-dropdown-toggle' ).on( athenLocalize.isMobile ? 'touchstart' : 'click', function( event ) {

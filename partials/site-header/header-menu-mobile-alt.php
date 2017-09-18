@@ -11,7 +11,7 @@
  * @version     1.0.3
  */ ?>
 
-<div id="mobile-menu-alternative" class="wpex-hidden">
+<div id="mobile-menu-alternative" class="hidden">
     <?php wp_nav_menu( array(
         'theme_location'    => 'mobile_menu_alt',
         'menu_class'        => 'dropdown-menu',

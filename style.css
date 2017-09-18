@@ -4269,6 +4269,8 @@ TOPBAR
     float: right; }
     #site-header.header-one .header-bottom .navbar.navbar-style-one a:link {
       color: #000000; }
+    #site-header.header-one .header-bottom .navbar.navbar-style-one a:visited {
+      color: #000; }
     #site-header.header-one .header-bottom .navbar .mobile-menu-toggle {
       float: left;
       position: relative;
@@ -6703,6 +6705,104 @@ ol.commentlist {
   color: red;
   background: rgba(255, 255, 255, 0.5); }
 
+.sidr {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 300px;
+  background: white;
+  border: 1px solid #000000; }
+  .sidr .sidr-inner {
+    padding: 0 0 15px; }
+    .sidr .sidr-inner > p {
+      margin-left: 15px;
+      margin-right: 15px; }
+  .sidr .sidr-class-dropdown-toggle {
+    float: right; }
+  .sidr .sidr-class-sub-menu {
+    display: none; }
+  .sidr .sidr-class-mobile-icon {
+    display: none; }
+  .sidr.right {
+    left: auto; }
+  .sidr.left {
+    right: auto; }
+  .sidr h1,
+  .sidr h2,
+  .sidr h3,
+  .sidr h4,
+  .sidr h5,
+  .sidr h6 {
+    font-weight: normal;
+    padding: 0 15px;
+    margin: 0 0 5px;
+    line-height: 24px; }
+  .sidr p {
+    margin: 0 0 12px; }
+  .sidr > p {
+    margin-left: 15px;
+    margin-right: 15px; }
+  .sidr ul {
+    display: block;
+    margin: 0 0 15px;
+    padding: 0; }
+    .sidr ul li {
+      display: block;
+      margin: 0;
+      line-height: 48px; }
+      .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active {
+        border-top: 0;
+        line-height: 49px; }
+      .sidr ul li a,
+      .sidr ul li span {
+        padding: 0 15px;
+        display: block;
+        text-decoration: none; }
+      .sidr ul li ul {
+        border-bottom: 0;
+        margin: 0; }
+        .sidr ul li ul li {
+          line-height: 40px; }
+          .sidr ul li ul li:last-child {
+            border-bottom: 0; }
+          .sidr ul li ul li:hover, .sidr ul li ul li.active, .sidr ul li ul li.sidr-class-active {
+            border-top: 0;
+            line-height: 41px; }
+          .sidr ul li ul li a,
+          .sidr ul li ul li span {
+            padding-left: 30px; }
+  .sidr form {
+    margin: 0 15px; }
+  .sidr input[type="text"],
+  .sidr input[type="password"],
+  .sidr input[type="date"],
+  .sidr input[type="datetime"],
+  .sidr input[type="email"],
+  .sidr input[type="number"],
+  .sidr input[type="search"],
+  .sidr input[type="tel"],
+  .sidr input[type="time"],
+  .sidr input[type="url"],
+  .sidr textarea,
+  .sidr select {
+    width: 100%;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+    border-radius: 2px;
+    border: 0;
+    display: block;
+    clear: both; }
+  .sidr input[type=checkbox] {
+    width: auto;
+    display: inline;
+    clear: none; }
+
 /***************************************************************************
 ---------------------------- SHORTCODES STYLES-----------------------------
 ***************************************************************************/
@@ -7576,19 +7676,6 @@ List
     z-index: 1;
     position: relative; }
 
-/*
-section {
-    min-height: 1000px;
-    position: relative;
-    width: 100% !important;
-    min-width: 1000px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-section#bottle{background:whitesmoke;height:1200px;}
-section:nth-of-type(2){background:black;height:1600px;}*/
 #story-freext > div:nth-of-type(1) {
   background: url(../img/nike-bg.jpeg) 50% 0 no-repeat fixed;
   margin: 0;
@@ -7616,7 +7703,6 @@ section:nth-of-type(2){background:black;height:1600px;}*/
   overflow: hidden; }
 
 #parallax-container > div:nth-of-type(1) {
-  /*background: url(../img/bottle.jpeg) 50% 0 no-repeat fixed;*/
   margin: 0;
   height: 100%;
   position: absolute;
@@ -7625,27 +7711,12 @@ section:nth-of-type(2){background:black;height:1600px;}*/
   left: 0; }
 
 #parallax-container > div:nth-of-type(2) {
-  /*background: url(../img/bottle.jpeg) 50% 0 no-repeat fixed;*/
   margin: 0;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%; }
-
-section h1 {
-  color: #4F9426;
-  width: 300px;
-  font-size: 65px;
-  margin-bottom: 14px; }
-
-/*section p{color:black;width:300px;}*/
-/*section article{position:absolute;top:240px;left:40px;width:300px;z-index:4;}*/
-.parallax-item {
-  position: absolute;
-  z-index: 5;
-  top: 40px;
-  left: 400px; }
 
 /******************** 
 Pricing Table 

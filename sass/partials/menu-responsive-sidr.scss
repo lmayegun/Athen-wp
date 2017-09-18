@@ -1,0 +1,209 @@
+.sidr ul.submenu {
+    display:none;
+}
+.sidr li {
+    position:relative;
+}
+.sidr .sub-toggle {
+    position:absolute;
+    right:0;
+    top:0;
+    cursor:pointer;
+    border-left:1px solid #dddddd;
+    font-size: 1.5em;
+    width:15px;
+    text-align:center;
+}
+.sidr .sub-toggle.is-open {
+    content:" - " !important;
+}
+.sidr .sub-toggle:hover {
+    color:red;
+    background:rgba(255,255,255,0.5);
+}
+
+.sidr {
+    // Default Settings
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 300px;
+    background: $white;
+    border: 1px solid $black;
+
+    .sidr-inner {
+        padding: 0 0 15px;
+
+        > p {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+
+    // Toggle Chilldren Icon
+    .sidr-class-dropdown-toggle{
+        float: right; 
+    }
+
+    // Children Hidden
+    .sidr-class-sub-menu{
+        display: none;
+    }
+
+    // Hide Mobile Icon
+    .sidr-class-mobile-icon{
+        display: none;
+    }
+
+    &.right {
+        left: auto;    
+    }
+
+    &.left {
+        right: auto;
+    }
+
+    // Theme Settings
+   
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+     
+        font-weight: normal;
+        padding: 0 15px;
+        margin: 0 0 5px;
+        line-height: 24px;
+       
+    }
+
+    p {
+      
+        margin: 0 0 12px;
+
+        a {
+            
+        }
+    }
+
+    > p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    ul {
+        display: block;
+        margin: 0 0 15px;
+        padding: 0;
+      
+
+        li {
+            display: block;
+            margin: 0;
+            line-height: 48px;
+        
+            &:hover,
+            &.active,
+            &.sidr-class-active {
+                border-top: 0;
+                line-height: 49px;
+
+                > a,
+                > span {
+                   
+                }
+            }
+
+            a,
+            span {
+                padding: 0 15px;
+                display: block;
+                text-decoration: none;
+              
+            }
+
+            ul {
+                border-bottom: 0;
+                margin: 0;
+
+                li {
+                    line-height: 40px;
+                   
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+
+                    &:hover,
+                    &.active,
+                    &.sidr-class-active {
+                        border-top: 0;
+                        line-height: 41px;
+
+                        > a,
+                        > span {
+                         
+                        }
+                    }
+
+                    a,
+                    span {
+                      
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    form {
+        margin: 0 15px;
+    }
+
+    label {
+      
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 5px;
+        @include box-sizing(border-box);
+        margin: 0 0 10px;
+        border-radius: 2px;
+        border: 0;
+       
+        display: block;
+        clear: both;
+    }
+
+    input[type=checkbox] {
+        width: auto;
+        display: inline;
+        clear: none;
+    }
+
+    input[type=button],
+    input[type=submit] {
+     
+        &:hover {
+          
+        }
+    }
+}
