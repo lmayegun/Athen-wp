@@ -11,13 +11,16 @@ TOPBAR
 	&.header-one{
 		///////////////HEADER TOPBAR
 		.header-top {
-			background : none;
 			padding : 0px 20px;
 			line-height : 3 ;
 			position : relative;
 			overflow : inherit;
 			border-bottom: 1px dashed $trace;
-			
+			a{
+				&:link { color: $link-color; }
+				&:hover{ color: $link-hover; }
+				&:visited{ color:$link-color;}
+			}
 			// Logo 
 			.site-branding { 
 				display: none;
@@ -34,11 +37,6 @@ TOPBAR
 				float:left;
 				color:$text-color;
 				.fa{ color: $text-color;}
-				a{
-					&:link{ color:$link-color;}
-					&:hover{ color:$sec-color;}
-					&:visited{ color:$link-color;}
-				}
 			}
 			
 			// MOBILE MENU TOGGLE 
@@ -58,8 +56,6 @@ TOPBAR
 					&:hover{ color: $link-hover;}
 					&:visited{ color: $link-color;}
 				}
-
-
 			}
 			
 			
@@ -76,11 +72,6 @@ TOPBAR
 			// Search Icon
 			.search-icon{ 
 				float: right;
-				a{
-					&:link{ color:$link-color;}
-					&:hover{ color:$sec-color;}
-					&:visited{ color:$link-color;}
-				}
 			}
 		}
 	}

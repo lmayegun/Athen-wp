@@ -66,96 +66,29 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
             );
 
             /*-----------------------------------------------------*/
-            /*  - Toggle Bar
-            /*-----------------------------------------------------*/
-            $array[] = array(
-                'id'        => 'toggle_bar_bg',
-                'type'      => 'color',
-                'label'     => __( 'Content Background', 'athen_transl' ),
-                'element'   => '#toggle-bar-wrap',
-                'style'     => 'background-color',
-                'section'   => 'athen_togglebar_styling',
-            );
-            $array[] = array(
-                'id'        => 'toggle_bar_color',
-                'type'      => 'color',
-                'label'     => __( 'Content Color', 'athen_transl' ),
-                'element'   => '#toggle-bar-wrap, #toggle-bar-wrap strong',
-                'style'     => 'color',
-                'section'   => 'athen_togglebar_styling',
-            );
-
-            // Toggle bar button
-            $array[] = array(
-                'id'        => 'athen_hr_control',
-                'type'      => 'hr',
-                'section'   => 'athen_togglebar_styling',
-            );
-            $array[] = array(
-                'id'        => 'toggle_bar_btn_bg',
-                'transport' => 'refresh',
-                'type'      => 'color',
-                'label'     => __( 'Button Background', 'athen_transl' ),
-                'element'   => '.toggle-bar-btn',
-                'style'     => array( 'border-top-color', 'border-right-color' ),
-                'section'   => 'athen_togglebar_styling',
-            );
-            $array[] = array(
-                'id'        => 'toggle_bar_btn_color',
-                'type'      => 'color',
-                'label'     => __( 'Button Color', 'athen_transl' ),
-                'element'   => '.toggle-bar-btn span.fa',
-                'style'     => 'color',
-                'section'   => 'athen_togglebar_styling',
-            );
-            $array[] = array(
-                'id'        => 'toggle_bar_btn_hover_bg',
-                'type'      => 'color',
-                'label'     => __( 'Button Hover Background', 'athen_transl' ),
-                'element'   => '.toggle-bar-btn:hover',
-                'style'     => array( 'border-top-color', 'border-right-color' ),
-                'section'   => 'athen_togglebar_styling',
-                'transport' => 'refresh',
-            );
-            $array[] = array(
-                'id'        => 'toggle_bar_btn_hover_color',
-                'type'      => 'color',
-                'label'     => __( 'Button Hover Color', 'athen_transl' ),
-                'element'   => '.toggle-bar-btn:hover span.fa',
-                'style'     => 'color',
-                'section'   => 'athen_togglebar_styling',
-                'transport' => 'refresh',
-            );
-
-            /*-----------------------------------------------------*/
-            /*  - Top Bar
+            /*  - Header Top
             /*-----------------------------------------------------*/
             $array[] = array(
                 'id'        => 'top_bar_bg',
                 'type'      => 'color',
                 'label'     => __( 'Background', 'athen_transl' ),
-                'element'   => '#top-bar-wrap',
+                'element'   => '#header-top',
                 'style'     => 'background-color',
                 'section'   => 'athen_topbar_styling',
             );
-            $array[] = array(
-                'id'        => 'top_bar_border',
-                'type'      => 'color',
-                'label'     => __( 'Borders', 'athen_transl' ),
-                'element'   => '#top-bar-wrap',
-                'style'     => 'border-color',
-                'section'   => 'athen_topbar_styling',
-            );
+
             $array[] = array(
                 'id'        => 'top_bar_text',
                 'type'      => 'color',
                 'label'     => __( 'Color', 'athen_transl' ),
-                'element'   => '#top-bar-wrap, #top-bar-content strong',
+                'element'   => '#header-top, #site-header.header-one .header-top .header-top-free-txt,
+                                #site-header.header-one .header-top .header-top-free-txt .fa,
+                                #site-header.header-one .header-top .site-branding a:link',
                 'style'     => 'color',
                 'section'   => 'athen_topbar_styling',
             );
 
-            // Top bar link colors
+            // Header Top Styling Link
             $array[] = array(
                 'id'        => 'athen_hr_control',
                 'type'      => 'hr',
@@ -165,7 +98,7 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'id'        => 'top_bar_link_color',
                 'type'      => 'color',
                 'label'     => __( 'Link Color', 'athen_transl' ),
-                'element'   => '#top-bar-content a, #top-bar-social-alt a',
+                'element'   => '#site-header.header-one .header-top a:link',
                 'style'     => 'color',
                 'section'   => 'athen_topbar_styling',
             );
@@ -173,13 +106,13 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'id'        => 'top_bar_link_color_hover',
                 'type'      => 'color',
                 'label'     => __( 'Link Color: Hover', 'athen_transl' ),
-                'element'   => '#top-bar-content a:hover, #top-bar-social-alt a:hover',
+                'element'   => '#site-header.header-one .header-top a:hover',
                 'style'     => 'color',
                 'section'   => 'athen_topbar_styling',
                 'transport' => 'refresh',
             );
 
-            // Top bar social
+            // Header Top Social Styling
             $array[] = array(
                 'id'        => 'athen_hr_control',
                 'type'      => 'hr',
@@ -189,7 +122,7 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'id'        => 'top_bar_social_color',
                 'type'      => 'color',
                 'label'     => __( 'Social Links Color', 'athen_transl' ),
-                'element'   => '#top-bar-social a',
+                'element'   => '#header-top .social-icons a span.fa',
                 'style'     => 'color',
                 'section'   => 'athen_topbar_styling',
             );
@@ -197,20 +130,58 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'id'        => 'top_bar_social_hover_color',
                 'type'      => 'color',
                 'label'     => __( 'Social Links Hover Color', 'athen_transl' ),
-                'element'   => '#top-bar-social a:hover',
+                'element'   => '#header-top .social-icons a span.fa:hover',
                 'style'     => 'color',
                 'section'   => 'athen_topbar_styling',
                 'transport' => 'refresh',
             );
 
             /*-----------------------------------------------------*/
-            /*  - Header
+            /*  - Header Main 
             /*-----------------------------------------------------*/
 
+            // Header main - Background color
             $array[] = array(
-                'id'        => 'header_top_padding',
+                'id'        => 'header_main_background_color',
+                'type'      => 'color',
+                'label'     => __( 'Header Background Color', 'athen_transl' ), 
+                'element'   => '#site-header-inner',
+                'style'     => 'background-color',
+                'section'   => 'athen_header_styling',
+            );
+
+            // Header main - Text color
+            $array[] = array(
+                'id'        => 'header_main_text_color',
+                'type'      => 'color',
+                'label'     => __( 'Header Text Color', 'athen_transl' ), 
+                'element'   => '#site-header-inner, #site-header.header-one .header-main .header-main-free-txt,
+                                #site-header.header-one .header-main .header-main-free-txt .fa',
+                'style'     => 'color',
+                'section'   => 'athen_header_styling',
+            );
+
+            // Header main - Link color
+            $array[] = array(
+                'id'        => 'header_main_link_color',
+                'type'      => 'color',
+                'label'     => __( 'Header Link Color', 'athen_transl' ), 
+                'element'   => '#site-header-inner a:link',
+                'style'     => 'color',
+                'section'   => 'athen_header_styling',
+            );
+
+            $array[] = array(
+                'id'        => 'athen_hr_control',
+                'type'      => 'hr',
+                'section'   => 'athen_header_styling',
+            );
+
+            // Header Main Top Padding
+            $array[] = array(
+                'id'        => 'header_main_top_padding',
                 'type'      => 'text',
-                'label'     => __( 'Header Top Padding', 'athen_transl' ), 
+                'label'     => __( 'Header Main Top Padding', 'athen_transl' ), 
                 'element'   => '#site-header-inner',
                 'style'     => 'padding-top',
                 'section'   => 'athen_header_styling',
@@ -219,9 +190,9 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
             );
 
             $array[] = array(
-                'id'            => 'header_bottom_padding',
+                'id'            => 'header_main_bottom_padding',
                 'type'          => 'text',
-                'label'         => __( 'Header Bottom Padding', 'athen_transl' ), 
+                'label'         => __( 'Header Main Bottom Padding', 'athen_transl' ), 
                 'element'       => '#site-header-inner',
                 'style'         => 'padding-bottom',
                 'section'       => 'athen_header_styling',
@@ -235,14 +206,7 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'type'      => 'hr',
                 'section'   => 'athen_header_styling',
             );
-            $array[] = array(
-                'id'        => 'header_background',
-                'type'      => 'color',
-                'label'     => __( 'Header Background Color', 'athen_transl' ), 
-                'element'   => '#site-header, .footer-has-reveal #site-header, #searchform-header-replace, .is-sticky #site-header',
-                'style'     => 'background-color',
-                'section'   => 'athen_header_styling',
-            );
+
             $array[] = array(
                 'id'        => 'logo_color',
                 'type'      => 'color',
@@ -1046,7 +1010,7 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'id'        => 'page_header_top_padding',
                 'type'      => 'text',
                 'label'     => __( 'Top Padding', 'athen_transl' ),
-                'element'   => '.page-header',
+                'element'   => '.page-header, .section-intro',
                 'style'     => 'padding-top',
                 'section'   => 'athen_page_header',
                 'transport' => 'refresh',
@@ -1055,7 +1019,7 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'id'        => 'page_header_bottom_padding',
                 'type'      => 'text',
                 'label'     => __( 'Bottom Padding', 'athen_transl' ),
-                'element'   => '.page-header',
+                'element'   => '.page-header, .section-intro',
                 'style'     => 'padding-bottom',
                 'section'   => 'athen_page_header',
                 'transport' => 'refresh',
@@ -1064,7 +1028,7 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'id'        => 'page_header_background',
                 'type'      => 'color',
                 'label'     => __( 'Background', 'athen_transl' ),
-                'element'   => '.page-header',
+                'element'   => '.page-header, .section-intro',
                 'style'     => 'background-color',
                 'section'   => 'athen_page_header',
             );
@@ -1076,7 +1040,7 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'style'     => 'color',
                 'section'   => 'athen_page_header',
             );
-            $array[] = array(
+            /*$array[] = array(
                 'id'        => 'page_header_top_border',
                 'type'      => 'color',
                 'label'     => __( 'Top Border Color', 'athen_transl' ),
@@ -1091,7 +1055,7 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
                 'element'   => '.page-header, .theme-gaps .page-header-inner',
                 'style'     => 'border-bottom-color',
                 'section'   => 'athen_page_header',
-            );
+            );*/
 
             /*-----------------------------------------------------*/
             /*  - Breadcrumbs
@@ -1810,7 +1774,7 @@ if ( ! class_exists( 'Athen_Theme_Customizer_Styling' ) ) {
 
                         // Sanitize data
                         if ( 'px' == $sanitize ) {
-                            $theme_mod = intval( $theme_mod ) .'px';
+                            $theme_mod = intval( $theme_mod ) .'px !important';
                         }
                         if ( 'border-radius' == $sanitize ) {
                             $theme_mod = athen_sanitize_data( $theme_mod, 'border_radius' );

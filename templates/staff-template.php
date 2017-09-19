@@ -36,36 +36,37 @@ get_header(); ?>
 
 				<?php endwhile; ?>
                                 
-                                <?php athen_display_filter_btn( "staff_category", "slug" ); ?>
+                <?php athen_display_filter_btn( "staff_category", "slug" ); ?>
                                 
 				<?php
 				global $post, $paged, $more;
 				$more = 0;
                                 
-                                $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+                $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+				
 				// Query posts
 				$wp_query = new WP_Query(
 					array(
 						'post_type'			=> 'staff',
-                                                'posts_per_page'                => 3,
-                                                'paged'                         => $paged,
+                        'posts_per_page'    => 3,
+                        'paged'             => $paged,
 					)
 				);
                                
 				if ( $wp_query->posts ) :  ?>
 
-                                    <div id="blog-entries" class="post-type-entries clr <?php athen_blog_wrap_classes(); ?>">
-					<?php $athen_count = 0; ?>
-					<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-                                            <?php $athen_count++; ?>
-                                            <?php get_template_part( 'partials/staff/staff-entry-template' ); ?>
-                                            <?php if ( athen_blog_entry_columns() == $athen_count ) $athen_count=0; ?>
-                                        <?php endwhile; ?>
-                                    </div><!-- #blog-entries -->
+                	<div id="blog-entries" class="post-type-entries clr <?php athen_blog_wrap_classes(); ?>">
+						<?php $athen_count = 0; ?>
+						<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+	                        <?php $athen_count++; ?>
+	                        <?php get_template_part( 'partials/staff/staff-entry-template' ); ?>
+	                        <?php if ( athen_blog_entry_columns() == $athen_count ) $athen_count=0; ?>
+	                    <?php endwhile; ?>
+                    </div><!-- #blog-entries -->
 
 				<?php endif; ?>
                                     
-                                <?php Athen_Pagination::athen_blog_pagination(); ?>
+                <?php Athen_Pagination::athen_blog_pagination(); ?>
 
 				<?php wp_reset_postdata(); wp_reset_query(); ?>
 

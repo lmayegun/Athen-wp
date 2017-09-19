@@ -50,22 +50,22 @@ get_header(); ?>
 				// Query posts
 				$wp_query = new WP_Query(
 					array(
-						'post_type'			=> 'portfolio',
-                                                'paged'                         => $paged,
-                                                'posts_per_page'                 => 3,
+						'post_type'		=> 'portfolio',
+                        'paged'    		=> $paged,
+                        'posts_per_page'=> 3,
 					)
 				);
                                
 				if ( $wp_query->posts ) : ?>
 
-                                    <div id="blog-entries" class="clr <?php athen_blog_wrap_classes(); ?>">
-					<?php $athen_count = 0; ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-                                            <?php $athen_count++; ?>
-                                            <?php get_template_part( 'partials/portfolio/portfolio-entry-template' ); ?>
-                                            <?php if ( athen_blog_entry_columns() == $athen_count ) $athen_count=0; ?>
-                                        <?php endwhile; ?>
-                                    </div><!-- #blog-entries -->
+                    <div id="blog-entries" class="clr <?php athen_blog_wrap_classes(); ?>">
+						<?php $athen_count = 0; ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+	                        <?php $athen_count++; ?>
+	                        <?php get_template_part( 'partials/portfolio/portfolio-entry-template' ); ?>
+	                        <?php if ( athen_blog_entry_columns() == $athen_count ) $athen_count=0; ?>
+	                    <?php endwhile; ?>
+                    </div><!-- #blog-entries -->
 
 				<?php Athen_Pagination::athen_blog_pagination(); ?>
 

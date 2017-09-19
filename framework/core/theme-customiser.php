@@ -32,11 +32,6 @@ class Athen_Theme_Customiser extends Athen_Framework_Init{
             }
         }
 
-		// Skins
-		if ( $this->athen_get_mod( 'skins_enable', true ) ) {
-			require_once( ATHEN_SKIN_DIR . 'skins.php' );
-		}
-
 		// Import Export Functions
 		if ( is_admin() ) {
 			require_once( ATHEN_FRAMEWORK_DIR .'customiser-addons/import-export.php' );

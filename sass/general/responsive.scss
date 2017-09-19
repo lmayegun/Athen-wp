@@ -43,9 +43,121 @@
 		height: 20px;
 	}
 
+	/**** Header Main ****/
+
+	// Site Branding 
+	.site-branding {
+	    float: left;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	// Header Main Free Text 
+	#site-header.header-one 
+	.header-main
+	.header-main-free-txt{
+		width: 100%;
+		text-align: center;
+		margin: 0px;
+	}
+
+	// Header Main Social Icon
+	#site-header.header-one .header-main .social-icons {
+	    float: right;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	// Header Main Site Navigation
+	#site-header.header-one .header-main .navbar {
+		width: 100%;
+
+		.main-navigation{
+		    margin: auto;
+
+		    a{
+		    	&:link 	  { color: $link-color; }
+		    	&:visited { color: $link-color; }
+		    }
+
+		    li.mobile-icon{
+		    	position: relative;
+		    	display: none;
+		    }
+		}
+	}
+
+	/**** Header Top ****/
+
+	// Header Top Social Icon
+	#site-header.header-one .header-top .social-icons{
+		width : 100%;
+		text-align: center;
+	}
+
+	// Header Top Social Icon
+	#site-header.header-one .header-top .search-icon{
+		width : 100%; 
+		text-align : center;
+	}
+
+	// Header Top Free Text
+	#site-header.header-one .header-top .header-top-free-txt{
+		width: 100%;
+		text-align: center;
+	}
+
+	/**** Header Bottom ****/
+
+	// Header Bottom Menu 
+	#site-header.header-one .header-bottom .navbar {
+	    width: 100%;
+	}
+
+	// Header Bottom Social Icons 
+	#site-header.header-one .header-bottom .social-icons {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	// Header Bottom Search Icon
+	#site-header.header-one .header-bottom .search-icon {
+	    width: 100%; 
+	    text-align: center;
+	}
+
+	// Recent Post Image 
+	.sidebar-box .athen-recent-posts-thumb-grid .entry.athen-col{
+		&-4 {
+		    height: auto;
+		    width: 25%;
+	    }
+		&-3 {
+		    height: auto;
+		    width: 33%;
+	    }
+	    &-2 {
+		    height: auto;
+		    width: 50%;
+	    }
+
+	}
+
+	.site-footer .footer-widget .athen-recent-posts-thumb-grid .entry.athen-col{
+		&-4 {
+		    height: auto;
+		    width: 25%;
+	    }
+		&-3 {
+		    height: auto;
+		    width: 33%;
+	    }
+	    &-2 {
+		    height: auto;
+		    width: 50%;
+	    }
+	}
 }
-
-
 
 /*------------------------- Small devices (tablets, 768px and up) -------------------------*/
 @media (min-width: 768px) { 
@@ -76,12 +188,46 @@
 			}
 		}
 	}
-	
+
+	// Site Branding 
+	.site-branding {
+	    float: left;
+	    width: 40%;
+	    text-align: left;
+	}	
+
+	// Header Main Free Text 
+	#site-header.header-one 
+	.header-main
+	.header-main-free-txt{
+		width: 60%;
+		text-align: right;
+		float: right;
+	}
+
+	/**** Header Top ****/
+
+	// Header Top Social Icon
+	#site-header.header-one .header-top .social-icons{
+		width : auto;
+		text-align: center;
+	}
+
+	// Header Top Social Icon
+	#site-header.header-one .header-top .search-icon{
+		width : auto; 
+		text-align : center;
+	}
+
+	// Header Top Free Text
+	#site-header.header-one .header-top .header-top-free-txt{
+		width: auto;
+		text-align: center;
+	}
 }
 
 /*--------------------- Medium devices (desktops, 992px and up) -----------------*/
 @media (min-width: 992px) {
-	
 	
 	// CONTENT AND SIDEBAR LAYOUT
 	.posts-box{
@@ -109,12 +255,47 @@
 			width: 1100px;
 		}
 	}
+
+	// site Branding 
+	.site-branding {
+	    float: left;
+	    width: 20%;
+	    text-align: left;
+	}
+
+	/**** Header Bottom ****/
+
+	// Header Bottom Menu 
+	#site-header.header-one .header-bottom .navbar {
+	    width: auto;
+	    float: right;
+	}
+
+	// Header Bottom Social Icons 
+	#site-header.header-one .header-bottom .social-icons {
+	    width: 50%;
+	    text-align: left;
+	}
+
+	// Header Bottom Search Icon
+	#site-header.header-one .header-bottom .search-icon {
+	    width: 100%; 
+	    text-align: center;
+	}
+
+
+	/******** Site Footer ********/
+	.site-footer .footer-widget .athen-recent-posts-thumb-grid .entry.athen-col-3 {
+	    height: 80px;
+	    width: 33%;
+	}
  }
+
+
 
 /*-------------- Large devices (large desktops, 1200px and up) -------------------*/
 @media (min-width: 1200px) {
 
-	
 	.full-width{
 		width: 100% !important;
 	}

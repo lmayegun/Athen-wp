@@ -4079,12 +4079,17 @@ TOPBAR
 - topbar-social
 ***************************************************************************/
 #site-header.header-one .header-top {
-  background: none;
   padding: 0px 20px;
   line-height: 3;
   position: relative;
   overflow: inherit;
   border-bottom: 1px dashed red; }
+  #site-header.header-one .header-top a:link {
+    color: #000; }
+  #site-header.header-one .header-top a:hover {
+    color: #ccc; }
+  #site-header.header-one .header-top a:visited {
+    color: #000; }
   #site-header.header-one .header-top .site-branding {
     display: none;
     margin-right: 30px; }
@@ -4099,12 +4104,6 @@ TOPBAR
     color: #333; }
     #site-header.header-one .header-top .header-top-free-txt .fa {
       color: #333; }
-    #site-header.header-one .header-top .header-top-free-txt a:link {
-      color: #000; }
-    #site-header.header-one .header-top .header-top-free-txt a:hover {
-      color: #ccc; }
-    #site-header.header-one .header-top .header-top-free-txt a:visited {
-      color: #000; }
   #site-header.header-one .header-top .navbar .mobile-menu-toggle {
     float: left;
     position: relative;
@@ -4129,12 +4128,6 @@ TOPBAR
       color: #000; }
   #site-header.header-one .header-top .search-icon {
     float: right; }
-    #site-header.header-one .header-top .search-icon a:link {
-      color: #000; }
-    #site-header.header-one .header-top .search-icon a:hover {
-      color: #ccc; }
-    #site-header.header-one .header-top .search-icon a:visited {
-      color: #000; }
 
 #site-header .is-sticky .header-top {
   z-index: 9;
@@ -4248,14 +4241,6 @@ TOPBAR
       color: #000000; }
     #site-header.header-one .header-bottom .navbar.navbar-style-one a:visited {
       color: #000; }
-    #site-header.header-one .header-bottom .navbar .mobile-menu-toggle {
-      float: left;
-      position: relative;
-      padding: 16px 0px 14px 14px;
-      font-size: 12px;
-      color: white; }
-      #site-header.header-one .header-bottom .navbar .mobile-menu-toggle:hover {
-        color: #daa520; }
   #site-header.header-one .header-bottom .social-icons {
     float: left; }
     #site-header.header-one .header-bottom .social-icons a:link {
@@ -5910,11 +5895,6 @@ Menu Navigation Style
           text-decoration: none; }
       .navbar.navbar-style-one .dropdown-menu > li:first-child {
         margin-left: 20px; }
-      .navbar.navbar-style-one .dropdown-menu > li.mobile-icon {
-        position: absolute;
-        left: -30px;
-        top: -16px;
-        margin: 0px; }
       .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu {
         background-color: #333;
         padding: 0px 0px; }
@@ -8653,7 +8633,68 @@ Spacing
   .sidebar-wrap {
     width: 100%;
     box-sizing: border-box;
-    height: 20px; } }
+    height: 20px; }
+  /**** Header Main ****/
+  .site-branding {
+    float: left;
+    width: 100%;
+    text-align: center; }
+  #site-header.header-one .header-main .header-main-free-txt {
+    width: 100%;
+    text-align: center;
+    margin: 0px; }
+  #site-header.header-one .header-main .social-icons {
+    float: right;
+    width: 100%;
+    text-align: center; }
+  #site-header.header-one .header-main .navbar {
+    width: 100%; }
+    #site-header.header-one .header-main .navbar .main-navigation {
+      margin: auto; }
+      #site-header.header-one .header-main .navbar .main-navigation a:link {
+        color: #000; }
+      #site-header.header-one .header-main .navbar .main-navigation a:visited {
+        color: #000; }
+      #site-header.header-one .header-main .navbar .main-navigation li.mobile-icon {
+        position: relative;
+        display: none; }
+  /**** Header Top ****/
+  #site-header.header-one .header-top .social-icons {
+    width: 100%;
+    text-align: center; }
+  #site-header.header-one .header-top .search-icon {
+    width: 100%;
+    text-align: center; }
+  #site-header.header-one .header-top .header-top-free-txt {
+    width: 100%;
+    text-align: center; }
+  /**** Header Bottom ****/
+  #site-header.header-one .header-bottom .navbar {
+    width: 100%; }
+  #site-header.header-one .header-bottom .social-icons {
+    width: 100%;
+    text-align: center; }
+  #site-header.header-one .header-bottom .search-icon {
+    width: 100%;
+    text-align: center; }
+  .sidebar-box .athen-recent-posts-thumb-grid .entry.athen-col-4 {
+    height: auto;
+    width: 25%; }
+  .sidebar-box .athen-recent-posts-thumb-grid .entry.athen-col-3 {
+    height: auto;
+    width: 33%; }
+  .sidebar-box .athen-recent-posts-thumb-grid .entry.athen-col-2 {
+    height: auto;
+    width: 50%; }
+  .site-footer .footer-widget .athen-recent-posts-thumb-grid .entry.athen-col-4 {
+    height: auto;
+    width: 25%; }
+  .site-footer .footer-widget .athen-recent-posts-thumb-grid .entry.athen-col-3 {
+    height: auto;
+    width: 33%; }
+  .site-footer .footer-widget .athen-recent-posts-thumb-grid .entry.athen-col-2 {
+    height: auto;
+    width: 50%; } }
 
 /*------------------------- Small devices (tablets, 768px and up) -------------------------*/
 @media (min-width: 768px) {
@@ -8665,7 +8706,25 @@ Spacing
     padding: 20px 30px 0px 30px;
     margin: 20px 30px 0px 30px; }
   body.athen-content-layout-full-screen .post-box {
-    width: 100%; } }
+    width: 100%; }
+  .site-branding {
+    float: left;
+    width: 40%;
+    text-align: left; }
+  #site-header.header-one .header-main .header-main-free-txt {
+    width: 60%;
+    text-align: right;
+    float: right; }
+  /**** Header Top ****/
+  #site-header.header-one .header-top .social-icons {
+    width: auto;
+    text-align: center; }
+  #site-header.header-one .header-top .search-icon {
+    width: auto;
+    text-align: center; }
+  #site-header.header-one .header-top .header-top-free-txt {
+    width: auto;
+    text-align: center; } }
 
 /*--------------------- Medium devices (desktops, 992px and up) -----------------*/
 @media (min-width: 992px) {
@@ -8682,7 +8741,25 @@ Spacing
   body.athen-layout-three .container {
     width: 100%; }
   body.athen-layout-three .athen-alt-capsule {
-    width: 1100px; } }
+    width: 1100px; }
+  .site-branding {
+    float: left;
+    width: 20%;
+    text-align: left; }
+  /**** Header Bottom ****/
+  #site-header.header-one .header-bottom .navbar {
+    width: auto;
+    float: right; }
+  #site-header.header-one .header-bottom .social-icons {
+    width: 50%;
+    text-align: left; }
+  #site-header.header-one .header-bottom .search-icon {
+    width: 100%;
+    text-align: center; }
+  /******** Site Footer ********/
+  .site-footer .footer-widget .athen-recent-posts-thumb-grid .entry.athen-col-3 {
+    height: 80px;
+    width: 33%; } }
 
 /*-------------- Large devices (large desktops, 1200px and up) -------------------*/
 @media (min-width: 1200px) {

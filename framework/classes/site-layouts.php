@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Start Class
 if ( ! class_exists( 'Athen_Responsive_Widths_CSS' ) ) {
 	
-	class Athen_Responsive_Widths_CSS {
+	class Athen_Responsive_Widths_Css {
 
 		/**
 		 * Main constructor
@@ -400,4 +400,4 @@ if ( ! class_exists( 'Athen_Responsive_Widths_CSS' ) ) {
 	}
 
 }
-new Athen_Responsive_Widths_CSS();
+new Athen_Responsive_Widths_Css();

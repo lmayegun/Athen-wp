@@ -57,7 +57,7 @@ if ( ! class_exists( 'Athen_Post_Metaboxes' ) ) {
             $types  = array( 'post', 'page', 'portfolio', 'staff', 'testimonials', 'page', 'product' );
             $types  = apply_filters( 'athen_main_metaboxes_post_types', $types );
             $types  = array_combine( $types, $types );
-            
+            var_dump( $post_type );
             if ( in_array( $post_type, $types ) ) {
                 $obj = get_post_type_object( $post_type );
                 add_meta_box(
@@ -375,23 +375,17 @@ if ( ! class_exists( 'Athen_Post_Metaboxes' ) ) {
 
                     // Validate text
                     if ( 'text' == $type ) {
-
                         $value = sanitize_text_field( $_POST[$id] );
-
                     }
 
                     // Validate textarea
                     if ( 'textarea' == $type ) {
-
                         $value = esc_html( $_POST[$id] );
-
                     }
 
                     // Links
                     elseif ( 'link' == $type ) {
-
                         $value = esc_url( $_POST[$id] );
-
                     }
 
                     // Validate select
@@ -414,7 +408,6 @@ if ( ! class_exists( 'Athen_Post_Metaboxes' ) ) {
                             $value = $old;
                             delete_post_meta( get_the_ID(), 'athen_post_self_hosted_shortcode_redux' );
                         }
-
                     }
 
                     // All else
@@ -430,12 +423,9 @@ if ( ! class_exists( 'Athen_Post_Metaboxes' ) ) {
                     // Otherwise cleanup stuff
                     else {
                         delete_post_meta( $post_id, $id );
-                    }
-                    
+                    }   
                 }
-
             }
-
         }
 
         /**
@@ -553,17 +543,6 @@ if ( ! class_exists( 'Athen_Post_Metaboxes' ) ) {
                         'description'   => __( 'Select your a custom sidebar for this page or post.', 'athen_transl' ),
                         'options'       => $this->helpers( 'widget_areas' ),
                     ),
-                    'disable_toggle_bar'    => array(
-                        'title'         => __( 'Toggle Bar', 'athen_transl' ),
-                        'id'            => $prefix . 'disable_toggle_bar',
-                        'type'          => 'select',
-                        'description'   => __( 'Enable or disable this element on this page or post.', 'athen_transl' ),
-                        'options'       => array(
-                            ''          => __( 'Default', 'athen_transl' ),
-                            'enable'    => __( 'Enable', 'athen_transl' ),
-                            'on'        => __( 'Disable', 'athen_transl' ),
-                        ),
-                    ),
                     'disable_top_bar'   => array(
                         'title'         => __( 'Top Bar', 'athen_transl' ),
                         'id'            => $prefix . 'disable_top_bar',
@@ -648,18 +627,6 @@ if ( ! class_exists( 'Athen_Post_Metaboxes' ) ) {
                         'type'          => 'media',
                         'description'   => __( 'Select a custom logo (optional) for the overlay header.', 'athen_transl' ),
                     ),
-                    /*'overlay_header_logo_retina'  => array(
-                        'title'         => __( 'Overlay Header Logo: Retina', 'athen_transl'),
-                        'id'            => $prefix . 'overlay_header_logo_retina',
-                        'type'          => 'media',
-                        'description'   => __( 'Retina version for the overlay header custom logo.', 'athen_transl' ),
-                    ),
-                    'overlay_header_logo_height'    => array(
-                        'title'         => __( 'Overlay Header Logo: Retina', 'athen_transl'),
-                        'id'            => $prefix . 'overlay_header_logo_retina',
-                        'type'          => 'media',
-                        'description'   => __( 'Retina version for the overlay header custom logo.', 'athen_transl' ),
-                    ),*/
                 ),
             );
 

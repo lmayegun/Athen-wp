@@ -101,10 +101,6 @@ if ( ! class_exists( 'WPEX_Tweaks_Admin' ) ) {
                     'enabled' => true,
                     'label'   => __( 'Image Sizes', 'athen_transl' ),
                 ),
-                'skins' => array(
-                    'enabled' => true,
-                    'label'   => __( 'Skins', 'athen_transl' ),
-                ),
                 'minify_js' => array(
                     'enabled' => true,
                     'label'   => __( 'Minify Javascript', 'athen_transl' ),

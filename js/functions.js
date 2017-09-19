@@ -365,7 +365,7 @@
                 $( 'a.mobile-menu-toggle, li.mobile-menu-toggle > a' ).sidr( {
                     name        	: 'sidr-main',
                     source      	: athenLocalize.sidrSource,
-                    side        	: 'right',
+                    side        	: 'left',
                     displace    	: athenLocalize.sidrDisplace,
                     renaming    	: true,
 					body 		: '',

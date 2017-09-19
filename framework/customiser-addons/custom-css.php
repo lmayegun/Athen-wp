@@ -2,13 +2,11 @@
 /**
  * Creates the admin panel and custom CSS output
  *
- * @package		Total
+ * @package		Athen 
  * @subpackage	Framework/Addons
- * @author		Alexander Clarke
- * @copyright	Copyright (c) 2015, WPExplorer.com
- * @link		http://www.wpexplorer.com
- * @since		1.6.0
- * @version		2.1.0
+ * @author		Lukmon Mayegun 
+ * @since		1.0.0
+ * @version		1.0.0
  */
 
 // Exit if accessed directly
@@ -19,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Start Class
 if ( ! class_exists( 'WPEX_Custom_CSS' ) ) {
 
-	class WPEX_Custom_CSS {
+	class Athen_Custom_CSS {
 
 		/**
 		 * Start things up
@@ -83,7 +81,7 @@ if ( ! class_exists( 'WPEX_Custom_CSS' ) ) {
 			}
 
 			// Define assets URL
-			$dir = ATHEN_FRAMEWORK_DIR_URI .'addons/assets/codemirror/';
+			$dir = ATHEN_FRAMEWORK_DIR_URI .'customiser-addons/assets/codemirror/';
 
 			// Load JS files and required CSS
 			wp_enqueue_script(
@@ -197,7 +195,7 @@ if ( ! class_exists( 'WPEX_Custom_CSS' ) ) {
 							lint			: true
 						} );
 					};
-					<?php $dir = ATHEN_FRAMEWORK_DIR_URI .'addons/assets/codemirror/'; ?>
+					<?php $dir = ATHEN_FRAMEWORK_DIR_URI .'customiser-addons/assets/codemirror/'; ?>
 					$( '.wpex-custom-css-toggle-skin' ).click(function() {
 						var hiddenField = $( '#wpex-default-codemirror-theme' );
 						if ( hiddenField.val() == 'dark' ) {
@@ -223,6 +221,5 @@ if ( ! class_exists( 'WPEX_Custom_CSS' ) ) {
 			return $output;
 		}
 	}
-	
 }
-new WPEX_Custom_CSS();
+new Athen_Custom_CSS();

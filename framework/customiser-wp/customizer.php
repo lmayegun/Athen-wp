@@ -66,7 +66,6 @@ if ( ! class_exists( 'Athen_Customizer' ) ) {
                 'menu'              => __( 'Menu', 'athen_transl' ),
                 'search'            => __( 'Search', 'athen_transl' ),
                 'socials'           => __( 'Socials', 'athen_transl' ),
-                'togglebar'         => __( 'Toggle Bar', 'athen_transl' ),
                 'sidebar'           => __( 'Sidebar', 'athen_transl' ),
                 'blog'              => __( 'Blog', 'athen_transl' ),
                 'portfolio'         => __( 'Portfolio', 'athen_transl' ),
