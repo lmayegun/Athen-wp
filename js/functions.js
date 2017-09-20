@@ -1282,7 +1282,7 @@
             }
             
             // Add equal heights
-            $( '.match-height-grid .vcex-blog-entry, .blog-entry-equal-heights, .footer-box' ).matchHeight();
+            $( '.match-height-grid .vcex-blog-entry, .blog-entry-equal-heights, .footer-box, .equal-heights' ).matchHeight();
 
         },
 

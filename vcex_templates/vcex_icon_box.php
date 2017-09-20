@@ -132,7 +132,7 @@ if ( $icon ) {
 // Main Classes
 $wrapper_classes = array( 'vcex-icon-box', 'clr' );
 if ( $style ) {
-    //$wrapper_classes[] = 'style-'. $style;
+    $wrapper_classes[] = 'style-'. $style;
 }
 if ( empty( $icon ) && empty( $image ) ) {
     $wrapper_classes[] = 'no-icon';
@@ -300,7 +300,7 @@ $wrapper_classes = implode( ' ', $wrapper_classes );
 if ( $url && $url_wrap ) : ?>
 <a href="<?php echo $url; ?>" title="<?php echo esc_attr( $heading ); ?>" class="<?php echo $wrapper_classes; ?>"<?php vcex_unique_id( $unique_id ); ?><?php echo $wrapper_style; ?><?php echo $url_target; ?><?php echo $url_rel; ?><?php echo $wrapper_data; ?>>
 <?php else : ?>
-<div class="<?php echo $wrapper_classes; ?>"<?php vcex_unique_id( $unique_id ); ?><?php echo $wrapper_style; ?><?php echo $wrapper_data; ?>>
+<div class="brain <?php echo $wrapper_classes; ?>"<?php vcex_unique_id( $unique_id ); ?><?php echo $wrapper_style; ?><?php echo $wrapper_data; ?>>
 <?php endif; ?>
 
     <?php
