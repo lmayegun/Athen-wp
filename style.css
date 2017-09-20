@@ -1120,7 +1120,7 @@ textarea:focus {
   .athen-col-3 {
     width: 33.3%; }
   .athen-col-4 {
-    width: 25%; }
+    width: 50%; }
   .athen-col-5 {
     width: 20%; }
   .athen-col-6 {
@@ -3956,11 +3956,11 @@ Other Miscellaneous Item in Entry
 /*related posts*/
 .related-posts {
   margin-bottom: 20px;
-  overflow: hidden;
-  border: 1px dashed #333; }
+  overflow: hidden; }
   .related-posts .related-post {
-    box-sizing: border-box;
-    border: 1px dashed #333; }
+    box-sizing: border-box; }
+    .related-posts .related-post .contain {
+      border: 1px dashed #333; }
     .related-posts .related-post-thumb {
       display: block; }
       .related-posts .related-post-thumb img {
@@ -8722,7 +8722,10 @@ Spacing
     text-align: center; }
   #site-header.header-one .header-top .header-top-free-txt {
     width: auto;
-    text-align: center; } }
+    text-align: center; }
+  /**** Sidebar ****/
+  .sidebar-box .athen-recent-posts-thumb-grid .entry img {
+    height: 180px; } }
 
 /*--------------------- Medium devices (desktops, 992px and up) -----------------*/
 @media (min-width: 992px) {
@@ -8757,7 +8760,10 @@ Spacing
   /******** Site Footer ********/
   .site-footer .footer-widget .athen-recent-posts-thumb-grid .entry.athen-col-3 {
     height: 80px;
-    width: 33%; } }
+    width: 33%; }
+  /**** Sidebar ****/
+  .sidebar-box .athen-recent-posts-thumb-grid .entry img {
+    height: 115px; } }
 
 /*-------------- Large devices (large desktops, 1200px and up) -------------------*/
 @media (min-width: 1200px) {

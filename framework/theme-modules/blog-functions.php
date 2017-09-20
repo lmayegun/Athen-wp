@@ -592,7 +592,7 @@ function athen_blog_single_layout_blocks() {
 	$blocks = athen_get_mod( 'blog_single_composer' );
 
 	// If blocks are 100% empty return defaults
-	$blocks = $blocks ? $blocks : 'featured_media,title_meta,post_series,the_content,post_tags,social_share,author_bio,related_posts,comments';
+	$blocks = $blocks ? $blocks : 'featured_media,title_meta,post_series,the_content,post_tags,social_share,author_bio,related_posts,comments,categories,tags';
 				
 	// Apply filters to entry layout blocks
 	$blocks = apply_filters( 'athen_blog_single_layout_blocks', $blocks );

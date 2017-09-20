@@ -87,7 +87,7 @@ $blocks = athen_blog_entry_layout_blocks(); ?>
                     // Display the social share
                     elseif ( 'social_share' == $block ){ ?>
                 
-                        <?php get_template_part( 'partials/social-share/social-share', $social_share ); ?>
+                        <?php //get_template_part( 'partials/social-share/social-share', $social_share ); ?>
                     
                     <?php }
                     
@@ -167,7 +167,7 @@ $blocks = athen_blog_entry_layout_blocks(); ?>
                 // Display the social share
                 elseif ( 'social_share' == $block ){ ?>
                 
-                    <?php get_template_part( 'partials/social-share/social-share', $social_share ); ?>
+                    <?php //get_template_part( 'partials/social-share/social-share', $social_share ); ?>
                     
                 <?php }
                     

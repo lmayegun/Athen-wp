@@ -19,6 +19,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Get global object
 $athen_std_theme = athen_global_obj();
 
+$post_format    = get_post_format();
+$entry_style    = athen_blog_entry_style();
+$social_share   = Athen_Social_Share::athen_social_share_animation();
+
+// Get layout blocks
+$blocks = athen_blog_entry_layout_blocks(); 
+
 // Get single blog layout blocks
 $post_format        = get_post_format();
 $password_required  = post_password_required();
@@ -84,7 +91,7 @@ else :
         // Social sharing links
         elseif ( 'social_share' == $block && $athen_std_theme->has_social_share && ! $password_required ) {
             
-            get_template_part( 'partials/social', 'share' );
+            get_template_part( 'partials/social-share/social-share', $social_share ); 
            
         }
 
@@ -107,6 +114,20 @@ else :
 
             comments_template();
 
+        }
+                    
+        // Displaye category terms
+        elseif ( 'category_terms' == $block ){ 
+                
+            get_template_part( 'partials/blog/blog-terms', 'category' );
+                    
+        }
+                
+        // Displaye tag terms
+        elseif ( 'tag_terms' == $block ){ 
+                
+            get_template_part( 'partials/blog/blog-terms', 'tag' );
+                    
         }
 
         // Custom Blocks

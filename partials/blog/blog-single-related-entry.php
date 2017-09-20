@@ -36,53 +36,53 @@ $classes[]	= athen_grid_class( 4 );
 $classes[]	= 'col-'. $athen_count; ?>
 
 <article <?php post_class( $classes ); ?>>
+	<div class="contain">
+		<?php
+		// Display post video
+		if ( $show_embeds && 'video' == $format && $video = athen_get_post_video_html() ) : ?>
 
-	<?php
-	// Display post video
-	if ( $show_embeds && 'video' == $format && $video = athen_get_post_video_html() ) : ?>
+			<div class="related-post-video">
+				<?php echo $video; ?>
+			</div><!-- .related-post-video -->
 
-		<div class="related-post-video">
-			<?php echo $video; ?>
-		</div><!-- .related-post-video -->
+		<?php
+		// Display post audio
+		elseif ( $show_embeds && 'audio' == $format && $audio = athen_get_post_audio_html() ) : ?>
 
-	<?php
-	// Display post audio
-	elseif ( $show_embeds && 'audio' == $format && $audio = athen_get_post_audio_html() ) : ?>
+			<div class="related-post-video">
+				<?php echo $audio; ?>
+			</div><!-- .related-post-audio -->
 
-		<div class="related-post-video">
-			<?php echo $audio; ?>
-		</div><!-- .related-post-audio -->
+		<?php
+		// Display post thumbnail
+		elseif ( $thumbnail ) : ?>
 
-	<?php
-	// Display post thumbnail
-	elseif ( $thumbnail ) : ?>
+			<a href="<?php the_permalink(); ?>" title="<?php athen_esc_title(); ?>" rel="bookmark" class="related-post-thumb<?php athen_entry_image_animation_classes(); ?>">
+				<?php echo $thumbnail; ?>
+			</a><!-- .related-post-thumb -->
 
-		<a href="<?php the_permalink(); ?>" title="<?php athen_esc_title(); ?>" rel="bookmark" class="related-post-thumb<?php athen_entry_image_animation_classes(); ?>">
-			<?php echo $thumbnail; ?>
-		</a><!-- .related-post-thumb -->
+		<?php endif; ?>
 
-	<?php endif; ?>
+		<?php
+		// Display post excerpt
+		if ( $has_excerpt ) : ?>
 
-	<?php
-	// Display post excerpt
-	if ( $has_excerpt ) : ?>
+			<div class="related-post-content equal-height-content clr">
 
-		<div class="related-post-content equal-height-content clr">
+				<h4 class="related-post-title">
+					<a href="<?php athen_permalink(); ?>" title="<?php athen_esc_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
+				</h4><!-- .related-post-title -->
 
-			<h4 class="related-post-title">
-				<a href="<?php athen_permalink(); ?>" title="<?php athen_esc_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h4><!-- .related-post-title -->
+				<div class="related-post-excerpt clr">
 
-			<div class="related-post-excerpt clr">
+					<?php athen_excerpt( array(
+						'length' => athen_get_mod( 'blog_related_excerpt_length', '15' ),
+					) ); ?>
 
-				<?php athen_excerpt( array(
-					'length' => athen_get_mod( 'blog_related_excerpt_length', '15' ),
-				) ); ?>
+				</div><!-- related-post-excerpt -->
 
-			</div><!-- related-post-excerpt -->
+			</div><!-- .related-post-content -->
 
-		</div><!-- .related-post-content -->
-
-	<?php endif; ?>
-
+		<?php endif; ?>
+	</div>
 </article><!-- .related-post -->
