@@ -119,3 +119,8 @@ class Athen_Framework_Init {
  * @since 1.6.3
  */
 $athen_init = new Athen_Framework_Init;
+
+
+
+
+//add_filter( 'the_excerpt', 'custom_excerpt');

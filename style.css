@@ -3117,10 +3117,8 @@ pre {
 
 .theme-heading {
   height: auto;
-  margin-bottom: 20px auto 20px auto;
+  margin: 10px auto 0px auto;
   top: auto !important;
-  font-size: 30px;
-  font-wieight: bold;
   color: #333;
   overflow: hidden;
   position: relative; }
@@ -3472,10 +3470,10 @@ BLOGS --- entry --- single -- media
     margin-top: 10px; }
   .blog-entry .blog-entry-readmore {
     margin-top: 20px;
-    float: left;
-    margin: 20px 0px;
-    padding: 8px;
-    border: 1px dashed #333; }
+    margin: 20px 0px; }
+    .blog-entry .blog-entry-readmore a:link {
+      border: 1px dashed #333;
+      padding: 8px; }
 
 /*------- Blog Entry Media -------*/
 .blog-entry {
@@ -5431,7 +5429,7 @@ ul.social-share-buttons {
   display: none; }
 
 .social-share-buttons.position-horizontal {
-  margin: 0 0 40px; }
+  margin: 0 0 0px; }
   .social-share-buttons.position-horizontal li {
     float: left;
     margin: 0 5px 5px 0;
@@ -6188,10 +6186,10 @@ Post-Filters-Btn
       margin: 0;
       font-size: 16px;
       min-height: 95px;
-      padding-left: 150px;
+      padding-left: 110px;
       position: relative;
       padding-top: 15px;
-      padding-bottom: 65px;
+      padding-bottom: 15px;
       border-bottom: 1px dashed #333; }
       .athen-widget-recent-posts-thumb li:first-child {
         margin-top: -14px; }

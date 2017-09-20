@@ -105,13 +105,13 @@
                 self.config.$siteHeaderHeight = self.parseHeaderHeight();
 
                 // Run functions
-                self.equalHeights();
                 self.footerRevealMainMargin();
                 self.overlayHeaderTopbarOffset();
                 self.fadeIn();
                 self.parallax();
                 self.cartSearchDropdownsRelocate();
                 self.sliderPro();
+                self.equalHeights();
 				//console.log(self.layoutAutoContainer());
 
                 // Delay functions if page animations are enabled
@@ -1282,7 +1282,7 @@
             }
             
             // Add equal heights
-            $( '.match-height-grid .vcex-blog-entry' ).matchHeight();
+            $( '.match-height-grid .vcex-blog-entry, .blog-entry-equal-heights' ).matchHeight();
 
         },
 

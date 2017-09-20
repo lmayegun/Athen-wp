@@ -22,7 +22,12 @@ $cat = athen_list_post_terms( 'post_tag', true, false );
 
 <?php if($cat): ?>
 <div class="blog-entry-terms clr">
-    <h4 class="title"> Tags </h4>
+    <?php athen_heading( array(
+		'content'		=> 'Tags',
+		'tag'			=> 'h4',
+		'classes'		=> array( 'social-share-title' ),
+		'apply_filters'	=> 'social_share',
+	) ); ?>
     <div class="entry-category-label">
         <?php athen_list_post_terms( 'post_tag', true, true ); ?>
     </div>  
