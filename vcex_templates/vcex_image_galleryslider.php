@@ -74,10 +74,10 @@ extract( shortcode_atts( array(
     'caption_visibility'        => '',
     'css'                       => '',
 ), $atts ) );
-var_dump($image_ids);
+
 // Set image ids
 $image_ids = ( 'true' == $post_gallery ) ? athen_get_gallery_ids() : $image_ids;
-var_dump($image_ids);
+
 // If there aren't any images lets display a notice
 if ( empty( $image_ids ) ) {
     echo '<div class="vc-module-notice">'. __( 'Please select some images.', 'athen_transl' ) .'</div>';

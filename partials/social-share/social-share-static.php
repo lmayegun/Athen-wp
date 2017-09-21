@@ -89,7 +89,7 @@ if ( is_rtl() ) {
 
 	<?php athen_heading( array(
 		'content'		=> $heading,
-		'tag'			=> 'div',
+		'tag'			=> 'h4',
 		'classes'		=> array( 'social-share-title' ),
 		'apply_filters'	=> 'social_share',
 	) ); ?>

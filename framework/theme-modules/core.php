@@ -1325,7 +1325,6 @@ function athen_display_filter_btn( $cat, $key ){
     foreach( $slugs as $Slug ){
         $minusDash = str_replace('-', " ", $Slug );
         $output .= "<li class='button' data-filter=.".$cat.'-'.$Slug."><a href='#' onclick='return false;'> $minusDash </a></li>";
-        //var_dump($slug);
     }
     
     $output .= "</ul>";
@@ -1333,7 +1332,6 @@ function athen_display_filter_btn( $cat, $key ){
     $output .= "</div>";
     
     echo $output;       
-    //var_dump( athen_get_cpt_terms( $cat, $key )); 
 }
 
 /**
@@ -1465,11 +1463,19 @@ function athen_section_classes(){
 }
 
 
+/*
+ * Return Excerpt of a specific post type
+ * Description : Should be use in a wp query loop
+ * 
+ * @since 1.0.0
+ * @return String
+ */
+function athen_custom_excerpt( $post_excerpt, $lengths = 100 ){
 
-$athen_std_theme = athen_global_obj();
+    if ( $post_excerpt ){
+        $excerpt = wp_trim_words( $post_excerpt, $lengths);
+    }
+    return $excerpt;
+}
 
-
-    
-
-
-    
+$athen_std_theme = athen_global_obj(); 

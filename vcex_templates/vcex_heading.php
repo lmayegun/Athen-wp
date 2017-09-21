@@ -36,6 +36,7 @@ $atts = shortcode_atts( array(
 	'link'              => '',
 	'link_local_scroll' => '',
 	'background_hover'  => '',
+	'css_animation' 	=> '',
 ), $atts );
 
 // Extract attributes
@@ -48,6 +49,12 @@ $tag = $tag ? $tag : 'div';
 $wrap_classes = array( 'vcex-heading', 'reset-styles' );
 $link_html    = array();
 $wrap_data    = array();
+
+
+// Css Animation Appear
+if ( $css_animation ){
+	$wrap_classes[] = $this->getCSSAnimation( $css_animation );
+}
 
 // Load custom font
 if ( $font_family ) {

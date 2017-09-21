@@ -88,11 +88,13 @@
 .related-posts { 
 	margin-bottom: 20px;
 	overflow: hidden;
-	border: 1px dashed $trace-2;
 	
 	.related-post{
 		box-sizing: border-box;
-		border: 1px dashed $trace-2;
+
+		.contain{
+			border: 1px dashed $trace-2;
+		}
 		
 		&-thumb { 
 			display: block;

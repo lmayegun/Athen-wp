@@ -104,6 +104,7 @@ class Athen_Recent_Posts_Thumb extends WP_Widget {
                 while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
                 
                     <?php
+                    
                     // Get post thumbnail
                     $thumbnail = athen_get_post_thumbnail( array(
                         'size'      => $img_size,
@@ -127,9 +128,21 @@ class Athen_Recent_Posts_Thumb extends WP_Widget {
                         <?php endif; ?>
 
                         <a href="<?php athen_permalink(); ?>" title="<?php athen_esc_title(); ?>" class="post-title"><?php the_title(); ?></a>
-                            
+                         
+
+                        <?php  
+                        // Display Excerpt 
+                        // if ( $excerpt ): 
+                       //var_dump(get_post()->post_content);
+                       //$contentjj = get_post()->post_content;
+                        if(true):?> 
+
+                            <div> <?php echo athen_custom_excerpt( get_post()->post_content , 8 ); ?> </div>
+                                          
+                        <?php endif; ?>
+
                         <?php
-						print( custom_excerpt ( $my_query->post->post_content, 8 ) );
+
                         // Display date if enabled
                         if ( '1' == $post_meta ) : ?>
 
@@ -141,6 +154,11 @@ class Athen_Recent_Posts_Thumb extends WP_Widget {
                             </div><!-- .wpex-widget-recent-posts-date -->
 
                         <?php endif; ?>
+                        
+                            
+                            
+                         
+
                     </li><!-- .wpex-widget-recent-posts-li -->
 
                 <?php endwhile; ?>

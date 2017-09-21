@@ -93,10 +93,14 @@ BLOGS --- entry --- single -- media
 	/* readmore */ 
 	.blog-entry-readmore {
 		margin-top: 20px;
-   		float: left;
     	margin: 20px 0px;
-    	padding: 8px;
-		border: 1px dashed $trace-2;
+
+		a{
+			&:link{
+				border: 1px dashed $trace-2;
+				padding: 8px;
+			}
+		}
 	}
 }
 

@@ -60,7 +60,23 @@ extract( shortcode_atts( array(
     'classes'                   => '',
     'visibility'                => '',
     'css'                       => '',
+    'teaser_button'             => '',
+    'button_teaser_animation'   => '',
+    'button_bg_transition'      => '',
+    'button_animation_icon'     => '',
+    'button_color'              => '',
+    'button_color_hover'        => '',
+
+
 ), $atts ) );
+/*
+var_dump($teaser_button);
+var_dump($button_teaser_animation);
+var_dump($button_bg_transition);
+var_dump($button_animation_icon);
+var_dump($button_color);
+var_dump($button_color_hover);
+*/
 
 // Add main Classes
 $wrap_classes = array( 'vcex-teaser' );

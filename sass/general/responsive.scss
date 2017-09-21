@@ -224,6 +224,11 @@
 		width: auto;
 		text-align: center;
 	}
+
+	/**** Sidebar ****/
+	.sidebar-box .athen-recent-posts-thumb-grid .entry img {
+	    height: 180px;
+	}
 }
 
 /*--------------------- Medium devices (desktops, 992px and up) -----------------*/
@@ -283,11 +288,15 @@
 	    text-align: center;
 	}
 
-
 	/******** Site Footer ********/
 	.site-footer .footer-widget .athen-recent-posts-thumb-grid .entry.athen-col-3 {
 	    height: 80px;
 	    width: 33%;
+	}
+
+	/**** Sidebar ****/
+	.sidebar-box .athen-recent-posts-thumb-grid .entry img {
+	    height: 115px;
 	}
  }
 

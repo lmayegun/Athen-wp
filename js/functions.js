@@ -105,13 +105,13 @@
                 self.config.$siteHeaderHeight = self.parseHeaderHeight();
 
                 // Run functions
-                self.equalHeights();
                 self.footerRevealMainMargin();
                 self.overlayHeaderTopbarOffset();
                 self.fadeIn();
                 self.parallax();
                 self.cartSearchDropdownsRelocate();
                 self.sliderPro();
+                self.equalHeights();
 				//console.log(self.layoutAutoContainer());
 
                 // Delay functions if page animations are enabled
@@ -374,11 +374,14 @@
 						}),*/
                 } );
 
+                // Add Mobile Style to sidr element
+                $('.sidr').addClass( 'default-style' );
+
                 // Declare useful vars
                 var $hasChildren = $( '.sidr-class-menu-item-has-children' );
 
                 // Add dropdown toggle (arrow)
-                $hasChildren.children( 'a' ).append( '<span class="sidr-class-dropdown-toggle"> + </span>' );
+                $hasChildren.children( 'a' ).append( '<span class="sidr-class-dropdown-toggle fa fa-angle-down"></span>' );
 
                 // Toggle dropdowns
                 $( '.sidr-class-dropdown-toggle' ).on( athenLocalize.isMobile ? 'touchstart' : 'click', function( event ) {
@@ -387,11 +390,20 @@
                         $toggleParentLi     = $toggleParentLink.parent( 'li' ),
                         $allParentLis       = $toggleParentLi.parents( 'li' ),
                         $dropdown           = $toggleParentLi.children( 'ul' );
+                        //$currentLink        = $(this);
                     if ( ! $toggleParentLi.hasClass( 'active' ) ) {
                         $hasChildren.not( $allParentLis ).removeClass( 'active' ).children( 'ul' ).slideUp( 'fast' );
                         $toggleParentLi.addClass( 'active' ).children( 'ul' ).slideDown( 'fast' );
+                        console.log($( this ).hasClass('fa'));
+                        
                     } else {
                         $toggleParentLi.removeClass( 'active' ).children( 'ul' ).slideUp( 'fast' );
+                    }
+
+                    if( $( this ).hasClass( 'fa-angle-down') ){
+                        $( this ).addClass( 'fa-angle-up').removeClass( 'fa-angle-down');
+                    } else if ( $( this ).hasClass( 'fa-angle-up') ){
+                        $( this ).addClass( 'fa-angle-down').removeClass( 'fa-angle-up');
                     }
                 } );
                 
@@ -1282,7 +1294,7 @@
             }
             
             // Add equal heights
-            $( '.match-height-grid .vcex-blog-entry' ).matchHeight();
+            $( '.match-height-grid .vcex-blog-entry, .blog-entry-equal-heights, .footer-box, .equal-heights' ).matchHeight();
 
         },
 

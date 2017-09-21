@@ -21,7 +21,6 @@
     color:red;
     background:rgba(255,255,255,0.5);
 }
-
 .sidr {
     // Default Settings
     position: fixed;
@@ -46,6 +45,8 @@
     // Toggle Chilldren Icon
     .sidr-class-dropdown-toggle{
         float: right; 
+
+        &.fa{ padding-top: 15px;}
     }
 
     // Children Hidden
@@ -67,8 +68,6 @@
     }
 
     // Theme Settings
-   
-
     h1,
     h2,
     h3,
@@ -204,6 +203,17 @@
      
         &:hover {
           
+        }
+    }
+    // Default Style 
+    &.default-style{
+        display: block;
+        background: $pri-color;
+        opacity: 0.9;
+
+        a{
+            &:link{ color: $white ; }
+            &:visited{ color: $white ; }
         }
     }
 }

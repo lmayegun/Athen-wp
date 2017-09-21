@@ -349,6 +349,8 @@ $blocks = array (
 	'author_bio'        => __( 'Author Bio','athen_transl' ),
 	'related_posts'     => __( 'Related Posts','athen_transl' ),
 	'comments'          => __( 'Comments','athen_transl' ),
+	'category_terms'        => __( 'Categories','athen_transl' ),
+	'tag_terms'			    => __( 'Tags','athen_transl' ),
 );
 $blocks = apply_filters( 'athen_blog_single_blocks', $blocks );
 $this->sections['athen_blog_single_builder'] = array(
@@ -357,7 +359,7 @@ $this->sections['athen_blog_single_builder'] = array(
 	'settings'  => array(
 		array(
 			'id'        => 'blog_single_composer',
-			'default'   => 'featured_media,title_meta,post_series,the_content,post_tags,social_share,author_bio,related_posts,comments',
+			'default'   => 'featured_media,title_meta,post_series,the_content,post_tags,social_share,author_bio,related_posts,comments,categories,tags',
 			'control'   => array (
 				'label'     => __( 'Blog Entry Element\'s Order', 'athen_transl' ),
 				'type'      => 'wpex-sortable',
