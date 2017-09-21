@@ -4235,10 +4235,6 @@ TOPBAR
   border-bottom: 1px dashed red; }
   #site-header.header-one .header-bottom .navbar {
     float: right; }
-    #site-header.header-one .header-bottom .navbar.navbar-style-one a:link {
-      color: #000000; }
-    #site-header.header-one .header-bottom .navbar.navbar-style-one a:visited {
-      color: #000; }
   #site-header.header-one .header-bottom .social-icons {
     float: left; }
     #site-header.header-one .header-bottom .social-icons a:link {
@@ -5873,83 +5869,52 @@ Menu Navigation Style
   margin-top: 0px;
   margin-left: 14px;
   top: 0px; }
-  .navbar.navbar-style-one .dropdown-menu {
-    background: none; }
-    .navbar.navbar-style-one .dropdown-menu a {
-      color: #cccccc; }
-      .navbar.navbar-style-one .dropdown-menu a:hover {
-        color: white;
+  .navbar.navbar-style-one .dropdown-menu > li {
+    margin: 0px 0px 0px 20px; }
+    .navbar.navbar-style-one .dropdown-menu > li > a {
+      font-size: 12px;
+      line-height: 44px;
+      margin: 0px 16px; }
+      .navbar.navbar-style-one .dropdown-menu > li > a:link {
+        color: #333; }
+      .navbar.navbar-style-one .dropdown-menu > li > a:visited {
+        text-decoration: none;
+        color: #333; }
+      .navbar.navbar-style-one .dropdown-menu > li > a:hover {
+        color: #ccc;
         text-decoration: none; }
-    .navbar.navbar-style-one .dropdown-menu > li {
-      margin: 0px 0px 0px 20px; }
-      .navbar.navbar-style-one .dropdown-menu > li > a {
-        font-size: 12px;
-        line-height: 44px;
-        margin: 0px 16px; }
-        .navbar.navbar-style-one .dropdown-menu > li > a:link {
-          color: white; }
-        .navbar.navbar-style-one .dropdown-menu > li > a:hover {
-          color: #ccc;
-          text-decoration: none; }
-      .navbar.navbar-style-one .dropdown-menu > li:first-child {
-        margin-left: 20px; }
-      .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu {
-        background-color: #333;
-        padding: 0px 0px; }
-        .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li {
-          padding: 0px;
-          margin: 0px; }
-          .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li.margin-bottom {
-            margin-bottom: 12px !important; }
-          .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li a {
-            padding: 8px 35px 8px 15px;
-            line-height: 2;
-            float: none; }
-            .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li a .fa:before {
-              margin-right: 10px; }
-            .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li a .sub {
-              font-size: 10px;
-              position: absolute;
-              top: 27px;
-              font-style: italic;
-              text-transform: lowercase;
-              color: #fff; }
-
-.navbar li.megamenu ul.sub-menu {
-  padding: 0px 20px 0px 0px !important;
-  background-color: #333;
-  background-image: url(http://themes.dfd.name/ronneby/first/wp-content/uploads/2015/07/layouts2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 100%;
-  left: 20px; }
-  .navbar li.megamenu ul.sub-menu > li.menu-item-has-children {
-    padding: 0px 0px 0px 0px;
-    margin-left: 0px;
-    float: left; }
-    .navbar li.megamenu ul.sub-menu > li.menu-item-has-children > a {
-      color: #fff;
-      padding: 18px 40px 0px 35px !important; }
-      .navbar li.megamenu ul.sub-menu > li.menu-item-has-children > a:after {
-        content: "";
-        display: block;
-        width: auto;
-        height: 1px;
-        position: relative;
-        left: 0px;
-        right: 20px;
-        top: 2px;
-        bottom: 5px;
-        margin: 0;
-        background: rgba(255, 255, 255, 0.1);
-        opacity: 1;
-        visibility: visible; }
-    .navbar li.megamenu ul.sub-menu > li.menu-item-has-children.dropdown ul.sub-menu {
-      padding-left: 20px !important;
-      width: auto;
-      background: none; }
-  .navbar li.megamenu ul.sub-menu li {
-    border: 0px; }
+    .navbar.navbar-style-one .dropdown-menu > li:first-child {
+      margin-left: 20px; }
+    .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu {
+      background-color: #333;
+      padding: 0px 0px; }
+      .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li {
+        padding: 0px;
+        margin: 0px; }
+        .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li.margin-bottom {
+          margin-bottom: 12px !important; }
+        .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li a {
+          padding: 8px 35px 8px 15px;
+          line-height: 2;
+          float: none; }
+          .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li a .fa:before {
+            margin-right: 10px; }
+          .navbar.navbar-style-one .dropdown-menu > li ul.sub-menu li a .sub {
+            font-size: 10px;
+            position: absolute;
+            top: 27px;
+            font-style: italic;
+            text-transform: lowercase;
+            color: #fff; }
+  .navbar.navbar-style-one .dropdown-menu a:link {
+    text-decoration: none;
+    color: #ccc; }
+  .navbar.navbar-style-one .dropdown-menu a:visited {
+    text-decoration: none;
+    color: #ccc; }
+  .navbar.navbar-style-one .dropdown-menu a:hover {
+    text-decoration: none;
+    color: white; }
 
 .navbar.navbar-style-two {
   float: right;
@@ -5964,11 +5929,6 @@ Menu Navigation Style
     margin-top: 10px; }
   .navbar.navbar-style-two .dropdown-menu {
     background: none; }
-    .navbar.navbar-style-two .dropdown-menu a {
-      color: #cccccc; }
-      .navbar.navbar-style-two .dropdown-menu a:hover {
-        color: white;
-        text-decoration: none; }
     .navbar.navbar-style-two .dropdown-menu > li {
       margin: 0px 0px 0px 10px; }
       .navbar.navbar-style-two .dropdown-menu > li > a {
@@ -6008,42 +5968,6 @@ Menu Navigation Style
               text-transform: lowercase;
               color: #fff; }
 
-.navbar li.megamenu ul.sub-menu {
-  padding: 0px 20px 0px 0px !important;
-  background-color: #333;
-  background-image: url(http://themes.dfd.name/ronneby/first/wp-content/uploads/2015/07/layouts2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 100%;
-  left: 20px; }
-  .navbar li.megamenu ul.sub-menu > li.menu-item-has-children {
-    padding: 0px 0px 0px 0px;
-    margin-left: 0px;
-    float: left; }
-    .navbar li.megamenu ul.sub-menu > li.menu-item-has-children > a {
-      color: #fff;
-      padding: 18px 40px 0px 35px !important; }
-      .navbar li.megamenu ul.sub-menu > li.menu-item-has-children > a:after {
-        content: "";
-        display: block;
-        width: auto;
-        height: 1px;
-        position: relative;
-        left: 0px;
-        right: 20px;
-        top: 2px;
-        bottom: 5px;
-        margin: 0;
-        background: rgba(255, 255, 255, 0.1);
-        opacity: 1;
-        visibility: visible; }
-    .navbar li.megamenu ul.sub-menu > li.menu-item-has-children.dropdown ul.sub-menu {
-      padding-left: 20px !important;
-      width: auto;
-      background: none; }
-  .navbar li.megamenu ul.sub-menu li {
-    border: 0px; }
-
 .navbar.navbar-style-three {
   border-top: 0px;
   position: relative;
@@ -6066,6 +5990,34 @@ Menu Navigation Style
         color: yellow; }
       .navbar.navbar-style-three .dropdown-menu > li a:visited {
         color: white; }
+
+.navbar li.megamenu ul.sub-menu {
+  padding: 0px 20px 0px 0px !important;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  left: 20px; }
+  .navbar li.megamenu ul.sub-menu > li.menu-item-has-children {
+    padding: 0px 0px 0px 0px;
+    margin-left: 0px;
+    float: left; }
+    .navbar li.megamenu ul.sub-menu > li.menu-item-has-children > a {
+      padding: 18px 40px 0px 35px !important; }
+      .navbar li.megamenu ul.sub-menu > li.menu-item-has-children > a:after {
+        content: "";
+        display: block;
+        width: auto;
+        height: 1px;
+        position: relative;
+        left: 0px;
+        right: 20px;
+        top: 2px;
+        bottom: 5px;
+        margin: 0;
+        background: rgba(255, 255, 255, 0.1);
+        opacity: 1;
+        visibility: visible; }
 
 /***************************************************************************
 Post-Filters-Btn
@@ -6762,7 +6714,6 @@ ol.commentlist {
     display: inline;
     clear: none; }
   .sidr.default-style {
-    display: block;
     background: #333;
     opacity: 0.9; }
     .sidr.default-style a:link {

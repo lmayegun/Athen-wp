@@ -267,7 +267,7 @@
                 $siteNavigationWrapPosition = 0;
             }
 
-            var $megaMenuNegativeMargin = $headerContainerWidth-$navWrapWidth-$siteNavigationWrapPosition;
+            var $megaMenuNegativeMargin = $navWrapWidth-$siteNavigationWrapPosition;
 			if ( $megaMenuClass.hasClass( "col-2" ) ){
 				$( '#site-navigation-wrap .megamenu > ul' ).css( {
 					'width'         : $megaMenuColWidth * 2,
@@ -332,7 +332,7 @@
 			if ( athenLocalize.siteHeaderStyle == "one" ){
 				if ( ! $( '#site-navigation' ).hasClass( '.nav-custom-height' ) ) {
 					$( '#site-navigation-wrap .megamenu > ul' ).css( {
-						'top' : $megaMenuTop/2.5
+						//'top' : $megaMenuTop/2.5
 					} );
 				}
 			}
@@ -341,7 +341,7 @@
 			else {
 				if ( ! $( '#site-navigation' ).hasClass( '.nav-custom-height' ) ) {
 					$( '#site-navigation-wrap .megamenu > ul' ).css( {
-						'top' : $megaMenuTop/2 + $navHeight
+						//'top' : $megaMenuTop/2 + $navHeight
 					} );
 				}
 			}
