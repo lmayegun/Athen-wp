@@ -349,6 +349,59 @@ if ( ! function_exists( 'vcex_teaser_shortcode_vc_map' ) ) {
                     'edit_field_class'  => 'vc_col-sm-4 vc_column',
                 ),
 
+                // Button 
+                array(
+                    'type'              => 'textfield',
+                    'heading'           => __( 'Heading', 'athen_transl'),
+                    'param_name'        => 'teaser_button',
+                    'description'       => '',
+                    'value'             => 'Button',
+                    'group'             => __( 'Button', 'athen_transl'),
+                ),
+
+                array(
+                    'type'              => 'dropdown',
+                    'heading'           => __( 'Animation', 'athen_transl'), 
+                    'param_name'        => 'button_teaser_animation',
+                    'description'       => '',
+                    'value'             => vcex_hover_animations(),
+                    'group'             => __( 'Button', 'athen_transl'),
+                    'edit_field_class'  => 'vc_col-sm-4 vc_column', 
+                ),
+
+                array(
+                    'type'              => 'dropdown',
+                    'heading'           => __( 'Transition', 'athen_transl'), 
+                    'param_name'        => 'button_bg_transition',
+                    'description'       => '',
+                    'value'             => vcex_hover_animations(),
+                    'group'             => __( 'Button', 'athen_transl'),
+                    'edit_field_class'        => 'vc_col-sm-4 vc_column', 
+                ),
+
+                array(
+                    'type'              => 'dropdown',
+                    'heading'           => __( 'Icon Animation', 'athen_transl'), 
+                    'param_name'        => 'button_animation_icon',
+                    'description'       => '',
+                    'value'             => vcex_hover_animations(),
+                    'group'             => __( 'Button', 'athen_transl'),
+                    'edit_field_class'        => 'vc_col-sm-4 vc_column', 
+                ),
+
+                array(
+                    'type'              => 'colorpicker',
+                    'heading'           => __( 'Button Color', 'athen_transl'), 
+                    'param_name'        => 'button_color', 
+                    'group'             => __( 'Button', 'athen_transl'),
+                ),
+                 array(
+                    'type'              => 'colorpicker',
+                    'heading'           => __( 'Button Hover', 'athen_transl'), 
+                    'param_name'        => 'button_color_hover', 
+                    'group'             => __( 'Button', 'athen_transl'),
+                ),
+
                 // Link
                 array(
                     'type'          => 'vc_link',

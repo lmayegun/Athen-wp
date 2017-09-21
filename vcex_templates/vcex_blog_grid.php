@@ -241,7 +241,7 @@ if ( $my_query->have_posts() ) :
 	if ( $classes ) {
 		$wrap_classes[] = vcex_get_extra_class( $classes );
 	}
-    if ( $css_animation ) {
+    if ( !$css_animation ) {
         $wrap_classes[] = $this->getCSSAnimation( $css_animation );
     }
     

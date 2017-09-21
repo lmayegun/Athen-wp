@@ -6679,6 +6679,8 @@ ol.commentlist {
       margin-right: 15px; }
   .sidr .sidr-class-dropdown-toggle {
     float: right; }
+    .sidr .sidr-class-dropdown-toggle.fa {
+      padding-top: 15px; }
   .sidr .sidr-class-sub-menu {
     display: none; }
   .sidr .sidr-class-mobile-icon {
@@ -6759,6 +6761,14 @@ ol.commentlist {
     width: auto;
     display: inline;
     clear: none; }
+  .sidr.default-style {
+    display: block;
+    background: #333;
+    opacity: 0.9; }
+    .sidr.default-style a:link {
+      color: white; }
+    .sidr.default-style a:visited {
+      color: white; }
 
 /***************************************************************************
 ---------------------------- SHORTCODES STYLES-----------------------------
@@ -8024,42 +8034,6 @@ Bullets
 .vcex-bullets-purple ul li {
   background: url("../images/visual-composer/bullets-purple.png") left center no-repeat; }
 
-/********************
-Callout
-********************/
-.vcex-callout {
-  padding: 15px;
-  position: relative;
-  background: #f7f7f7;
-  border: 1px solid #e4e4e4;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  min-height: 70px; }
-  .vcex-callout-caption {
-    float: left;
-    font-size: 14px;
-    font-weight: normal; }
-    .vcex-callout-caption h1, .vcex-callout-caption h2, .vcex-callout-caption h3, .vcex-callout-caption h4 {
-      margin: 0;
-      font-size: 21px;
-      font-weight: normal;
-      color: #000; }
-    .vcex-callout-caption p:last-child {
-      margin: 0; }
-  .vcex-callout-button {
-    float: left;
-    width: 25%; }
-    .vcex-callout-button .vcex-button {
-      display: block;
-      float: right;
-      text-align: center;
-      font-size: 1em;
-      font-weight: normal;
-      margin: 0; }
-  .vcex-callout.with-button .vcex-callout-caption {
-    width: 75%;
-    padding-right: 20px; }
-
 /*****************
  Login Form 
  ****************/
@@ -8337,6 +8311,8 @@ Teaser Boxes
     margin: 10px 0 0; }
     .vcex-teaser-text p:last-child {
       margin: 0; }
+  .vcex-teaser-one {
+    padding: 20px; }
   .vcex-teaser-two {
     padding: 20px;
     border: 1px solid #eee;
@@ -8589,9 +8565,7 @@ Terms Grid
 Headings
 *********************************/
 .vcex-heading {
-  display: block;
-  font-size: 21px;
-  color: #000; }
+  display: block; }
 
 a.vcex-heading:hover {
   text-decoration: none; }

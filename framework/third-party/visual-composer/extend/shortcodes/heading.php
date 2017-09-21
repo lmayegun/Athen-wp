@@ -40,6 +40,8 @@ if ( ! function_exists( 'vcex_heading_shortcode_vc_map' ) ) {
 			'category'    => ATHEN_NAME_THEME,
 			'icon'        => 'vcex-heading',
 			'params'      => array(
+
+				// General 
 				array(
 					'type'        => 'textarea',
 					'heading'     => __( 'Text', 'athen_transl' ),
@@ -96,6 +98,13 @@ if ( ! function_exists( 'vcex_heading_shortcode_vc_map' ) ) {
 					'std'        => '',
 				),
 				array(
+					'type'		 => 'dropdown',
+					'heading'	 => __( 'Appear Animation', 'athen_transl' ),
+					'param_name' => 'css_animation',
+					'value'		 => vcex_css_animations(),
+					'edit_field_class'  => 'vc_col-sm-4 vc_column clear',
+				),
+				array(
 					'type'        => 'colorpicker',
 					'heading'     => __( 'Color', 'athen_transl' ),
 					'param_name'  => 'color',
@@ -105,6 +114,7 @@ if ( ! function_exists( 'vcex_heading_shortcode_vc_map' ) ) {
 					'heading'     => __( 'Color: Hover', 'athen_transl' ),
 					'param_name'  => 'color_hover',
 				),
+
 
 				// Link
 				array(
@@ -124,7 +134,7 @@ if ( ! function_exists( 'vcex_heading_shortcode_vc_map' ) ) {
 					'group'      => __( 'Link', 'athen_transl' ),
 				),
 
-				// CSS
+				// Design
 				array(
 					'type'       => 'css_editor',
 					'heading'    => __( 'Design', 'athen_transl' ),
