@@ -119,3 +119,12 @@ class Athen_Framework_Init {
  * @since 1.6.3
  */
 $athen_init = new Athen_Framework_Init;
+
+
+
+function custom_excerpt ( $the_query, $lenght = 10) {
+ 	$excerpt = wp_trim_words ($the_query, $lenght );
+	return $excerpt;
+}
+
+add_filter( 'excerpt_length', 'custom_excerpt' );

@@ -104,7 +104,6 @@ class Athen_Recent_Posts_Thumb extends WP_Widget {
                 while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
                 
                     <?php
-                    $excerpt = get_the_excerpt( 30 )
                     // Get post thumbnail
                     $thumbnail = athen_get_post_thumbnail( array(
                         'size'      => $img_size,
@@ -130,7 +129,7 @@ class Athen_Recent_Posts_Thumb extends WP_Widget {
                         <a href="<?php athen_permalink(); ?>" title="<?php athen_esc_title(); ?>" class="post-title"><?php the_title(); ?></a>
                             
                         <?php
-
+						print( custom_excerpt ( $my_query->post->post_content, 8 ) );
                         // Display date if enabled
                         if ( '1' == $post_meta ) : ?>
 
@@ -142,11 +141,6 @@ class Athen_Recent_Posts_Thumb extends WP_Widget {
                             </div><!-- .wpex-widget-recent-posts-date -->
 
                         <?php endif; ?>
-                        
-                            
-                            
-                         
-
                     </li><!-- .wpex-widget-recent-posts-li -->
 
                 <?php endwhile; ?>
