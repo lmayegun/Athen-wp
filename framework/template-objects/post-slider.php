@@ -127,8 +127,6 @@ function athen_post_slider( $post_id = '', $postion = '' ) {
 		$get = true;
 	} elseif ( 'after_main_header' == $position && 'athen_hook_main_header_after' == $filter ) {
 		$get = true;
-	} elseif ( 'above_title' == $position && 'athen_hook_page_header_before' == $filter ) {
-		$get = true;
 	} elseif ( 'below_title' == $position && 'athen_hook_main_top' == $filter ) {
 		$get = true;
 	}

@@ -111,10 +111,6 @@ SuperFish Third Party
 				margin-bottom: 12px;
 			
 				> a{
-					font-weight: bold; 
-					font-weight: 600;
-					color: #000;
-					font-size: 1.03em; 
 					padding: 8px 12px;
 					word-wrap: break-word; 
 					white-space: normal; 
@@ -141,7 +137,6 @@ SuperFish Third Party
 					left: auto !important; 
 					position: relative !important; 
 					opacity: 1 !important; 
-					border: none !important; 
 					padding: 0 !important;
 					box-shadow: none !important;
 				}
@@ -151,10 +146,10 @@ SuperFish Third Party
 				border-left: 1px solid #eee;
 					
 				> ul.sub-menu > li > ul.sub-menu a:before { 
-				display: inline-block; 
-				content: "\f105";
-				margin-right: 7px;
-				font-family: 'FontAwesome';
+					display: inline-block; 
+					content: "\f105";
+					margin-right: 7px;
+					font-family: 'FontAwesome';
 				}
 					
 			&:first-child { border-left: none; }

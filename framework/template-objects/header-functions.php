@@ -399,7 +399,7 @@ class Athen_Header {
 		$classes[] = 'header-'. $athen_std_theme->header_style .'-logo';
 
 		// Get custom overlay logo
-		if ( $athen_std_theme->has_overlay_header && athen_header_overlay_logo() ) {
+		if ( $athen_std_theme->has_overlay_header && Athen_header::athen_header_overlay_logo() ) {
 			$classes[] = 'has-overlay-logo';
 		}
 

@@ -17,8 +17,9 @@
 
 /* Wrap > Top
 -------------------------------------------------------------------------------*/
-add_action( 'athen_hook_site_header_before', 'athen_post_slider' );
+
 add_action( 'athen_display_site_header', 'athen_site_header_partial' );
+add_action( 'athen_hook_site_header_before', 'athen_post_slider' );
 
 	/* Topbar > Before
 	------------------------------------------------------------------------------*/
@@ -28,21 +29,25 @@ add_action( 'athen_display_site_header', 'athen_site_header_partial' );
             -------------------------------------------------------------------------------*/
             add_action( 'athen_display_top_header', 'athen_top_header_partial');
                         
-            /* Header > Top > Partials
-            -------------------------------------------------------------------*/
-            add_action( 'athen_hook_top_header', 'athen_top_header_logo' );
-            add_action( 'athen_hook_top_header', 'athen_top_header_menu' );
-            add_action( 'athen_hook_top_header', 'athen_top_header_aside' );
-            add_action( 'athen_hook_top_header', 'athen_search_icon' );
-            add_action( 'athen_hook_top_header', 'athen_header_social' );
-            add_action( 'athen_hook_top_header', 'athen_search_dropdown');
-            add_action( 'athen_hook_top_header', 'athen_search_header_replace' );
+	            /* Header > Top > Partials
+	            -------------------------------------------------------------------*/
+	            add_action( 'athen_hook_top_header', 'athen_top_header_logo' );
+	            add_action( 'athen_hook_top_header', 'athen_top_header_menu' );
+	            add_action( 'athen_hook_top_header', 'athen_top_header_aside' );
+	            add_action( 'athen_hook_top_header', 'athen_search_icon' );
+	            add_action( 'athen_hook_top_header', 'athen_header_social' );
+	            add_action( 'athen_hook_top_header', 'athen_search_dropdown');
+	            add_action( 'athen_hook_top_header', 'athen_search_header_replace' );
     
     /* Topbar > After
 	------------------------------------------------------------------------------*/
     add_action( 'athen_hook_top_header_after', 'athen_post_slider' );
 
-    
+/* Site Header > After
+------------------------------------------------------------------------------*/
+add_action( 'athen_hook_site_header_after', 'athen_post_slider' );
+
+
     /* Main Header > Before
 	------------------------------------------------------------------------------*/
     add_action( 'athen_hook_top_header_after', 'athen_post_slider' );
@@ -91,7 +96,7 @@ add_action( 'athen_hook_main_before', 'athen_section_open');
 
 		/* Page Header > Before
 		-------------------------------------------------------------------------------*/
-		add_action( 'athen_hook_page_header_bottom', 'athen_post_slider' );
+		add_action( 'athen_hook_page_header_top', 'athen_post_slider' );
 
 			/* Page Header > Inner
 			-------------------------------------------------------------------------------*/
@@ -102,6 +107,7 @@ add_action( 'athen_hook_main_before', 'athen_section_open');
 
 		/* Page Header > Bottom
 		-------------------------------------------------------------------------------*/
+		add_action( 'athen_hook_page_header_bottom', 'athen_post_slider' );
 		add_action( 'athen_hook_page_header_bottom', 'Athen_Page_Header::athen_page_header_overlay' );
 
 

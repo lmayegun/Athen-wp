@@ -736,7 +736,6 @@ if ( ! class_exists( 'Athen_Post_Metaboxes' ) ) {
                             'after_top_header'     => __( 'After Top Header', 'athen_transl' ),
                             'before_main_header'     => __( 'Before Main Header', 'athen_transl' ),
                             'after_main_header'     => __( 'After Main Header', 'athen_transl' ),
-                            'above_title'  => __( 'Above Title', 'athen_transl' ),
                             'below_title' => __( 'Below Title', 'athen_transl' ),
                         ),
                     ),  
