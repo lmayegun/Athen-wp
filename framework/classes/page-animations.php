@@ -98,8 +98,8 @@ if ( ! class_exists( 'Athen_Page_Animations' ) ) {
 				}
 
 				// Animation Speeds
-				$array['pageAnimationInDuration']  = 400;
-				$array['pageAnimationOutDuration'] = 400;
+				$array['pageAnimationInDuration']  = 1500;
+				$array['pageAnimationOutDuration'] = 1500;
 
 				// Loading text
 				$text = athen_get_mod( 'page_animation_loading' );

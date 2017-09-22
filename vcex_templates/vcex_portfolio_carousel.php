@@ -82,6 +82,8 @@ $atts = shortcode_atts( array(
 // Extract shortcode atts
 extract( $atts );
 
+var_dump($atts);
+
 // Fallback for term slug
 if ( $term_slug ) {
 	$include_categories = $term_slug;

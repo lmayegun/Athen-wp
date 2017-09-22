@@ -12,7 +12,8 @@
 ***************************************************************************/
 @import "general/resets";
 @import "general/accent-color";
-@import "general/animation-page-transition";
+//@import "general/animation-page-transition";
+@import "sass/page-animsition/animsition.css";
 @import "general/body-main-commons";
 @import "general/boxed-layouts";
 @import "general/form-and-button-template";
@@ -99,6 +100,8 @@
 @import "shortcodes-elements/terms-grid";
 @import "shortcodes-elements/headings";
 @import "shortcodes-elements/spacing";
+
+
 
 // Bootstrap
 @import "general/responsive";

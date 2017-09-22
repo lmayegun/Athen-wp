@@ -102,6 +102,8 @@ $atts = shortcode_atts( array(
 	'single_column_style'           => '',
 	'thumb_lightbox_caption'        => '',
 	'css_editor'                    => '',
+	'category_post_terms'			=> '',
+	'tag_post_terms'				=> '',
 ), $atts );
 
 // Extract shortcode atts
@@ -123,6 +125,8 @@ if ( $my_query->have_posts() ) :
 	$is_isotope         = false;
 	$title              = ( 'false' == $title ) ? false : true;
 	$excerpt            = ( 'false' == $excerpt ) ? false : true;
+	$category_post_terms= ( 'true' == $category_post_terms ) ? true : false;
+	$tag_post_terms		= ( 'true' == $tag_post_terms ) ? true : false;
 	$read_more          = ( 'false' == $read_more ) ? false : true;
 	$read_more_text     = $read_more_text ? $read_more_text : __( 'read more', 'athen_transl' );
 	$filter             = ( 'true' == $filter ) ? true : false;
@@ -519,6 +523,31 @@ if ( $my_query->have_posts() ) :
 									<?php endif; ?>
 
 								</div><!-- .vcex-blog-entry-excerpt -->
+
+							<?php endif; ?>
+
+
+							<?php 
+							// Display Categories
+							if ( $category_post_terms ) : ?>
+
+								<div class="vcex-blog-post-terms categories clr"<?php echo $category_style; ?>>
+
+									<?php athen_list_post_terms( 'category', true, true ); ?>
+
+								</div><!-- .vcex-blog-categories -->
+
+							<?php endif; ?>
+
+							<?php 
+							// Display Tags
+							if ( $tag_post_terms ) : ?>
+
+								<div class="vcex-blog-post-terms tags clr"<?php echo $tags_style; ?>>
+
+									<?php athen_list_post_terms( 'post_tag', true, true ); ?>
+
+								</div><!-- .vcex-blog-tags -->
 
 							<?php endif; ?>
 

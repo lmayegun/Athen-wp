@@ -49,6 +49,27 @@ Blog Grid
 	&-entry-readmore-wrap {
 		padding-top: 15px;
 	}
+
+	&-post-terms{
+		margin-top: 20px;
+		a{ 
+			color: $link-color;
+			&:link{
+				padding-left: 15px;
+			    padding-right: 15px;
+			    padding-top: 5px;
+			    padding-bottom: 5px;
+			    background: lighten($black, 80%);
+			    border-radius: 24px;
+			}
+			&:hover{
+				text-decoration: none;
+			}
+			&visited{
+				color: $link-color;
+			}
+		}
+	}
 	
 	///////////////////////////////////// Grid 
 	&-grid{

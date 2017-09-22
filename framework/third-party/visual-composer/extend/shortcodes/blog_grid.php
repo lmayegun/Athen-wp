@@ -272,6 +272,32 @@ if ( ! function_exists( 'vcex_blog_grid_shortcode_vcmap' ) ) {
                     'group'         => __( 'Query', 'athen_transl' ),
                 ),
 
+                array(
+                    'type'          => 'dropdown',
+                    'heading'       => __( 'Categories Display', 'athen_transl'),
+                    'param_name'    => 'category_post_terms',
+                    'value'         => array(
+                        __( 'No', 'athen_transl' )  => '',
+                        __( 'Yes', 'athen_transl' ) => 'true',
+                    ),
+                    'description'       => __( 'View categories of post', 'athen_transl'),
+                    'group'             => __( 'Query', 'athen_transl'),
+                    'edit_field_class'  => 'vc_col-sm-6 vc-column',
+                ), 
+
+                array(
+                    'type'          => 'dropdown',
+                    'heading'       => __( 'Tags Display', 'athen_transl'),
+                    'param_name'    => 'tag_post_terms',
+                    'value'         => array(
+                        __( 'No', 'athen_transl' )  => '',
+                        __( 'Yes', 'athen_transl' ) => 'true',
+                    ),
+                    'description'   => __( 'View categories of post', 'athen_transl'),
+                    'group'         => __( 'Query', 'athen_transl'),
+                    'edit_field_class'  => 'vc_col-sm-6 vc-column',
+                ), 
+
                 // Filter
                 array(
                     'type'          => 'dropdown',

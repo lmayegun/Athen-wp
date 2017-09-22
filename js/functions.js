@@ -211,7 +211,11 @@
                 outDuration  : athenLocalize.pageAnimationOutDuration,
                 linkElement  : 'a[href]:not([target="_blank"]):not([href^="#"]):not([href*="javascript"]):not([href*=".jpg"]):not([href*=".jpeg"]):not([href*=".gif"]):not([href*=".png"]):not([href*=".mov"]):not([href*=".swf"]):not([href*=".mp4"]):not([href*=".flv"]):not([href*=".avi"]):not([href*=".mp3"]):not([href^="mailto:"]):not([href*="?"]):not([href*="#localscroll"]):not([class="wcmenucart"])',
                 loading      : true,
-                loadingText  : athenLocalize.pageAnimationLoadingText
+                loadingText  : athenLocalize.pageAnimationLoadingText,
+                loadingClass: 'animsition-loading',
+                //loadingInner: '<img src="images/Pacman.svg" />', // e.g '<img src="loading.svg" />'
+                loadingParentElement: 'body',
+                 transition: function(url){ window.location.href = url; }
             } );
 
         },
@@ -1404,7 +1408,7 @@
                 return;
             }
 
-            $( '.athen-blog-carousel' ).each( function() {
+            $( '.athen-blog-carousel, .wpex-carousel-portfolio' ).each( function() {
 
                 var $this = $( this ),
                     $data = $this.data(),

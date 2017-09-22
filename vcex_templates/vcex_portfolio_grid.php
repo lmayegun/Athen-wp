@@ -490,7 +490,7 @@ if ( $my_query->have_posts() ) :
 
 								<?php
 								// Inner link overlay HTML
-								Athen_Overlay::athen_overlay( 'inside_link', $overlay_style ); ?>
+								athen_overlay( 'inside_link', $overlay_style ); ?>
 
 								<?php
 								// Close link tag
@@ -498,7 +498,7 @@ if ( $my_query->have_posts() ) :
 
 								<?php
 								// Outer link overlay HTML
-								Athen_Overlay::athen_overlay( 'outside_link', $overlay_style ); ?>
+								athen_overlay( 'outside_link', $overlay_style ); ?>
 
 							</div><!-- .portfolio-entry-media -->
 
