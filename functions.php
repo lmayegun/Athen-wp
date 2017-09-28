@@ -118,7 +118,7 @@ class Athen_Framework_Init {
  *
  * @since 1.6.3
  */
-$athen_init = new Athen_Framework_Init;
+//$athen_init = new Athen_Framework_Init;
 
 
 
@@ -526,8 +526,7 @@ function return_array(){
                 ),
             );
 
-    return $array['media']['title'];
+    return $array;
 }
-
 
 var_dump(return_array());
