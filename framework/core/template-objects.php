@@ -67,6 +67,7 @@ class Athen_Template_Objects extends Athen_Framework_Init{
 		$athen_std_theme->lightbox_skin              = athen_ilightbox_skin();
 		$athen_std_theme->mobile_menu_style          = $menuObj->athen_mobile_menu_style();
 		$athen_std_theme->mega_menu_width            = $menuObj->athen_mega_menu_width();
+		$athen_std_theme->mega_menu_margin			 = $menuObj->athen_mega_menu_margin();
 		$athen_std_theme->header_search_style        = $searchFuncObj->athen_header_search_style();
 		$athen_std_theme->sidr_menu_source           = $menuObj->athen_mobile_menu_source();
 		$athen_std_theme->post_slider_position       = $postSliderObj->athen_post_slider_position( $athen_std_theme->post_id );

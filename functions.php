@@ -110,6 +110,8 @@ class Athen_Framework_Init {
 		//print_r($athen_std_theme);
 		//var_dump(get_post_type_labels(get_post_type_object('staff')));
 		//register_taxonomy_for_object_type( 'category', 'staff' );
+        $menuMag = athen_get_mod('mega_menu_margin_left');
+        print_r($menuMag);
 	}
 }
 
@@ -118,7 +120,7 @@ class Athen_Framework_Init {
  *
  * @since 1.6.3
  */
-//$athen_init = new Athen_Framework_Init;
+$athen_init = new Athen_Framework_Init;
 
 
 
@@ -128,7 +130,7 @@ class Athen_Framework_Init {
 }*/
 
 //add_filter( 'excerpt_length', 'custom_excerpt' );
-function return_array(){
+function tabs_array(){
 		$array = array();
 
             // Main Tab
@@ -529,4 +531,4 @@ function return_array(){
     return $array;
 }
 
-var_dump(return_array());
+//var_dump(tabs_array());

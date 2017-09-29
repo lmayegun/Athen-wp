@@ -10,9 +10,10 @@ class Athen_Post_Types {
     
     public function post_types() {
         
-        $post_types = array( 'portfolio-config'=> true ,
-                             'staff-config'=> true,
-                             'testimonials-config' => ATHEN_CHECK_TESTIMONIALS);
+        $post_types = array( 'portfolio-config'=> true,
+                             'staff-config'=> false,
+                             'testimonials-config' => false
+                      );
         
         foreach($post_types as $posttype => $check){
             if ( $check ){

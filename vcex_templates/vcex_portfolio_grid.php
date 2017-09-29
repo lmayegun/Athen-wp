@@ -510,7 +510,7 @@ if ( $my_query->have_posts() ) :
 					// Display content if there is either a title or excerpt
 					if ( $title || $post->excerpt ) : ?>
 					
-						<div class="portfolio-entry-details clr"<?php echo $content_style; ?>>
+						<div class="vcex-portfolio-entry-details clr"<?php echo $content_style; ?>>
 
 							<?php
 							// Equal height div

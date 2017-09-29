@@ -190,6 +190,20 @@ $wp_customize->add_control( 'mega_menu_width', array(
 	'type'		=> 'text',
 ) );
 
+// Mega Menu Margin Left 
+$wp_customize->add_setting( 'mega_menu_margin_left', array(
+	'type'		=> 'theme_mod',
+	'sanitize_callback' => false,
+) );
+
+$wp_customize->add_control( 'mega_menu_margin_left', array(
+	'label' 	=> __( 'Mega Menu Magin-Left', 'athen_transl'),
+	'section'	=> 'athen_mega_menu',
+	'settings'	=> 'mega_menu_margin_left',
+	'priority'	=> 2,
+	'type'		=> 'text',
+) );
+
 // Background Megamenu Image
 $wp_customize->add_setting( 'mega_menu_bkg_img', array(
 	'type'		=> 'theme_mod',

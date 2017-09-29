@@ -63,6 +63,7 @@ class Athen_Theme_Js extends Athen_Framework_Init{
 			'retinaLogo'             	=> $this->athen_get_mod( 'retina_logo' ),
 			'carouselSpeed'		     	=> 150,
 			'iLightbox'              	=> $this->ilightbox_localize_array(),
+			'megaMarginLeft'			=> $athen_std_theme->mega_menu_margin,
 		);
 
 		$localize_array = apply_filters( 'athen_localize_array', $localize_array );

@@ -176,6 +176,24 @@ class Athen_Menu {
 		// Return Integer 
 		return $width;	
 	}
+
+	/**
+	 * Get Mega Menu Left Margin 
+	 *
+	 * @Return Integer
+	 * @Since AThen 1.0.0
+	**/
+	function athen_mega_menu_margin(){
+
+		// Get Margin Left for Mega Menu 
+		$margin_left = athen_get_mod( 'mega_menu_margin_left' );
+
+		// Hook For Child Theme
+		$margin_left = apply_filters( 'mega_menu_margin_left', $margin_left );
+
+		// Return 
+		return $margin_left;
+	}
 	
 	/**
 	 * Returns correct mobile menu style
